@@ -1,0 +1,117 @@
+/* Reset e base */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Primeiro nav (topo) */
+nav#main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #6B4226, #A9746E);
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  z-index: 1001;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+/* Menu principal */
+nav#main-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+/* Links com ícone */
+nav#main-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s ease;
+}
+
+nav#main-nav ul li a:hover {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+/* Ícones */
+nav#main-nav .icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Segundo nav (tipos de produtos) */
+nav#product-nav {
+  position: fixed;
+  top: 60px; /* altura do primeiro nav */
+  left: 0;
+  width: 100%;
+  background: #5C3A21;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  z-index: 1000;
+
+  display: flex;
+  justify-content: center;
+}
+
+/* Lista do segundo nav */
+nav#product-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  gap: 25px;
+}
+
+/* Links segundo nav */
+nav#product-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 5px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover e ativo no segundo nav */
+nav#product-nav ul li a:hover,
+nav#product-nav ul li a.active {
+  background-color: #A9746E;
+  color: #fff;
+}
+
+/* Espaço para não esconder o conteúdo atrás dos dois navs */
+main {
+  padding-top: 110px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
