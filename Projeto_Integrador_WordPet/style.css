@@ -16,7 +16,7 @@ body {
   top: 0;
   width: 100%;
   height: 80px;
-  background: linear-gradient(to right, #8a4a00, #b87429);
+  background: linear-gradient(to right, #924F14, #7E4818, #c58a57);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -115,11 +115,30 @@ body {
   letter-spacing: 4px;
 }
 
-.hero img {
+.hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
+}
+
+.hero .foto1 {
+  width: 90%;
   height: auto;
   display: block;
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.hero .seta1{
+  rotate: 90%;
+  width: 40px;
+  height: auto;
+}
+
+
+.hero .seta2{
+  width: 40px;
+  height: auto;
 }
 
 
