@@ -1,117 +1,257 @@
-/* Reset e base */
-body {
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Primeiro nav (topo) */
-nav#main-nav {
+body {
+  font-family: Arial, sans-serif;
+  padding-top: 150px; /* espaço para as duas navs fixas */
+}
+
+/* Primeiro NAV que permite o usuário navegar entre as telas principas */
+
+.top-nav {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  background: linear-gradient(90deg, #6B4226, #A9746E);
-  padding: 15px 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-  z-index: 1001;
-
+  height: 80px;
+  background: linear-gradient(to right, #8a4a00, #b87429);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 80px;
+  z-index: 1000;
 }
 
-/* Logo */
-.logo {
-  color: white;
-  font-weight: bold;
-  font-size: 24px;
-  margin: 0;
-  user-select: none;
-  flex-shrink: 0;
+.logo img {
+  height: 150%;
+  max-height: 90px;
+  margin-left: 30px;
+  margin:30px;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
 }
 
-/* Menu principal */
-nav#main-nav ul {
-  margin: 0;
-  padding: 0;
+.menu-links {
   list-style: none;
-
   display: flex;
   gap: 30px;
-  align-items: center;
 }
 
-/* Links com ícone */
-nav#main-nav ul li a {
-  color: #fff;
+.menu-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.menu-links a:hover{
+  color: rgba(255, 210, 127, 0.829);
+  border: 30px;
+  border-color: black;
+}
+
+.search-bar input {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  border-color: #b87429;
+  width: 520px;
+  font-size: 16px;
+}
+
+.iconeCarrinho {
+  display: flex;
+  gap: 25px;
+}
+
+.iconeCarrinho a {
+  color: white;
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
   display: flex;
   align-items: center;
-  gap: 10px;
-  transition: color 0.3s ease;
+  gap: 8px;
 }
 
-nav#main-nav ul li a:hover {
-  color: #FFD700;
+.account {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* espaço entre o ícone e o texto */
   text-decoration: none;
+  color: #333;
+  font-weight: 500;
 }
 
-/* Ícones */
-nav#main-nav .icon {
-  width: 20px;
-  height: 20px;
+.account .icon {
+  width: 35px;
+  height: 35px;
 }
 
-/* Segundo nav (tipos de produtos) */
-nav#product-nav {
+/* Segundo NAV - que possibilita o usuário navegar entre os produtos */
+.sub-nav {
   position: fixed;
-  top: 60px; /* altura do primeiro nav */
-  left: 0;
+  top: 92px; 
   width: 100%;
-  background: #5C3A21;
-  padding: 10px 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  z-index: 1000;
+  background-color: #4d2900;
+  padding: 14px 0;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 
+.sub-nav ul {
   display: flex;
   justify-content: center;
+  list-style: none;
+  gap: 70px;
 }
 
-/* Lista do segundo nav */
-nav#product-nav ul {
+.sub-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 4px;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+
+.beneficios_site {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.beneficio {
+  max-width: 200px;
+  margin: 10px;
+}
+
+.beneficio img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.beneficio h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.beneficio .line {
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: linear-gradient(to right, #0D47A1, #1976D2, #1565C0);
+  margin: 0 auto 10px;
+}
+
+.beneficio p {
+  font-size: 14px;
+  color: #333;
+}
+
+.secao-lancamentos {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.titulo-lancamentos {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.lista-produtos {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.produto-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.etiqueta-lancamento {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ff5722;
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.imagem-produto {
   margin: 0;
   padding: 0;
-  list-style: none;
+}
 
+.imagem-produto img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.descricao-produto {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #333;
+  background-color: #fafafa;
+}
+
+.area-botoes {
   display: flex;
-  gap: 25px;
+  justify-content: space-between;
+  padding: 12px 15px;
+  gap: 10px;
+  margin-top: auto;
 }
 
-/* Links segundo nav */
-nav#product-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
-  padding: 5px 12px;
-  border-radius: 4px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+.botao-veja-mais,
+.botao-adicionar {
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  flex: 1;
+  font-size: 14px;
 }
 
-/* Hover e ativo no segundo nav */
-nav#product-nav ul li a:hover,
-nav#product-nav ul li a.active {
-  background-color: #A9746E;
-  color: #fff;
+.botao-veja-mais {
+  background-color: #1976d2;
+  color: white;
 }
 
-/* Espaço para não esconder o conteúdo atrás dos dois navs */
-main {
-  padding-top: 110px;
-  max-width: 960px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+.botao-adicionar {
+  background-color: #43a047;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
 }

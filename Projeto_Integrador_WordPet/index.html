@@ -2,41 +2,168 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Petshop Ecommerce</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="icon" href="caminho/para/seu/favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header>
+    <section class="top-nav">
+      <figure class="logo">
+         <a href="index.html">
+          <img src="image/worldpet.png" alt="Logo World Pet" />
+         </a>
+      </figure>
 
-  <!-- Primeiro nav -->
-  <nav id="main-nav">
-    <h1 class="logo">PetShop</h1>
-    <ul>
-      <li><a href="#home">Home <img src="icons/home.png" alt="Ícone Home" class="icon" /></a></li>
-      <li><a href="#perfil">Perfil <img src="icons/perfil.png" alt="Ícone Perfil" class="icon" /></a></li>
-      <li><a href="#produtos">Produtos <img src="icons/produtos.png" alt="Ícone Produtos" class="icon" /></a></li>
-      <li><a href="#contato">Contato <img src="icons/contato.png" alt="Ícone Contato" class="icon" /></a></li>
-    </ul>
-  </nav>
+      <nav aria-label="Menu principal">
+        <ul class="menu-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="sobrenos.html">Sobre nós</a></li>
+        </ul>
+      </nav>
 
-  <!-- Segundo nav -->
-  <nav id="product-nav">
-    <ul>
-      <li><a href="#racao" class="active">Ração</a></li>
-      <li><a href="#coleiras">Coleiras</a></li>
-      <li><a href="#brinquedos">Brinquedos</a></li>
-      <li><a href="#higiene">Higiene</a></li>
-      <li><a href="#acessorios">Acessórios</a></li>
-    </ul>
-  </nav>
+      <form class="search-bar" role="search">
+        <input type="text" placeholder="Pesquise aqui 🐾🐾🐾" />
+      </form>
 
-  <main>
-    <section>
-      <h2>Bem-vindo à PetShop</h2>
-      <p>Aqui você encontra tudo para o seu melhor amigo.</p>
+      <aside class="iconeCarrinho">
+        <a href="carrinho.html" class="cart">
+          <i class="bi bi-cart-fill"></i> Carrinho
+
+        <a href="perfil.html" class="account">
+          <img src="image/icone_minha_conta.png" alt="Ícone de perfil" class="icon" />
+          <span>Minha conta</span>
+        </a>
     </section>
-    <!-- Conteúdo adicional aqui -->
+
+    <nav class="sub-nav" aria-label="Categorias de produtos">
+      <ul>
+        <li><a href="produtos_higiene.html">Banho&Higiene</a></li>
+        <li><a href="produtos_racao.html">Ração</a></li>
+        <li><a href="produtos_acessorios.html">Acessórios</a></li>
+        <li><a href="produtos_roupinhas.html">Roupas</a></li>
+        <li><a href="produtos_casinha.html">Casinhas</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="hero">
+    <img src="image/carrossel_home_1.png" alt="Imagem de apresentação do pet shop">
+    </section>
+
+    <section class="beneficios_site">
+    <article class="beneficio">
+      <img src="img/oferta.png" alt="Ofertas" />
+      <h3>Ofertas Imperdíveis!</h3>
+      <span class="line"></span>
+      <p>Descontos feitos para você e seu pet!</p>
+    </article>
+
+    <article class="beneficio">
+      <img src="img/frete.png" alt="Frete" />
+      <h3>Frete para todo o Brasil!</h3>
+      <span class="line"></span>
+      <p>Entrega rápida e segura para todo o Brasil</p>
+    </article>
+
+    <article class="beneficio">
+      <img src="img/seguranca.png" alt="Segurança" />
+      <h3>Produtos de Qualidade</h3>
+      <span class="line"></span>
+      <p>Produtos de qualidade comprovada, selecionados com carinho para o seu pet.</p>
+    </article>
+
+    <article class="beneficio">
+      <img src="img/cartao.png" alt="Cartão" />
+      <h3>Pague com Cartão!</h3>
+      <span class="line"></span>
+      <p>Parcele suas compras em até 6x sem juros!</p>
+    </article>
+
+    <article class="beneficio">
+      <img src="image/icone_minha_conta.png" alt="Ofertas" />
+      <h3>Rastreio de entrega</h3>
+      <span class="line"></span>
+      <p>Visualize a sua entrega em tempo real!</p>
+    </article>
+  </section>
+
+          
+<section class="secao-lancamentos">
+  <h2 class="titulo-lancamentos">🐾 Lançamentos</h2>
+  <ul class="lista-produtos">
+
+    <li class="produto-card">
+      <strong class="etiqueta-lancamento">LANÇAMENTO</strong>
+      <figure class="imagem-produto">
+        <img src="image/worldpet.png" alt="Brinquedo Mordedor">
+        <figcaption class="descricao-produto">Brinquedo Mordedor para Cães</figcaption>
+      </figure>
+      <section class="area-botoes">
+        <button class="botao-veja-mais">Veja Mais</button>
+        <button class="botao-adicionar"><i class="bi bi-cart"></i> Adicionar</button>
+      </section>
+    </li>
+
+    <li class="produto-card">
+      <strong class="etiqueta-lancamento">LANÇAMENTO</strong>
+      <figure class="imagem-produto">
+        <img src="image/worldpet.png" alt="Ração Premium Gatos">
+        <figcaption class="descricao-produto">Ração Premium Gatos Adultos</figcaption>
+      </figure>
+      <section class="area-botoes">
+        <button class="botao-veja-mais">Veja Mais</button>
+        <button class="botao-adicionar"><i class="bi bi-cart"></i> Adicionar</button>
+      </section>
+    </li>
+
+    <li class="produto-card">
+      <strong class="etiqueta-lancamento">LANÇAMENTO</strong>
+      <figure class="imagem-produto">
+        <img src="image/worldpet.png" alt="Coleira Antipulgas">
+        <figcaption class="descricao-produto">Coleira Antipulgas</figcaption>
+      </figure>
+      <section class="area-botoes">
+        <button class="botao-veja-mais">Veja Mais</button>
+        <button class="botao-adicionar"><i class="bi bi-cart"></i> Adicionar</button>
+      </section>
+    </li>
+
+    <li class="produto-card">
+      <strong class="etiqueta-lancamento">LANÇAMENTO</strong>
+      <figure class="imagem-produto">
+        <img src="image/worldpet.png" alt="Areia Higiênica">
+        <figcaption class="descricao-produto">Areia Higiênica Super Absorvente</figcaption>
+      </figure>
+      <section class="area-botoes">
+        <button class="botao-veja-mais">Veja Mais</button>
+        <button class="botao-adicionar"><i class="bi bi-cart"></i> Adicionar</button>
+      </section>
+    </li>
+
+    <li class="produto-card">
+      <strong class="etiqueta-lancamento">LANÇAMENTO</strong>
+      <figure class="imagem-produto">
+        <img src="image/worldpet.png" alt="Petisco Natural">
+        <figcaption class="descricao-produto">Petisco Natural para Cães</figcaption>
+      </figure>
+      <section class="area-botoes">
+        <button class="botao-veja-mais">Veja Mais</button>
+        <button class="botao-adicionar"><i class="bi bi-cart"></i> Adicionar</button>
+      </section>
+    </li>
+
+  </ul>
+</section>
+
+
   </main>
+
 
 </body>
 </html>
