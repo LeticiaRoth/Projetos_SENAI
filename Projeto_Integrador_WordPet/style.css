@@ -162,6 +162,12 @@ body {
   width: 100px;
   height: auto;
   margin-bottom: 10px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.beneficio img:hover{
+  transform: translateY(-10px);
 }
 
 .beneficio h3 {
