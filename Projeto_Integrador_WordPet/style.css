@@ -14,7 +14,7 @@ body {
 
 /* Primeiro NAV que permite o usuário navegar entre as telas principas */
 
-.top-nav {
+.navegacaoPrincipal {
   position: fixed;
   top: 0;
   width: 100%;
@@ -35,26 +35,26 @@ body {
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
 }
 
-.menu-links {
+.menuPrincipal {
   list-style: none;
   display: flex;
   gap: 30px;
 }
 
-.menu-links a {
+.menuPrincipal a {
   color: white;
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
 }
 
-.menu-links a:hover{
+.menuPrincipal a:hover{
   color: rgba(255, 210, 127, 0.829);
   border: 30px;
   border-color: black;
 }
 
-.search-bar input {
+.barraPesquisa input {
   padding: 10px 15px;
   border-radius: 5px;
   border: none;
@@ -93,7 +93,7 @@ body {
 }
 
 /* Segundo NAV - que possibilita o usuário navegar entre os produtos */
-.sub-nav {
+.navegacaoSecundaria {
   position: fixed;
   top: 92px; 
   width: 100%;
@@ -103,20 +103,23 @@ body {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.sub-nav ul {
+.navegacaoSecundaria ul {
   display: flex;
   justify-content: center;
   list-style: none;
   gap: 70px;
 }
 
-.sub-nav a {
+.navegacaoSecundaria a {
   color: white;
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 4px;
 }
+
+
+
 
 /*Carrossel*/
 .carousel {
@@ -140,6 +143,7 @@ body {
     flex-shrink: 0;
   }
 
+  /*Mexer para colocar a quinta imagem*/
   @keyframes slideAnimation {
     0%    { transform: translateX(0); }
     20%   { transform: translateX(0); }
@@ -153,7 +157,8 @@ body {
   }
 
 
- .icon-left, .icon-right {
+
+ .iconeLeft, .iconeRight {
     position: absolute;
     top: 40%;
     transform: translateY(-50%);
@@ -168,20 +173,23 @@ body {
     cursor: pointer;
     user-select: none;
   }
-  .icon-left {
+  .iconeLeft {
     left: 20px;
     background: url(image/seta_esquerda.png);
     background-size: contain;
   }
-  .icon-right {
+  .iconeRight {
     right: 20px;
     background: url(image/seta_direita.png);
     background-size: contain;
   }
 
+
+
+
   
-/*Section dos benefícios*/
-.beneficios_site {
+/*Seção dos benefícios*/
+.beneficiosSite {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -192,19 +200,19 @@ body {
 
 .beneficio {
   max-width: 200px;
-  margin: 10px;
 }
 
+/*Código da imagem dentro dos benefícios*/
 .beneficio img {
   width: 100px;
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   display: inline-block;
   transition: transform 0.3s ease;
 }
 
 .beneficio img:hover{
-  transform: translateY(-10px);
+  transform: translateY(-9px);
 }
 
 .beneficio h3 {
@@ -228,28 +236,34 @@ body {
 
 
 
-/*Seção dos lançamentos*/
-.secao-lancamentos {
-  max-width: 1200px;
+
+
+/*Seção dos lançamentos - Card de Produtos*/
+.secaoLancamentos {
+  max-width: 1350px;
   margin: auto;
+  background-color:  red;
 }
 
-.titulo-lancamentos {
+.tituloLancamentos {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   color: #333;
 }
 
-.lista-produtos {
+.listaProdutos {
   list-style: none;
+    gap: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 20px;
   padding: 0;
   margin: 0;
 }
 
-.produto-card {
+.produtoCard {
+  height: 450px;
+  width: 300px;
+  gap:200px;
   background: #fff;
   border-radius: 12px;
   box-shadow: 5px  rgba(0, 0, 0, 0.1);
@@ -260,48 +274,51 @@ body {
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
 }
 
-.etiqueta-lancamento {
+.etiquetaLancamento {
   position: absolute;
   top: 10px;
   left: 10px;
   background-color: #ff6739;
   color: white;
   padding: 4px 8px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   border-radius: 4px;
   z-index: 1;
 }
 
-.imagem-produto {
+.fundoProduto {
   margin: 0;
   padding: 0;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
 }
 
-.imagem-produto img {
-  height:  200px;
+.fundoProduto img {
+  height: 330px;
   width: auto;
   display: block;
+  padding-top: 19px;
+  background-color: #1565C0;
 }
 
-.descricao-produto {
+.descricaoProduto {
   padding: 10px 15px;
-  font-size: 14px;
+  font-size: 16px;
   color: #333;
   background-color: #fafafa;
 }
 
-.area-botoes {
+.areaBotoes {
   display: flex;
   justify-content: space-between;
-  padding: 12px 15px;
-  gap: 10px;
+  padding: 12px 30px;
+  gap: 5px;
   margin-top: auto;
 }
 
-.botao-veja-mais,
-.botao-adicionar {
-  padding: 8px;
+.botaoVejaMais,
+.botaoAdicionar {
+  padding: 10px;
   border: none;
   border-radius: 4px;
   font-weight: bold;
@@ -310,20 +327,20 @@ body {
   font-size: 14px;
 }
 
-.botao-veja-mais {
+.botaoVejaMais {
   background-color: #1976d2;
   color: white;
 }
 
-.botao-veja-mais a{
+.botaoVejaMais a{
   text-decoration: none;
 }
 
-.botao-veja-mais:hover{
+.botaoVejaMais:hover{
   background-color: #000157e7;
 }
 
-.botao-adicionar {
+.botaoAdicionar {
   background-color: #43a047;
   color: white;
   display: flex;
@@ -332,11 +349,11 @@ body {
   gap: 6px;
 }
 
-.botao-adicionar:hover{
+.botaoAdicionar:hover{
   background-color: #093f0b;
 }
 
-.area-botoes a{
+.areaBotoes a{
   text-decoration: none;
 }
 

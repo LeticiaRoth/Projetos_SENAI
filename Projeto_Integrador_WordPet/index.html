@@ -13,7 +13,7 @@
     </head>
     <body>
         <header>
-            <section class="top-nav">
+            <section class="navegacaoPrincipal">
                 <figure class="logo">
                     <a href="index.html">
                         <img src="image/ícones_nav/icone_principal.png" alt="Logo World Pet" />
@@ -21,7 +21,7 @@
                 </figure>
 
                 <nav aria-label="Menu principal">
-                    <ul class="menu-links">
+                    <ul class="menuPrincipal">
                         <li><a href="index.html">Início</a></li>
                         <li><a href="catalogo.html">Catálogo</a></li>
                         <li><a href="contato.html">Contato</a></li>
@@ -29,7 +29,7 @@
                     </ul>
                 </nav>
 
-                <form class="search-bar" role="search">
+                <form class="barraPesquisa" role="search">
                     <input type="text" placeholder="Pesquise aqui 🐾🐾🐾" />
                 </form>
 
@@ -45,7 +45,7 @@
                 </aside>
             </section>
 
-            <nav class="sub-nav" aria-label="Categorias de produtos">
+            <nav class="navegacaoSecundaria" aria-label="Categorias de produtos">
                 <ul>
                     <li><a href="produtos_higiene.html">Banho & Higiene</a></li>
                     <li><a href="produtos_racao.html">Ração</a></li>
@@ -66,11 +66,12 @@
                     <img src="image/5.png" alt="Foto 5" />
                 </div>
             </section>
-            <div class="icon-left"></div>  <!-- seta para esquerda -->
-            <div class="icon-right"></div> <!-- seta para direita -->
+            <div class="iconeLeft"></div>  <!-- seta para esquerda -->
+            <div class="iconeRight"></div> <!-- seta para direita -->
 
 			
-            <section class="beneficios_site">
+            <!--Seção dos benefícios-->
+            <section class="beneficiosSite">
                 <article class="beneficio">
                     <img src="image/imagem_ofertas.svg" alt="Ofertas" />
                     <h3>Ofertas Imperdíveis!</h3>
@@ -106,106 +107,60 @@
                     <p>Visualize a sua entrega em tempo real!</p>
                 </article>
             </section>
+            <!--Fim da seção de benefícios-->
 
 
+            <!--Seção dos lançamentos-->
+            <section class="secaoLancamentos">
+                <h2 class="tituloLancamentos">🐾 Lançamentos</h2>
+                <ul class="listaProdutos">
 
-            <section class="secao-lancamentos">
-                <h2 class="titulo-lancamentos">🐾 Lançamentos</h2>
-                <ul class="lista-produtos">
-                    <li class="produto-card">
-                        <strong class="etiqueta-lancamento">LANÇAMENTO</strong>
-                        <figure class="imagem-produto">
-                            <img src="image/seta_esquerda.png" alt="Brinquedo Mordedor" />
-                            <figcaption class="descricao-produto">Brinquedo Mordedor para Cães</figcaption>
+                    <li class="produtoCard">
+                        <strong class="etiquetaLancamento">LANÇAMENTO</strong>
+                        <figure class="fundoProduto">
+                            <img src="image/racoes_secao_cachorros/racao_magnus_2.png" alt="Brinquedo Mordedor" />
+                            <figcaption class="descricaoProduto">Brinquedo Mordedor para Cães</figcaption>
                         </figure>
-                        <section class="area-botoes">
+                        <section class="areaBotoes">
                             <a href="vejamais.html">
-                                <button class="botao-veja-mais">Veja Mais</button>
+                                <button class="botaoVejaMais">Veja Mais</button>
                             </a>
                             <a href="carrinho.html">
-                                <button class="botao-adicionar">
+                                <button class="botaoAdicionar">
                                     <i class="bi bi-cart"></i> Adicionar
                                 </button>
                             </a>
                         </section>
                     </li>
 
-                    <li class="produto-card">
-                        <strong class="etiqueta-lancamento">LANÇAMENTO</strong>
-                        <figure class="imagem-produto">
-                            <img src="image/racoes_secao_cachorros/racao_magnus_2.png" alt="Ração Premium Gatos" />
-                            <figcaption class="descricao-produto">Ração Premium Gatos Adultos</figcaption>
+                    <li class="produtoCard">
+                        <strong class="etiquetaLancamento">LANÇAMENTO</strong>
+                        <figure class="fundoProduto">
+                            <img src="image/racoes_secao_cachorros/racao_magnus_2.png" alt="Brinquedo Mordedor" />
+                            <figcaption class="descricaoProduto">Brinquedo Mordedor para Cães</figcaption>
                         </figure>
-                        <section class="area-botoes">
+                        <section class="areaBotoes">
                             <a href="vejamais.html">
-                                <button class="botao-veja-mais">Veja Mais</button>
+                                <button class="botaoVejaMais">Veja Mais</button>
                             </a>
-
                             <a href="carrinho.html">
-                                <button class="botao-adicionar">
+                                <button class="botaoAdicionar">
                                     <i class="bi bi-cart"></i> Adicionar
                                 </button>
                             </a>
                         </section>
                     </li>
 
-                    <li class="produto-card">
-                        <strong class="etiqueta-lancamento">LANÇAMENTO</strong>
-                        <figure class="imagem-produto">
-                            <img src="image/seta_esquerda.png" alt="Coleira Antipulgas" />
-                            <figcaption class="descricao-produto">Coleira Antipulgas</figcaption>
-                        </figure>
-                        <section class="area-botoes">
-                            <a href="vejamais.html">
-                                <button class="botao-veja-mais">Veja Mais</button>
-                            </a>
-                            <a href="carrinho.html">
-                                <button class="botao-adicionar">
-                                    <i class="bi bi-cart"></i> Adicionar
-                                </button>
-                            </a>
-                        </section>
-                    </li>
-
-                    <li class="produto-card">
-                        <strong class="etiqueta-lancamento">LANÇAMENTO</strong>
-                        <figure class="imagem-produto">
-                            <img src="image/seta_esquerda.png" alt="Areia Higiênica" />
-                            <figcaption class="descricao-produto">Areia Higiênica Super Absorvente</figcaption>
-                        </figure>
-                        <section class="area-botoes">
-                            <a href="vejamais.html">
-                                <button class="botao-veja-mais">Veja Mais</button>
-                            </a>
-                            <a href="carrinho.html">
-                                <button class="botao-adicionar">
-                                    <i class="bi bi-cart"></i> Adicionar
-                                </button>
-                            </a>
-                        </section>
-                    </li>
-
-                    <li class="produto-card">
-                        <strong class="etiqueta-lancamento">LANÇAMENTO</strong>
-                        <figure class="imagem-produto">
-                            <img src="image/seta_esquerda.png" alt="Petisco Natural" />
-                            <figcaption class="descricao-produto">Petisco Natural para Cães</figcaption>
-                        </figure>
-                        <section class="area-botoes">
-                            <a href="vejamais.html">
-                                <button class="botao-veja-mais">Veja Mais</button>
-                            </a>
-                            <a href="carrinho.html">
-                                <button class="botao-adicionar">
-                                    <i class="bi bi-cart"></i> Adicionar
-                                </button>
-                            </a>
-                        </section>
-                    </li>
+                    
                 </ul>
             </section>
+            
+            <!--Fim da seção de lançamentos-->
         </main>
 
+
+
+        <!--Footer-->
 		<footer class="footer">
     			<section class="footer-content">
         
@@ -230,7 +185,7 @@
         		<article class="footer-social">
             		<h3>Siga a World Pet</h3>
             		<ul>
-                		<li><a href="#"><img src="facebook.png" alt="Facebook"></a></li>
+                		<li><a href="#"><img src="image/seta_direita.png" alt="Facebook"></a></li>
                 		<li><a href="#"><img src="instagram.png" alt="Instagram"></a></li>
                 		<li><a href="#"><img src="twitter.png" alt="Twitter"></a></li>
                 		<li><a href="#"><img src="youtube.png" alt="YouTube"></a></li>
@@ -250,6 +205,7 @@
         		<p>&copy; 2025 World Pet. Todos os direitos reservados.</p>
     		</section>
 		</footer>
-		
+		<!--Fim do footer-->
+
     </body>
 </html>
