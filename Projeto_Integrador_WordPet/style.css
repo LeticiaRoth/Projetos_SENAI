@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+*a{
+  text-decoration: none;
+}
 body {
   font-family: Arial, sans-serif;
   padding-top: 150px; /* espaço para as duas navs fixas */
@@ -116,39 +119,73 @@ body {
 }
 
 /*Carrossel*/
-.hero{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
+.carousel {
+    width: 1750px;
+    height: 450px;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+  }
 
-.hero .foto1 {
-  width: 90%;
-  height: auto;
-  display: block;
-  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
-}
+  .slides {
+    display: flex;
+    width: calc(1920px * 5); /* 5 imagens */
+    animation: slideAnimation 15s infinite;
+  }
 
-.hero .seta1{
-  rotate: 90%;
-  width: 40px;
-  height: auto;
-}
+  .slides img {
+    width: 1750px;
+    height: auto;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  @keyframes slideAnimation {
+    0%    { transform: translateX(0); }
+    20%   { transform: translateX(0); }
+    25%   { transform: translateX(-1750px); }
+    45%   { transform: translateX(-1750px); }
+    50%   { transform: translateX(-3500px); }
+    70%   { transform: translateX(-3500px); }
+    75%   { transform: translateX(-5250px); }
+    95%   { transform: translateX(-5250px); }
+    100%  { transform: translateX(0); }
+  }
 
 
-.hero .seta2{
-  width: 40px;
-  height: auto;
-}
+ .icon-left, .icon-right {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: rgba(0,0,0,0.4);
+    color: white;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+  }
+  .icon-left {
+    left: 20px;
+    background: url(image/seta_esquerda.png);
+    background-size: contain;
+  }
+  .icon-right {
+    right: 20px;
+    background: url(image/seta_direita.png);
+    background-size: contain;
+  }
 
-
+  
 /*Section dos benefícios*/
 .beneficios_site {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 40px 20px;
+  padding: 20px 10px;
   background-color: #fff;
   text-align: center;
 }
@@ -220,6 +257,7 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
 }
 
 .etiqueta-lancamento {
@@ -277,6 +315,10 @@ body {
   color: white;
 }
 
+.botao-veja-mais a{
+  text-decoration: none;
+}
+
 .botao-veja-mais:hover{
   background-color: #000157e7;
 }
@@ -293,6 +335,11 @@ body {
 .botao-adicionar:hover{
   background-color: #093f0b;
 }
+
+.area-botoes a{
+  text-decoration: none;
+}
+
 
 
 /*Seção do Footer*/
