@@ -115,6 +115,7 @@ body {
   letter-spacing: 4px;
 }
 
+/*Carrossel*/
 .hero{
   display: flex;
   align-items: center;
@@ -142,6 +143,7 @@ body {
 }
 
 
+/*Section dos benefícios*/
 .beneficios_site {
   display: flex;
   justify-content: space-around;
@@ -157,7 +159,7 @@ body {
 }
 
 .beneficio img {
-  width: 60px;
+  width: 100px;
   height: auto;
   margin-bottom: 10px;
 }
@@ -168,9 +170,9 @@ body {
   margin: 10px 0 5px;
 }
 
-.beneficio .line {
+.beneficio .linha {
   display: block;
-  width: 40px;
+  width: 60px;
   height: 3px;
   background: linear-gradient(to right, #0D47A1, #1976D2, #1565C0);
   margin: 0 auto 10px;
@@ -181,6 +183,9 @@ body {
   color: #333;
 }
 
+
+
+/*Seção dos lançamentos*/
 .secao-lancamentos {
   max-width: 1200px;
   margin: auto;
@@ -204,7 +209,7 @@ body {
 .produto-card {
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 17px 10px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
   display: flex;
@@ -215,7 +220,7 @@ body {
   position: absolute;
   top: 10px;
   left: 10px;
-  background-color: #ff5722;
+  background-color: #ff6739;
   color: white;
   padding: 4px 8px;
   font-size: 12px;
@@ -254,7 +259,7 @@ body {
 .botao-adicionar {
   padding: 8px;
   border: none;
-  border-radius: 6px;
+  border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
   flex: 1;
@@ -266,6 +271,10 @@ body {
   color: white;
 }
 
+.botao-veja-mais:hover{
+  background-color: #000157e7;
+}
+
 .botao-adicionar {
   background-color: #43a047;
   color: white;
@@ -273,4 +282,77 @@ body {
   align-items: center;
   justify-content: center;
   gap: 6px;
+}
+
+.botao-adicionar:hover{
+  background-color: #093f0b;
+}
+
+
+/*Seção do Footer*/
+.footer {
+  background-color: #292b2c;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 40px 20px 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content article {
+  flex: 1 1 200px;
+  margin: 10px 20px;
+}
+
+.footer h2,
+.footer h3 {
+  color: #f9a825;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer-payment ul,
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.footer-payment img,
+.footer-social img {
+  width: 40px;
+  height: auto;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+.footer-social img:hover,
+.footer-payment img:hover {
+  transform: scale(1.1);
+}
+
+.footer-contact p {
+  font-size: 14px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #555;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #ccc;
 }
