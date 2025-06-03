@@ -17,15 +17,13 @@ O objetivo principal é garantir praticidade e bem-estar para os tutores e seus 
 
 ---
 
-### 💡 Funcionalidades do Site - até agora(02/06/2025)
+### 💡 Funcionalidades do Site - até agora (02/06/2025)
 
 - Catálogo completo de produtos pet
 - Sistema de busca e categorias
 - Carrossel de destaques e lançamentos
 - Carrinho de compras
-- Área de conta do usuário
 - Depoimentos de clientes
-- Layout responsivo e acessível
 
 ---
 
