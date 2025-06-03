@@ -5,10 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Home - Início</title>
         <link rel="icon" href="image/ícones_nav/icone_principal.png" type="image/png" />
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-            rel="stylesheet"
-        />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
@@ -20,6 +17,7 @@
                     </a>
                 </figure>
 
+                <!--Navegação Primária-->
                 <nav aria-label="Menu principal">
                     <ul class="menuPrincipal">
                         <li><a href="index.html">Início</a></li>
@@ -29,6 +27,7 @@
                     </ul>
                 </nav>
 
+                <!--ícones da barra de navegação-->
                 <form class="barraPesquisa" role="search">
                     <input type="text" placeholder="Pesquise aqui 🐾🐾🐾" />
                 </form>
@@ -37,7 +36,6 @@
                     <a href="carrinho.html" class="cart">
                         <i class="bi bi-cart-fill"></i> Carrinho
                     </a>
-
                     <a href="perfil.html" class="account">
                         <img src="image/ícones_nav/icone_minha_conta.png" alt="Ícone de perfil" class="icon" />
                         <span>Minha conta</span>
@@ -45,6 +43,7 @@
                 </aside>
             </section>
 
+            <!--Navegação secundária-->
             <nav class="navegacaoSecundaria" aria-label="Categorias de produtos">
                 <ul>
                     <li><a href="produtos_higiene.html">Banho & Higiene</a></li>
@@ -57,6 +56,7 @@
         </header>
 
         <main>
+            <!--Carrossel Menu Principal -->
             <section class="carousel">
                 <div class="slides">
                     <img src="image/1.png" alt="Foto 1" />
@@ -66,40 +66,35 @@
                     <img src="image/5.png" alt="Foto 5" />
                 </div>
             </section>
-            <div class="iconeLeft"></div>  <!-- seta para esquerda -->
+            <div class="iconeLeft"></div> <!-- seta para esquerda -->
             <div class="iconeRight"></div> <!-- seta para direita -->
 
-			
             <!--Seção dos benefícios-->
             <section class="beneficiosSite">
                 <article class="beneficio">
                     <img src="image/imagem_ofertas.svg" alt="Ofertas" />
-                        <h3>Ofertas Imperdíveis!</h3>
-                        <span class="linha"></span>
-                        <p>Descontos feitos para você e seu pet!</p>
+                    <h3>Ofertas Imperdíveis!</h3>
+                    <span class="linha"></span>
+                    <p>Descontos feitos para você e seu pet!</p>
                 </article>
-
                 <article class="beneficio">
                     <img src="image/imagem_frete.svg" alt="Frete" />
                     <h3>Frete para todo o Brasil!</h3>
                     <span class="linha"></span>
                     <p>Entrega rápida e segura para todo o Brasil</p>
                 </article>
-
                 <article class="beneficio">
                     <img src="image/imagem_produtos.svg" alt="Segurança" />
                     <h3>Produtos de Qualidade</h3>
                     <span class="linha"></span>
                     <p>Produtos de qualidade comprovada, selecionados com carinho para o seu pet.</p>
                 </article>
-
                 <article class="beneficio">
                     <img src="image/imagem_cartão.svg" alt="Cartão" />
                     <h3>Pague com Cartão!</h3>
                     <span class="linha"></span>
                     <p>Parcele suas compras em até 6x sem juros!</p>
                 </article>
-
                 <article class="beneficio">
                     <img src="image/imagem_rastreio.svg" alt="Ofertas" />
                     <h3>Rastreio de entrega</h3>
@@ -109,103 +104,167 @@
             </section>
             <!--Fim da seção de benefícios-->
 
+            <h2 id="tituloLancamentos">Lançamentos</h2>
 
-            <!--Seção dos lançamentos-->
-            <section class="secaoLancamentos">
-                <h2 class="tituloLancamentos">🐾 Lançamentos</h2>
-                <ul class="listaProdutos">
-
-                    <li class="produtoCard">
-                        <strong class="etiquetaLancamento">LANÇAMENTO</strong>
-                        <figure class="fundoProduto">
-                            <img src="image/racoes_secao_cachorros/racao_magnus_2.png" alt="Brinquedo Mordedor" />
-                            <figcaption class="descricaoProduto">Brinquedo Mordedor para Cães</figcaption>
-                        </figure>
-                        <section class="areaBotoes">
-                            <a href="vejamais.html">
-                                <button class="botaoVejaMais">Veja Mais</button>
-                            </a>
-                            <a href="carrinho.html">
-                                <button class="botaoAdicionar">
-                                    <i class="bi bi-cart"></i> Adicionar
-                                </button>
-                            </a>
-                        </section>
-                    </li>
-
-                    <li class="produtoCard">
-                        <strong class="etiquetaLancamento">LANÇAMENTO</strong>
-                        <figure class="fundoProduto">
-                            <img src="image/racoes_secao_cachorros/racao_magnus_2.png" alt="Brinquedo Mordedor" />
-                            <figcaption class="descricaoProduto">Brinquedo Mordedor para Cães</figcaption>
-                        </figure>
-                        <section class="areaBotoes">
-                            <a href="vejamais.html">
-                                <button class="botaoVejaMais">Veja Mais</button>
-                            </a>
-                            <a href="carrinho.html">
-                                <button class="botaoAdicionar">
-                                    <i class="bi bi-cart"></i> Adicionar
-                                </button>
-                            </a>
-                        </section>
-                    </li>
-
-                    
-                </ul>
+            <!--Seção de Lançamentos-->
+            <section id="secaoLancamentos">
+                <section class="listaLancamentos">
+                    <article class="cartaoProduto">
+                        <p class="etiquetaLancamento">Lançamento</p>
+                        <img src="image/imagens_home/imagens_lancamento/lancamento_magnus_1.svg" alt="Ração Magnus Sabor Frango, 1Kg" class="imagemProduto" />
+                        <h3 class="nomeProduto">Ração Premium Especial, Sabor Frango, 1Kg</h3>
+                        <p class="precoProduto">R$78,90</p>
+                        <button class="botaoDetalhes">Ver mais detalhes</button>
+                        <button class="botaoCarrinho">Adicionar ao carrinho</button>
+                    </article>
+                    <article class="cartaoProduto">
+                        <p class="etiquetaLancamento">Lançamento</p>
+                        <img src="image/imagens_home/imagens_lancamento/lancamento_pedegree_2.svg" alt="Lata Filhote Sabor Carne e Frango Patê, 280g" class="imagemProduto" />
+                        <h3 class="nomeProduto">Lata Filhote Sabor Carne E Frango Patê, 280g</h3>
+                        <p class="precoProduto">R$11,40</p>
+                        <button class="botaoDetalhes">Ver mais detalhes</button>
+                        <button class="botaoCarrinho">Adicionar ao carrinho</button>
+                    </article>
+                    <article class="cartaoProduto">
+                        <p class="etiquetaLancamento">Lançamento</p>
+                        <img src="image/imagens_home/imagens_lancamento/lancamento_whiskas_3.svg" alt="Ração Whiskas para Gatos Adultos Sabor Peixe, 500g" class="imagemProduto" />
+                        <h3 class="nomeProduto">Ração Whiskas para Gatos Adultos Sabor Peixe, 500g</h3>
+                        <p class="precoProduto">R$20,90</p>
+                        <button class="botaoDetalhes">Ver mais detalhes</button>
+                        <button class="botaoCarrinho">Adicionar ao carrinho</button>
+                    </article>
+                    <article class="cartaoProduto">
+                        <p class="etiquetaLancamento">Lançamento</p>
+                        <img src="image/imagens_home/imagens_lancamento/lancamento_alcon_4.svg" alt="Ração para Peixe Bottom Fish, 30g" class="imagemProduto" />
+                        <h3 class="nomeProduto">Ração para Peixe Bottom Fish, 30g</h3>
+                        <p class="precoProduto">R$19,91</p>
+                        <button class="botaoDetalhes">Ver mais detalhes</button>
+                        <button class="botaoCarrinho">Adicionar ao carrinho</button>
+                    </article>
+                </section>
             </section>
-            
-            <!--Fim da seção de lançamentos-->
+
+            <!--Seção de Destaques- fotos do da Home-->
+            <section class="secaoDestaques">
+                <section class="galeriaDestaques">
+                    <figure class="imagemDestaque">
+                        <a href="produtos_acessorios.html">
+                            <img src="image/imagens_home/imagem_home_1.svg" alt="Destaque 1" />
+                            <!-- <figcaption>Texto opcional</figcaption> -->
+                        </a>
+                    </figure>
+                    <figure class="imagemDestaque">
+                        <a href="produtos_racao.html">
+                            <img src="image/imagens_home/imagem_home_2.svg" alt="Destaque 2" />
+                        </a>
+                    </figure>
+                </section>
+            </section>
+
+            <!--Seção de marcas parceiras-->
+            <section class="secaoMarcasParceiras">
+                <h2 class="tituloMarcas">Marcas Parceiras</h2>
+                <section class="listaMarcas">
+                    <figure><img src="image/imagens_marcas_parceiras/whiskas.png" alt="Whiskas"></figure>
+                    <figure><img src="image/imagens_marcas_parceiras/specialDog.png" alt="Special Dog"></figure>
+                    <figure><img src="image/imagens_marcas_parceiras/specialCat.png" alt="Special Cat"></figure>
+                    <figure><img src="image/imagens_marcas_parceiras/magnus.png" alt="Magnus"></figure>
+                    <figure><img src="image/imagens_marcas_parceiras/goldenGatos.png" alt="Golden Gatos"></figure>
+                    <figure><img src="image/imagens_marcas_parceiras/supreme.png" alt="Supreme"></figure>
+                    <figure><img src="image/imagens_marcas_parceiras/fluval.png" alt="Fluval"></figure>
+                </section>
+            </section>
+
+            <!--Seção de Feedback dos clientes - ESTÁTICO-->
+            <section class="cabecalhoDepoimentos">
+                <h2>Feedback dos nossos clientes!</h2>
+                <p>Confira o que nossos clientes e seus pets dizem sobre nossos produtos!</p>
+            </section>
+
+            <section class="secaoDepoimentos">
+                <section class="listaDepoimentos">
+                    <article class="cartaoDepoimento">
+                        <img src="image/imagens_home/cliente_1.svg" alt="Foto do cliente Paulo Augusto" class="fotoCliente">
+                        <section class="conteudoDepoimento">
+                            <h3 class="nomeCliente">Paulo Augusto</h3>
+                            <p>Comprei pela primeira vez na WorldPet e estou encantado! Chegou super rápido, o brinquedo veio embalado com carinho 💙</p>
+                        </section>
+                    </article>
+                    <article class="cartaoDepoimento">
+                        <img src="image/imagens_home/cliente_2.svg" alt="Foto da cliente Marcela Alcantara" class="fotoCliente">
+                        <section class="conteudoDepoimento">
+                            <h3 class="nomeCliente">Marcela Alcantara</h3>
+                            <p>Entrega rápida e produtos de ótima qualidade! Meu pet adorou. Recomendo a World Pet!</p>
+                        </section>
+                    </article>
+                    <article class="cartaoDepoimento">
+                        <img src="image/imagens_home/cliente_3.svg" alt="Foto da cliente Emília Barretos" class="fotoCliente">
+                        <section class="conteudoDepoimento">
+                            <h3 class="nomeCliente">Emília Barretos</h3>
+                            <p>Atendimento excelente e preços justos. Com certeza voltarei a comprar nessa loja, meu pet amou!!!</p>
+                        </section>
+                    </article>
+                </section>
+
+                <section class="rodapeDecorativo">
+                    <img src="image/imagens_home/carrossel_icone_selecionado.png" alt="Ícones de patinhas decorativas">
+                    <img src="image/imagens_home/carrosel_icone_nao_selecionado.png" alt="Ícones de patinhas decorativas">
+                    <img src="image/imagens_home/carrosel_icone_nao_selecionado.png" alt="Ícones de patinhas decorativas">
+
+                </section>
+            </section>
         </main>
 
-
-
         <!--Footer-->
-		<footer class="footer">
-    			<section class="footer-content">
-        
-        		<!-- Informações sobre a loja -->
-        		<article class="footer-about">
-            		<h2>World Pet</h2>
-            		<p>O melhor para seu pet você encontra aqui! Produtos de qualidade, carinho e cuidado para todos os tipos de bichinhos.</p>
-        		</article>
+        <footer class="footer">
+            <!-- Logo e links principais -->
+            <section class="footerTop">
+                <a href="index.html" class="footerLogo">
+                    <img src="image/ícones_nav/icone_principal.png" alt="Logo World Pet">
+                </a>
+                <nav class="footerNav">
+                    <a href="catalogo.html">Catálogo</a>
+                    <a href="sobrenos.html">Sobre Nós</a>
+                    <a href="contato.html">Contato</a>
+                </nav>
+            </section>
 
-        		<!-- Formas de pagamento -->
-        		<article class="footer-payment">
-            		<h3>Formas de Pagamento</h3>
-            		<ul>
-                		<li><img src="visa.png" alt="Visa"></li>
-                		<li><img src="mastercard.png" alt="Mastercard"></li>
-                		<li><img src="elo.png" alt="Elo"></li>
-                		<li><img src="pix.png" alt="Pix"></li>
-            		</ul>
-        		</article>
+            <!-- Conteúdo dividido em colunas -->
+            <section class="footerContent">
+                <article class="footerColuna">
+                    <h3>Sobre a WorldPet</h3>
+                    <p>Somos apaixonados por pets! Aqui você encontra produtos selecionados com carinho para garantir o bem-estar do seu companheiro.</p>
+                </article>
+                <article class="footerColuna">
+                    <h3>Atendimento</h3>
+                    <p>Email: atendimento@worldpet.com</p>
+                    <p>Telefone: (19) 9876-5432</p>
+                </article>
+                <article class="footerColuna">
+                    <h3>Formas de Pagamento</h3>
+                    <ul class="iconesPagamento">
+                        <li><img src="image/imagens_pagamento/visa_pagamento.svg" alt="Visa"></li>
+                        <li><img src="image/imagens_pagamento/mastercad_pagamento.svg" alt="Mastercard"></li>
+                        <li><img src="image/imagens_pagamento/elo_pagamento.svg" alt="Elo"></li>
+                        <li><img src="image/imagens_pagamento/pix_pagamento.svg" alt="Pix"></li>
+                    </ul>
+                </article>
+                <article class="footerColuna">
+                    <h3>Siga nas Redes</h3>
+                    <ul class="iconesRedes">
+                        <li><a href="#"><img src="image/facebook.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="image/instagram.png" alt="Instagram"></a></li>
+                        <li><a href="#"><img src="image/twitter.png" alt="Twitter"></a></li>
+                        <li><a href="#"><img src="image/youtube.png" alt="YouTube"></a></li>
+                    </ul>
+                </article>
+            </section>
 
-        		<!-- Redes sociais -->
-        		<article class="footer-social">
-            		<h3>Siga a World Pet</h3>
-            		<ul>
-                		<li><a href="#"><img src="image/seta_direita.png" alt="Facebook"></a></li>
-                		<li><a href="#"><img src="instagram.png" alt="Instagram"></a></li>
-                		<li><a href="#"><img src="twitter.png" alt="Twitter"></a></li>
-                		<li><a href="#"><img src="youtube.png" alt="YouTube"></a></li>
-            		</ul>
-        		</article>
-
-        		<!-- Contato -->
-        		<article class="footer-contact">
-            		<h3>Contato</h3>
-            		<p>Telefone: (19) 9876 <br>Email: atendimento@worldpet.com</p>
-        		</article>
-
-    		</section>
-
-    		<!-- Rodapé inferior -->
-    		<section class="footer-bottom">
-        		<p>&copy; 2025 World Pet. Todos os direitos reservados.</p>
-    		</section>
-		</footer>
-		<!--Fim do footer-->
-
+            <!-- Rodapé final -->
+            <section class="footerBottom">
+                <p>&copy; 2025 WorldPet. Todos os direitos reservados.</p>
+                <p>Desenvolvido por Letícia Alves Roth para os amantes de animais.</p>
+            </section>
+        </footer>
     </body>
 </html>
