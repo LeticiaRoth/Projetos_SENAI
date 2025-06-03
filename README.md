@@ -2,7 +2,7 @@
 
 <!-- Insira sua logo abaixo -->
 <p align="center">
-  <img src="C:\Users\LETICIA ROTH\Desktop\Projetos_SENAI\PI_WordPet_SO\image\ícones_nav\icone_principal.png" alt="Logo WorldPet" width="250"/>
+  <img src="ícones_nav\icone_principal.png" alt="Logo WorldPet" width="250"/>
 </p>
 
 **`Desenvolvedora: Letícia Alves Roth`**
