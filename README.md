@@ -2,7 +2,7 @@
 
 <!-- Insira sua logo abaixo -->
 <p align="center">
-  <img src="image\ícones_nav\icone_principal.png" alt="Logo WorldPet" width="250"/>
+  <img src="image/ícones_nav/icone_principal.png" alt="Logo WorldPet" width="250"/>
 </p>
 
 **`Desenvolvedora: Letícia Alves Roth`**
