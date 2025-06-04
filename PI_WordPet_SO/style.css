@@ -595,7 +595,7 @@ body {
   padding: 16px;
   width: 260px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 3px 2px 8px rgba(0,0,0,0.1);
   text-align: center;
 }
 
@@ -605,7 +605,8 @@ body {
   right: 10px;
   background: transparent;
   border: none;
-  color: white;
+  color: rgb(174, 204, 239);
+  border: red;
   font-size: 1.2rem;
   cursor: pointer;
   transition: color 0.3s;
