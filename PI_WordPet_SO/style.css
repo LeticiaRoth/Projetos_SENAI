@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/*Retira todas as linhas abaixo dos links*/
 *a{
   text-decoration: none;
 }
@@ -23,7 +24,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 80px;
+  padding: 0 90px;
   z-index: 1000;
 }
 
@@ -54,21 +55,55 @@ body {
   border-color: black;
 }
 
+/*Barra de pesquisa utilizando TAG semântica e Label*/
+.barraPesquisa {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .barraPesquisa input {
   padding: 10px 15px;
   border-radius: 5px;
-  border: none;
-  border-color: #b87429;
+  border: 2px solid #b87429;
   width: 520px;
   font-size: 16px;
+  outline: none;
 }
 
-.iconeCarrinho {
+.barraPesquisa button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 2px solid #b87429;
+  background-color: #b87429;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.barraPesquisa button:hover {
+  background-color: #ec790c;
+}
+
+.barraPesquisa .bi-search {
+  font-size: 15px;
+}
+
+.campoPesquisa{
+  color: white;
+}
+
+/*Section Ícone carrinho e Ícone Perfil*/
+.iconesNavegacao {
   display: flex;
   gap: 25px;
 }
 
-.iconeCarrinho a {
+.iconesNavegacao a {
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -78,19 +113,10 @@ body {
   gap: 8px;
 }
 
-.account {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px; /* espaço entre o ícone e o texto */
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
+.iconesPrincipais{
+  width: 50px;
 }
 
-.account .icon {
-  width: 35px;
-  height: 35px;
-}
 
 /* Segundo NAV - que possibilita o usuário navegar entre os produtos */
 .navegacaoSecundaria {
@@ -119,7 +145,7 @@ body {
 }
 
 
-
+/*PÁGINA HOME - ÍNICIO*/
 
 /*Carrossel*/
 .carousel {
@@ -264,7 +290,7 @@ body {
 }
 
 /* Cartão individual de produto */
-.cartaoProduto {
+.cartaoProdutoLancamento {
      background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -322,7 +348,7 @@ body {
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .botaoDetalhes {
@@ -420,6 +446,7 @@ body {
     display: block;
 }
 
+
 /*Seção Feedback dos Clientes - ESTÁTICO*/
 /* Cabeçalho da seção */
 .cabecalhoDepoimentos {
@@ -499,6 +526,162 @@ body {
 
 .rodapeDecorativo img {
     height: 25px;
+}
+/*FIM PÁGINA HOME - ÍNICIO*/
+
+
+
+/*PÁGINA CATÁLOGO*/
+
+.navegacaoCatalogo {
+  padding: 20px;
+  text-align: center;
+}
+
+.listaCategorias {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+}
+
+.categoriaFigura {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #ddd;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.imagemCategoria {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(20%);
+  height: 100px;
+  transition: transform 0.3s;
+}
+
+.categoriaItem:hover .categoriaFigura {
+  transform: translateY(-10px);
+}
+
+.tituloSecao {
+  text-align: center;
+  margin: 20px 0 5px;
+  font-size: 1.5rem;
+}
+
+.subtituloSecao {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.gradeProdutos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.cartaoProduto {
+  position: relative;
+  background-color: #fff;
+  padding: 16px;
+  width: 260px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.botaoFavorito {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.botaoFavorito:hover {
+  color: red;
+}
+
+.figuraProduto {
+  margin-bottom: 12px;
+}
+
+.imagemProduto {
+  max-width: 190px;
+  height: auto;
+}
+
+.nomeProduto {
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.precoProduto {
+  color: #e60000;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.acoesProduto button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+
+.botaoDetalhesCatalogo,
+.botaoCarrinhoCatalogo {
+    width: 100%;
+    height: 40px;
+    padding: 18px;
+    margin: 4px 0;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.botaoDetalhesCatalogo {
+    background-color: #EF9737;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+/*Hover Botão Ver mais*/
+.botaoDetalhesCatalogo:hover{
+  background-color: #b8641b;
+  transform: translateY(-2px);
+}
+
+.botaoCarrinhoCatalogo {
+    background-color: #70D17C;
+    color: white;
+    transition: transform 0.2s ease;
+}
+/*Hover adicionar ao Carrinho*/
+.botaoCarrinhoCatalogo:hover{
+  transform: translateY(-2px);
+  background-color: #328E3D;
 }
 
 

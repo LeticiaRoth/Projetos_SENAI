@@ -16,7 +16,7 @@
             <section class="navegacaoPrincipal">
                 <figure class="logo">
                     <a href="index.html">
-                        <img src="image/ícones_nav/icone_principal.png" alt="Logo World Pet" />
+                        <img src="image/icones_nav/icone_principal.png" alt="Logo World Pet" />
                     </a>
                 </figure>
 
@@ -29,20 +29,26 @@
                     </ul>
                 </nav>
 
-                <form class="barraPesquisa" role="search">
-                    <input type="text" placeholder="Pesquise aqui 🐾🐾🐾" />
+                <form class="barraPesquisa" role="search" aria-label="Barra de pesquisa">
+                        <label for="campoPesquisa" class="campoPesquisa">BUSCAR:</label>
+                             <input id="campoPesquisa" type="text" placeholder="Pesquise aqui 🐾🐾🐾" />
+                        <button type="submit" aria-label="Buscar">
+                                <i class="bi bi-search"></i>
+                        </button>
                 </form>
 
-                <aside class="iconeCarrinho">
-                    <a href="carrinho.html" class="cart">
-                        <i class="bi bi-cart-fill"></i> Carrinho
-                    </a>
+                
 
-                    <a href="perfil.html" class="account">
-                        <img src="image/ícones_nav/icone_minha_conta.png" alt="Ícone de perfil" class="icon" />
-                        <span>Minha conta</span>
+                <!--Ícones de navegação Carrinho e Minha conta-->
+                <section class="iconesNavegacao" >
+                    <a href="carrinho.html">
+                        <i class="bi bi-cart-fill" class="iconesPrincipais"></i> Carrinho
                     </a>
-                </aside>
+                    <a href="perfil.html" >
+                        <i class="bi bi-person-fill" class="iconesPrincipais"></i>
+                        <p>Minha conta</p>
+                    </a>
+                </section>
             </section>
 
             <nav class="navegacaoSecundaria" aria-label="Categorias de produtos">
@@ -51,7 +57,6 @@
                     <li><a href="produtos_racao.html">Ração</a></li>
                     <li><a href="produtos_acessorios.html">Brinquedos</a></li>
                     <li><a href="produtos_roupinhas.html">Roupas & Acessórios</a></li>
-                    <li><a href="produtos_casinha.html">Casinhas</a></li>
                 </ul>
             </nav>
         </header>
@@ -64,7 +69,7 @@
             <!-- Logo e links principais -->
             <section class="footerTop">
                 <a href="index.html" class="footerLogo">
-                    <img src="image/ícones_nav/icone_principal.png" alt="Logo World Pet">
+                    <img src="image/icones_nav/icone_principal.png" alt="Logo World Pet">
                 </a>
                 <nav class="footerNav">
                     <a href="catalogo.html">Catálogo</a>
@@ -87,19 +92,19 @@
                 <article class="footerColuna">
                     <h3>Formas de Pagamento</h3>
                     <ul class="iconesPagamento">
-                        <li><img src="image/seta_esquerda.png" alt="Visa"></li>
-                        <li><img src="image/mastercard.png" alt="Mastercard"></li>
-                        <li><img src="image/elo.png" alt="Elo"></li>
-                        <li><img src="image/pix.png" alt="Pix"></li>
+                        <li><img src="image/imagens_footer/imagens_pagamento/visa_pagamento.svg" alt="Visa"></li>
+                        <li><img src="image/imagens_footer/imagens_pagamento/mastercad_pagamento.svg" alt="Mastercard"></li>
+                        <li><img src="image/imagens_footer/imagens_pagamento/elo_pagamento.svg" alt="Elo"></li>
+                        <li><img src="image/imagens_footer/imagens_pagamento/pix_pagamento.svg" alt="Pix"></li>
                     </ul>
                 </article>
                 <article class="footerColuna">
                     <h3>Siga nas Redes</h3>
                     <ul class="iconesRedes">
-                        <li><a href="#"><img src="image/facebook.png" alt="Facebook"></a></li>
-                        <li><a href="#"><img src="image/instagram.png" alt="Instagram"></a></li>
-                        <li><a href="#"><img src="image/twitter.png" alt="Twitter"></a></li>
-                        <li><a href="#"><img src="image/youtube.png" alt="YouTube"></a></li>
+                        <li><a href="#"><img src="image/imagens_footer/imagens_redes_sociais/facebook_redes_sociais.svg" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="image/imagens_footer/imagens_redes_sociais/instagram_redes_sociais.svg" alt="Instagram"></a></li>
+                        <li><a href="#"><img src="image/imagens_footer/imagens_redes_sociais/twitter_redes_sociais.svg" alt="Twitter"></a></li>
+                        <li><a href="#"><img src="image/imagens_footer/imagens_redes_sociais/youtube_redes_sociais.svg" alt="YouTube"></a></li>
                     </ul>
                 </article>
             </section>
@@ -107,7 +112,7 @@
             <!-- Rodapé final -->
             <section class="footerBottom">
                 <p>&copy; 2025 WorldPet. Todos os direitos reservados.</p>
-                <p>Desenvolvido com 🧡 para os amantes de animais.</p>
+                <p>Desenvolvido por Letícia Alves Roth para os amantes de animais.</p>
             </section>
         </footer>
     </body>
