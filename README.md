@@ -1,5 +1,7 @@
 # Projeto Integrador - WORLDPET
 
+###  Recado
+-> 04/06/2025 - Colocar as fotos em todas as abas de produtos, arquivos já criados com seus devidos nomes, fazer banner e ícones, colocar o resumo em cada página e seção!
 
 ![Texto alternativo](image/ícones_nav/icone_principal.png)
 
@@ -15,7 +17,7 @@ O objetivo principal é garantir praticidade e bem-estar para os tutores e seus 
 
 ---
 
-### 💡 Funcionalidades do Site - até agora (02/06/2025)
+### 💡 Funcionalidades do Site 
 
 - Catálogo completo de produtos pet
 - Sistema de busca e categorias
