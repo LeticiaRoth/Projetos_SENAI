@@ -531,42 +531,153 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
 /*PÁGINA CATÁLOGO*/
 
-.navegacaoCatalogo {
-  padding: 20px;
-  text-align: center;
+/*Categoria dos Produtos*/
+.containerCategorias {
+   margin-bottom: 70px;
+   margin-top:30px;
+   background-color: rgb(255, 255, 255);
+}
+ 
+#tituloCategorias {
+    color: #30072f;
+    font-size: 30px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+ 
+.categoriaProdutos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+ 
+.produtoCaes {
+    background: linear-gradient(to top, #694207, #e9cca5, #f8eed4f6);
+    padding: 20px;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+ 
+.produtoGatos {
+    background: linear-gradient(to top, #4d064a, #81197c94, #f19fed77);
+    padding: 20px;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
 }
 
-.listaCategorias {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  list-style: none;
-  padding: 0;
+.produtoRoedores {
+    background: linear-gradient(to top, #cc771df3, #f0af6ad7, #ffe0bff1);
+    padding: 20px;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
 }
 
-.categoriaFigura {
-  position: relative;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: #ddd;
-  overflow: hidden;
-  transition: transform 0.3s;
+.produtoAves {
+    background: linear-gradient(to top, #096327, #4dbd3e88, #cffcc6ab);
+    padding: 20px;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
 }
 
-.imagemCategoria {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) translateY(20%);
-  height: 100px;
-  transition: transform 0.3s;
+.produtoPeixe {
+    background: linear-gradient(to top, #0c0fa1c9, #7ba5e4,#b0d2e7);
+    padding: 20px;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+.produto img {
+    width: 9000px;
+    height: auto;
+    transition: transform 0.5s ease;
+    margin-bottom: 15px;
+}
+ 
+
+ 
+#imagemSnack {
+    width: 215px;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+ 
+#imagemCachorro{
+    width: 200px;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+ 
+#imagemCachorro:hover{
+  transform: scale(1.18);
 }
 
-.categoriaItem:hover .categoriaFigura {
-  transform: translateY(-10px);
+#imagemGato{
+    width: 200px;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+#imagemRoedores:hover{
+  transform: scale(1.18);
+}
+
+#imagemRoedores{
+    width: 200px;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+ 
+#imagemGato:hover{
+  transform: scale(1.18);
+}
+
+.nomeCategoria {
+    font-size: 22px;
+    font-weight: 600;
+    color: #30072f;
+    text-align: center;
+    margin-top: 30px;
+}
+ 
+.linkCategoria {
+    text-decoration: none;
+    color: inherit;
 }
 
 .tituloSecao {
@@ -684,6 +795,23 @@ body {
   transform: translateY(-2px);
   background-color: #328E3D;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
