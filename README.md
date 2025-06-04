@@ -3,7 +3,7 @@
 ###  Recado
 -> 04/06/2025 - Colocar as fotos em todas as abas de produtos, arquivos já criados com seus devidos nomes, fazer banner e ícones, colocar o resumo em cada página e seção!
 
-![Texto alternativo](image/icones_nav/icone_principal.png)
+![Texto alternativo](/image/icones_nav/icone_principal.png)
 
 **`Desenvolvedora: Letícia Alves Roth`**
 
