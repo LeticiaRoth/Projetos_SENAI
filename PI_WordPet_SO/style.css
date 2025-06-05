@@ -543,14 +543,15 @@ body {
 /*PÁGINA CATÁLOGO*/
 
 /*Categoria dos Produtos*/
+/*Estilização da navegaçaõ*/
 .containerCategorias {
-   margin-bottom: 70px;
-   margin-top:30px;
+   margin-bottom: 80px;
+   margin-top:40px;
    background-color: rgb(255, 255, 255);
 }
  
 #tituloCategorias {
-    color: #30072f;
+    color: #050005;
     font-size: 30px;
     margin-bottom: 60px;
     text-align: center;
@@ -623,28 +624,23 @@ body {
     transition: transform 0.3s ease;
 }
 .produto img {
-    width: 9000px;
+    width: 900px;
     height: auto;
     transition: transform 0.5s ease;
     margin-bottom: 15px;
 }
- 
+
 
  
-#imagemSnack {
-    width: 215px;
-    height: auto;
-    transition: transform 0.5s ease;
-}
- 
+/*IDS da navegação das seções animais dentro do catálogo*/
 #imagemCachorro{
-    width: 200px;
+    width: 210px;
     height: auto;
     transition: transform 0.5s ease;
 }
  
 #imagemCachorro:hover{
-  transform: scale(1.18);
+  transform: scale(1.10);
 }
 
 #imagemGato{
@@ -653,8 +649,8 @@ body {
     transition: transform 0.5s ease;
 }
 
-#imagemRoedores:hover{
-  transform: scale(1.18);
+#imagemGato:hover{
+  transform: scale(1.10);
 }
 
 #imagemRoedores{
@@ -663,9 +659,39 @@ body {
     transition: transform 0.5s ease;
 }
  
-#imagemGato:hover{
-  transform: scale(1.18);
+#imagemRoedores:hover{
+  transform: scale(1.10);
 }
+
+#imagemAves{
+    width: 200px;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+ 
+#imagemAves:hover{
+  transform: scale(1.10);
+}
+
+
+#imagemPeixe{
+    width: 200px;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+ 
+#imagemPeixe:hover{
+  transform: scale(1.10);
+}
+
+/*FIM - área de navegação*/
+
+
+/*Estilização dos CARDS que são usadas em todas as áreas de produtos*/
+
+.imagemProduto{
+  width: 200px;
+ }
 
 .nomeCategoria {
     font-size: 22px;
@@ -773,6 +799,7 @@ body {
     font-size: 16px;
 }
 
+
 .botaoDetalhesCatalogo {
     background-color: #EF9737;
     color: white;
@@ -796,23 +823,7 @@ body {
   background-color: #328E3D;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*FIM - Estilização dos cards utilizados dentro de toda a área de catálogo*/
 
 
 
