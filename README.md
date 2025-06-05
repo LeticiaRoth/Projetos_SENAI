@@ -8,7 +8,7 @@
   <img src="PI_WordPet_SO/image/icones_nav/icone_principal.png" alt="Minha imagem" width="400" height="400">
 </p>
 
-<center><**`Desenvolvedora: Letícia Alves Roth`**</center>
+<center>**`Desenvolvedora: Letícia Alves Roth`**</center>
 
 ---
 
