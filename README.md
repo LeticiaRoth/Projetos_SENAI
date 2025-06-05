@@ -4,7 +4,7 @@
 -> 04/06/2025 - Colocar as fotos em todas as abas de produtos, arquivos já criados com seus devidos nomes, fazer banner e ícones, colocar o resumo em cada página e seção!
 
 ![Texto alternativo](PI_WordPet_SO/image/icones_nav/icone_principal.png ) 
-
+<img src="PI_WordPet_SO/image/icones_nav/icone_principal.png " alt="Minha imagem" width="300" height="200">
 **`Desenvolvedora: Letícia Alves Roth`**
 
 ---
