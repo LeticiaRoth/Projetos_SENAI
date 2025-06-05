@@ -7,7 +7,9 @@
 <p align="center">
   <img src="PI_WordPet_SO/image/icones_nav/icone_principal.png" alt="Logo do WorldPet" width="300">
   <br>
-  Desenvolvedora: Letícia Alves Roth
+  <strong>
+    Desenvolvedora: Letícia Alves Roth
+  </strong>
 </p>
 
 ---
