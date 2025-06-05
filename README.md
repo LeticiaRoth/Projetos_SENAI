@@ -5,10 +5,10 @@
 
 
 <p align="center">
-  <img src="PI_WordPet_SO/image/icones_nav/icone_principal.png" alt="Minha imagem" width="400" height="400">
+  <img src="PI_WordPet_SO/image/icones_nav/icone_principal.png" alt="Logo do WorldPet" width="300">
+  <br>
+  Desenvolvedora: Letícia Alves Roth
 </p>
-
-<center><strong>Desenvolvedora: Letícia Alves Roth</strong></center>
 
 ---
 
