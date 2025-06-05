@@ -1,6 +1,6 @@
 # Projeto Integrador - WORLDPET
 
-###  Recado
+### 💬 Recado
 -> 05/06/2025 - Terminar a página de catálogos de animais específicos
 
 
