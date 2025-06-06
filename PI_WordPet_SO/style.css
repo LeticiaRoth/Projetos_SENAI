@@ -349,6 +349,7 @@ body {
     font-weight: bold;
     cursor: pointer;
     font-size: 15px;
+    text-decoration: none;
 }
 
 .botaoDetalhes {
