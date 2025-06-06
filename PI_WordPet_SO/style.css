@@ -201,12 +201,12 @@ body {
   }
   .iconeLeft {
     left: 20px;
-    background: url(image/seta_esquerda.png);
+    background: url(image/imagens_home/imagens_carrossel_home/seta_esquerda.png);
     background-size: contain;
   }
   .iconeRight {
     right: 20px;
-    background: url(image/seta_direita.png);
+    background: url(image/imagens_home/imagens_carrossel_home/seta_direita.png);
     background-size: contain;
   }
 
