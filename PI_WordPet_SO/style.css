@@ -171,15 +171,17 @@ body {
 
   /*Mexer para colocar a quinta imagem*/
   @keyframes slideAnimation {
-    0%    { transform: translateX(0); }
-    20%   { transform: translateX(0); }
-    25%   { transform: translateX(-1750px); }
-    45%   { transform: translateX(-1750px); }
-    50%   { transform: translateX(-3500px); }
-    70%   { transform: translateX(-3500px); }
-    75%   { transform: translateX(-5250px); }
-    95%   { transform: translateX(-5250px); }
-    100%  { transform: translateX(0); }
+      0%    { transform: translateX(0); }
+  16%   { transform: translateX(0); }
+  20%   { transform: translateX(-1750px); }
+  36%   { transform: translateX(-1750px); }
+  40%   { transform: translateX(-3500px); }
+  56%   { transform: translateX(-3500px); }
+  60%   { transform: translateX(-5250px); }
+  76%   { transform: translateX(-5250px); }
+  80%   { transform: translateX(-7000px); }
+  96%   { transform: translateX(-7000px); }
+  100%  { transform: translateX(0); }
   }
 
 
@@ -219,7 +221,7 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 20px 10px;
+  padding: 10px 10px;
   background-color: #fff;
   text-align: center;
 }
@@ -228,7 +230,6 @@ body {
   max-width: 200px;
 }
 
-/*Código da imagem dentro dos benefícios*/
 .beneficio img {
   width: 100px;
   height: auto;
@@ -237,7 +238,7 @@ body {
   transition: transform 0.3s ease;
 }
 
-.beneficio img:hover{
+.beneficio img:hover {
   transform: translateY(-9px);
 }
 
@@ -248,11 +249,11 @@ body {
 }
 
 .beneficio .linha {
-  display: block;
   width: 60px;
-  height: 3px;
+  height: 5px;
   background: linear-gradient(to right, #0D47A1, #1976D2, #1565C0);
   margin: 0 auto 10px;
+  border: none;
 }
 
 .beneficio p {
