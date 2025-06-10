@@ -773,6 +773,7 @@ body {
   color: #e60000;
   font-weight: bold;
   font-size: 1.5rem;
+  text-align: center;
   margin-bottom: 10px;
 }
 
@@ -1037,8 +1038,7 @@ main.carrinhoContainer {
     }
 
     aside.logoContainer img#logo {
-      max-width: 150%;
-      max-height: 150px;
+      max-width: 130%;
       object-fit: contain;
       user-select: none;
     }
@@ -1114,14 +1114,14 @@ main.carrinhoContainer {
       color: white;
       text-decoration: none;
       cursor: pointer;
-      box-shadow: 0 8px 15px rgba(107, 115, 255, 0.4);
+      box-shadow: 0 8px 15px rgba(255, 255, 255, 0.4);
       transition: background-color 0.3s ease, box-shadow 0.3s ease;
       width: 100%;
     }
 
     a.botaoEntrar:hover {
       background: #125006;
-      box-shadow: 0 10px 20px rgba(75, 212, 12, 0.329);
+      box-shadow: 0 5px 9px rgba(75, 212, 12, 0.329);
     }
 
     footer.rodapeLogin {
@@ -1228,14 +1228,14 @@ a.botaoSalvar {
   font-size: 1.2rem;
   color: white;
   cursor: pointer;
-  box-shadow: 0 8px 15px rgba(1, 31, 11, 0.4);
+  box-shadow: 0 8px 15px rgba(217, 236, 223, 0.911);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
 }
 
 a.botaoSalvar:hover {
   background: #125006;
-      box-shadow: 0 10px 20px rgba(75, 212, 12, 0.329);
+      box-shadow: 0 6px 7px rgba(75, 212, 12, 0.329);
 }
 /*FIM - Página Endereço*/
 
@@ -1244,37 +1244,39 @@ a.botaoSalvar:hover {
 
 
 /*Página Finalizar Pagamento*/
-
 .secaoResumoPagamento {
+  margin: 0 auto;
   background: #fff;
   border-radius: 16px;
   padding: 2.5rem 2rem 3rem 2rem;
   box-shadow: 0 15px 30px rgba(0,0,0,0.1);
   max-width: 900px;
-  width: 100%;
+  width: 90%;
   font-family: 'Poppins', sans-serif;
   color: #222;
 }
+
 
 .secaoResumoPagamento header h1 {
   font-weight: 600;
   font-size: 2.2rem;
   text-align: center;
   margin-bottom: 2rem;
-  color: #2b2d42;
+  color: #42302b;
 }
 
 /* Conteúdo principal: resumo produtos + aside lado a lado */
 .conteudoPrincipal {
   display: flex;
   gap: 2rem;
-  margin-bottom: 2.5rem;
+  
 }
 
 .resumoProdutos {
   flex: 1 1 600px;
 }
 
+/*Fotos dos produtos de organização dentro de das linhas*/
 .resumoProdutos ul {
   list-style: none;
   padding-left: 0;
@@ -1296,8 +1298,8 @@ a.botaoSalvar:hover {
 }
 
 .resumoProdutos img {
-  width: 70px;
-  height: 70px;
+  width: 90px;
+  height: 90px;
   border-radius: 12px;
   object-fit: cover;
   margin-right: 1rem;
@@ -1318,7 +1320,7 @@ a.botaoSalvar:hover {
   color: #555;
 }
 
-.precoProduto {
+.precoProdutoCarrinho {
   flex: 1;
   text-align: right;
   font-weight: 400;
@@ -1422,23 +1424,29 @@ a.botaoSalvar:hover {
   flex-direction: column;
 }
 
-a.botaoFinalizar {
-  width: 170%;
-  padding: 1.2rem 0;
+/*Mudar o botão*/
+.botaoFinalizar {
+  display: block;
+  margin: 0 auto;
+  width: 290px;
+  padding: 1rem 0;
   background: #468d30;
   border: none;
+  text-decoration: none;
   border-radius: 14px;
-  font-size: 1.3rem;
+  font-size: 15px;
   font-weight: 700;
   color: white;
+  text-align: center;
   cursor: pointer;
-  box-shadow: 0 8px 15px rgba(1, 31, 11, 0.4);
+  box-shadow: 0 8px 15px rgba(255, 255, 255, 0.4);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+
 a.botaoFinalizar:hover {
   background: #125006;
-  box-shadow: 0 10px 20px rgba(75, 212, 12, 0.329);
+  box-shadow: 0 6px 10px rgba(75, 212, 12, 0.329);
 }
 
 
