@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Status das Esterias - Monitoramento de Estoque</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="imagens/icons8-python-48.png" type="image/png" />
+</head>
+<body>
+  <h2>Projeto Integrador LOPAL</h2>
+<table border="6px" class="dataframe" align="center", width="500">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Time</th>
+      <th>Esteira 1</th>
+      <th>Esteira 2</th>
+      <th>Esteira 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2024/11/26</td>
+      <td>06:35:02</td>
+      <td>2</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>2024/11/25</td>
+      <td>06:34:53</td>
+      <td>2</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>2024/11/24</td>
+      <td>06:34:37</td>
+      <td>0</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>2024/11/23</td>
+      <td>06:34:21</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2024/11/22</td>
+      <td>06:33:57</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2024/11/21</td>
+      <td>06:33:48</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2024/11/20</td>
+      <td>06:33:39</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>2024/11/19</td>
+      <td>06:33:24</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>2024/11/18</td>
+      <td>06:33:12</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2024/11/17</td>
+      <td>06:33:00</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>2024/11/16</td>
+      <td>06:32:48</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<script>
+document.querySelectorAll('td').forEach(td => {
+  if (td.textContent ==='1'){
+    td.classList.add('td-valor-1')
+  }
+  else if (td.textContent === '2'){
+    td.classList.add('td-valor-2')
+  }
+  else if (td.textContent === '3'){
+    td.classList.add('td-valor-3')
+  }
+  else if(td.textContent === '0'){
+    td.classList.add('td-valor-0')
+  }
+  
+}
+);
+</script>
+
+
+
+</body>
+</html>
