@@ -3,9 +3,12 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Home - Início</title>
-        <link rel="icon" href="image/icones_nav/icone_principal.png" type="image/png" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+        <title>Inserir Endereço</title>
+        <link rel="icon" href="image/ícones/icone_contato.png" type="image/png" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
@@ -17,7 +20,6 @@
                     </a>
                 </figure>
 
-                <!--Navegação Primária-->
                 <nav aria-label="Menu principal">
                     <ul class="menuPrincipal">
                         <li><a href="index.html">Início</a></li>
@@ -27,7 +29,6 @@
                     </ul>
                 </nav>
 
-                <!-- Barra de pesquisa - ESTÁTICA-->
                 <form class="barraPesquisa" role="search" aria-label="Barra de pesquisa" action="resultado_pesquisa.html">
                         <label for="campoPesquisa" class="campoPesquisa"></label>
                              <input id="campoPesquisa" type="text" placeholder="Pesquise aqui 🐾🐾🐾" />
@@ -48,7 +49,6 @@
                 </section>
             </section>
 
-            <!--Navegação secundária-->
             <nav class="navegacaoSecundaria" aria-label="Categorias de produtos">
                 <ul>
                     <li><a href="produtos_higiene.html">Banho & Higiene</a></li>
@@ -58,37 +58,81 @@
                 </ul>
             </nav>
         </header>
-       
+
         <main>
-              <section class="secaoLogin" aria-label="Formulário de Login">
-      <aside class="logoContainer" aria-label="Logo da loja">
-        <img id="logo" src="image/icones_nav/icone_principal.png" alt="Logo da WorldPet" />
-      </aside>
+               <section class="secaoEndereco" aria-label="Formulário de Inserção de Endereço">
+      <header>
+        <h1>Inserir Endereço</h1>
+      </header>
 
-      <form class="formularioLogin" novalidate>
-        <header>
-          <h1>Login na WordlPet</h1>
-          <p>Entre para continuar comprando</p>
-        </header>
+      <form class="formularioEndereco" novalidate>
+        <label for="inputNomeCompleto">Nome Completo</label>
+        <input type="text" id="inputNomeCompleto" placeholder="Seu nome completo" required />
 
-        <label class="labelEmail" for="inputEmail">Email</label>
-        <input type="email" id="inputEmail" placeholder="seuemail@exemplo.com" required />
+        <label for="inputRua">Rua</label>
+        <input type="text" id="inputRua" placeholder="Nome da rua" required />
 
-        <label class="labelSenha" for="inputSenha">Senha</label>
-        <input type="password" id="inputSenha" placeholder="••••••••" required />
+        <div class="linhaCampos">
+          <div>
+            <label for="inputNumero">Número</label>
+            <input type="text" id="inputNumero" placeholder="123" required />
+          </div>
+          <div>
+            <label for="inputComplemento">Complemento</label>
+            <input type="text" id="inputComplemento" placeholder="Apto, Bloco, etc." />
+          </div>
+        </div>
 
-        <a href="endereço.html" class="botaoEntrar">Entrar</a>
+        <label for="inputBairro">Bairro</label>
+        <input type="text" id="inputBairro" placeholder="Bairro" required />
 
-        <footer class="rodapeLogin">
-          <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
-         <p>Esqueceu sua senha? <a href="recuperarSenha.html">Esqueceu senha</a></p>
-        </footer>
+        <label for="inputCidade">Cidade</label>
+        <input type="text" id="inputCidade" placeholder="Cidade" required />
+
+        <label for="selectEstado">Estado</label>
+        <select id="selectEstado" required>
+          <option value="" disabled selected>Selecione o estado</option>
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+        </select>
+
+        <label for="inputCep">CEP</label>
+        <input type="text" id="inputCep" placeholder="00000-000" pattern="\d{5}-?\d{3}" required />
+
+        <label for="inputTelefone">Telefone</label>
+        <input type="tel" id="inputTelefone" placeholder="(00) 00000-0000" pattern="\(?\d{2}\)?\s?\d{4,5}-?\d{4}" required />
+
+        <a href="finalizarPagamento.html" class="botaoSalvar">Salvar Endereço</a>
       </form>
     </section>
-
+    
         </main>
-
-  <!--Footer-->
+        <!--Footer-->
         <footer class="footer">
             <!-- Logo e links principais -->
             <section class="footerTop">
@@ -116,16 +160,16 @@
                 <article class="footerColuna">
                     <h3>Formas de Pagamento</h3>
                     <ul class="iconesPagamento">
-                        <li><img src="image/imagens_footer/imagens_pagamento/visa_pagamento.svg" alt="Forma de pagameento - Cartão Visa"/></li>
-                        <li><img src="image/imagens_footer/imagens_pagamento/mastercad_pagamento.svg" alt="Forma de pagameento - Cartão Mastercard"/></li>
-                        <li><img src="image/imagens_footer/imagens_pagamento/elo_pagamento.svg" alt="Forma de pagameento - Cartão Elo"/></li>
-                        <li><img src="image/imagens_footer/imagens_pagamento/pix_pagamento.svg" alt="Forma de pagameento - Pix"/></li>
+                        <li><img src="image/imagens_footer/imagens_pagamento/visa_pagamento.svg" alt="Forma de pagamento, cartão Visa"/></li>
+                        <li><img src="image/imagens_footer/imagens_pagamento/mastercad_pagamento.svg" alt="Forma de pagamento, cartão Mastercard"/></li>
+                        <li><img src="image/imagens_footer/imagens_pagamento/elo_pagamento.svg" alt="Forma de pagamento, cartão Elo"/></li>
+                        <li><img src="image/imagens_footer/imagens_pagamento/pix_pagamento.svg" alt="Forma de pagamento,  Pix"/></li>
                     </ul>
                 </article>
                 <article class="footerColuna">
                     <h3>Siga nas Redes</h3>
                     <ul class="iconesRedes">
-                        <li><a href="#"><img src="image/imagens_footer/imagens_redes_sociais/facebook_redes_sociais.svg" alt="Logo do Facebook"/></a></li>
+                        <li><a href="#"><img src="image/imagens_footer/imagens_redes_sociais/facebook_redes_sociais.svg" alt="Logo do FacebookFacebook"/></a></li>
                         <li><a href="#"><img src="image/imagens_footer/imagens_redes_sociais/instagram_redes_sociais.svg" alt="Logo do Instagram"/></a></li>
                         <li><a href="#"><img src="image/imagens_footer/imagens_redes_sociais/twitter_redes_sociais.svg" alt="Logo do Twitter"/></a></li>
                         <li><a href="#"><img src="image/imagens_footer/imagens_redes_sociais/youtube_redes_sociais.svg" alt="Logo do YouTube"/></a></li>

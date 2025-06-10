@@ -3,9 +3,12 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Home - Início</title>
-        <link rel="icon" href="image/icones_nav/icone_principal.png" type="image/png" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+        <title>Finalizar Pagamento</title>
+        <link rel="icon" href="image/ícones/icone_contato.png" type="image/png" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
@@ -17,7 +20,6 @@
                     </a>
                 </figure>
 
-                <!--Navegação Primária-->
                 <nav aria-label="Menu principal">
                     <ul class="menuPrincipal">
                         <li><a href="index.html">Início</a></li>
@@ -27,7 +29,6 @@
                     </ul>
                 </nav>
 
-                <!-- Barra de pesquisa - ESTÁTICA-->
                 <form class="barraPesquisa" role="search" aria-label="Barra de pesquisa" action="resultado_pesquisa.html">
                         <label for="campoPesquisa" class="campoPesquisa"></label>
                              <input id="campoPesquisa" type="text" placeholder="Pesquise aqui 🐾🐾🐾" />
@@ -48,7 +49,6 @@
                 </section>
             </section>
 
-            <!--Navegação secundária-->
             <nav class="navegacaoSecundaria" aria-label="Categorias de produtos">
                 <ul>
                     <li><a href="produtos_higiene.html">Banho & Higiene</a></li>
@@ -58,37 +58,97 @@
                 </ul>
             </nav>
         </header>
-       
+
         <main>
-              <section class="secaoLogin" aria-label="Formulário de Login">
-      <aside class="logoContainer" aria-label="Logo da loja">
-        <img id="logo" src="image/icones_nav/icone_principal.png" alt="Logo da WorldPet" />
-      </aside>
+             <section class="secaoResumoPagamento" aria-label="Resumo da compra e forma de pagamento">
+      <header>
+        <h1>Finalizar Compra</h1>
+      </header>
 
-      <form class="formularioLogin" novalidate>
-        <header>
-          <h1>Login na WordlPet</h1>
-          <p>Entre para continuar comprando</p>
-        </header>
+      <div class="conteudoPrincipal">
+        <article class="resumoProdutos" aria-label="Produtos selecionados">
+          <ul>
+            <li>
+              <img src="image/imagens_produtos_aves/imagens_secao_racao/racao_3.svg" alt="" />
+              <div class="infoProduto">
+                <p class="nomeProduto">Ração Sabor frutas, NuTrópica 300g</p>
+                <p class="quantidadeProduto">Quantidade: 1</p>
+              </div>
+              <p class="precoProduto">R$15,67</p>
+            </li>
+            <li>
+              <img src="image/imagens_produtos_gatos/imagens_secao_racao/racao_4.png" alt="" />
+              <div class="infoProduto">
+                <p class="nomeProduto">Ração de Frango, Whiskas 900g</p>
+                <p class="quantidadeProduto">Quantidade: 1</p>
+              </div>
+              <p class="precoProduto">R$78,90</p>
+            </li>
+            <li>
+              <img src="image/imagens_produtos_caes/imagens_secao_racao/racao_3.png" alt="" />
+              <div class="infoProduto">
+                <p class="nomeProduto">Ração Carne e Vegetais, Pedigree 2,7Kg </p>
+                <p class="quantidadeProduto">Quantidade: 1</p>
+              </div>
+              <p class="precoProduto">R$78,90</p>
+            </li>
+          </ul>
 
-        <label class="labelEmail" for="inputEmail">Email</label>
-        <input type="email" id="inputEmail" placeholder="seuemail@exemplo.com" required />
+          <div class="totalCompra" aria-label="Valor total da compra">
+            <p>Total:</p>
+            <p class="valorTotal">R$173,74</p>
+          </div>
+        </article>
 
-        <label class="labelSenha" for="inputSenha">Senha</label>
-        <input type="password" id="inputSenha" placeholder="••••••••" required />
+        <aside class="asideCartao" aria-label="Imagem ilustrativa cartão de crédito">
+          <img src="image/imagens_produtos_gatos/imagens_secao_racao/racao_4.png" alt="Cartão de Crédito" />
+        </aside>
+      </div>
 
-        <a href="endereço.html" class="botaoEntrar">Entrar</a>
+      <form class="formularioPagamento" >
+        <fieldset>
+          <legend>Forma de Pagamento</legend>
 
-        <footer class="rodapeLogin">
-          <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
-         <p>Esqueceu sua senha? <a href="recuperarSenha.html">Esqueceu senha</a></p>
-        </footer>
+          <label>
+            <input type="radio" name="formaPagamento" value="cartao" />
+            Cartão de Crédito
+          </label>
+
+          <label>
+            <input type="radio" name="formaPagamento" value="boleto" />
+            Cartão de Débito
+          </label>
+
+          <label>
+            <input type="radio" name="formaPagamento" value="pix" />
+            Pix
+          </label>
+        </fieldset>
+
+        <fieldset class="dadosCartao" aria-label="Dados do cartão de crédito">
+          <label for="nomeTitular">Nome do Titular</label>
+          <input type="text" id="nomeTitular" placeholder="Nome como no cartão" />
+
+          <label for="numeroCartao">Número do Cartão</label>
+          <input type="text" id="numeroCartao" placeholder="0000 0000 0000 0000" maxlength="19" />
+
+          <div class="linhaCampos">
+            <div>
+              <label for="validadeCartao">Validade</label>
+              <input type="text" id="validadeCartao" placeholder="MM/AA" maxlength="5" />
+            </div>
+            <div>
+              <label for="cvvCartao">CVV</label>
+              <input type="text" id="cvvCartao" placeholder="123" maxlength="3" />
+            </div>
+          </div>
+        </fieldset>
+
+        <a href="finalcompra.html" class="botaoFinalizar">Finalizar Compra</a>
       </form>
     </section>
-
         </main>
-
-  <!--Footer-->
+        <!--Footer-->
         <footer class="footer">
             <!-- Logo e links principais -->
             <section class="footerTop">
@@ -116,16 +176,16 @@
                 <article class="footerColuna">
                     <h3>Formas de Pagamento</h3>
                     <ul class="iconesPagamento">
-                        <li><img src="image/imagens_footer/imagens_pagamento/visa_pagamento.svg" alt="Forma de pagameento - Cartão Visa"/></li>
-                        <li><img src="image/imagens_footer/imagens_pagamento/mastercad_pagamento.svg" alt="Forma de pagameento - Cartão Mastercard"/></li>
-                        <li><img src="image/imagens_footer/imagens_pagamento/elo_pagamento.svg" alt="Forma de pagameento - Cartão Elo"/></li>
-                        <li><img src="image/imagens_footer/imagens_pagamento/pix_pagamento.svg" alt="Forma de pagameento - Pix"/></li>
+                        <li><img src="image/imagens_footer/imagens_pagamento/visa_pagamento.svg" alt="Forma de pagamento, cartão Visa"/></li>
+                        <li><img src="image/imagens_footer/imagens_pagamento/mastercad_pagamento.svg" alt="Forma de pagamento, cartão Mastercard"/></li>
+                        <li><img src="image/imagens_footer/imagens_pagamento/elo_pagamento.svg" alt="Forma de pagamento, cartão Elo"/></li>
+                        <li><img src="image/imagens_footer/imagens_pagamento/pix_pagamento.svg" alt="Forma de pagamento,  Pix"/></li>
                     </ul>
                 </article>
                 <article class="footerColuna">
                     <h3>Siga nas Redes</h3>
                     <ul class="iconesRedes">
-                        <li><a href="#"><img src="image/imagens_footer/imagens_redes_sociais/facebook_redes_sociais.svg" alt="Logo do Facebook"/></a></li>
+                        <li><a href="#"><img src="image/imagens_footer/imagens_redes_sociais/facebook_redes_sociais.svg" alt="Logo do FacebookFacebook"/></a></li>
                         <li><a href="#"><img src="image/imagens_footer/imagens_redes_sociais/instagram_redes_sociais.svg" alt="Logo do Instagram"/></a></li>
                         <li><a href="#"><img src="image/imagens_footer/imagens_redes_sociais/twitter_redes_sociais.svg" alt="Logo do Twitter"/></a></li>
                         <li><a href="#"><img src="image/imagens_footer/imagens_redes_sociais/youtube_redes_sociais.svg" alt="Logo do YouTube"/></a></li>

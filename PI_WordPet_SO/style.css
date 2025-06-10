@@ -828,6 +828,619 @@ body {
 
 /*FIM - Estilização dos cards utilizados dentro de toda a área de catálogo*/
 
+/*Página do Carrinho*/
+main.carrinhoContainer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.carrinhoProdutos {
+  flex: 2;
+}
+
+.carrinhoProdutos h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.produto {
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+}
+
+.produto figure {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  gap: 1rem;
+}
+
+.produto img {
+  width: 130px;
+  height: 130px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.produto figcaption {
+  flex: 1;
+}
+
+.produto figcaption h2 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.produto figcaption p {
+  margin: 0.7rem 0;
+}
+
+.precoCarrinho {
+  font-weight: bold;
+  color: #e60000;
+}
+
+.produto figcaption button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #444;
+  margin: 0 0.3rem;
+}
+
+.btnTrash {
+  background: none;
+  border: none;
+  color: #cc0000;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Botão Continuar comprando */
+.navegacao {
+  margin-top: 2rem;
+}
+
+.navegacao a {
+  font-weight: bold;
+  background-color: #444343;
+  border: 1px solid #312f2e;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.navegacao a:hover{
+  background-color:#05214de1
+}
+
+/* Resumo da Compra - aside*/
+.resumoCompra {
+  margin-left: 30px;
+  flex: 1;
+  max-height: 500px;
+  border: 3px dashed #9c9797;
+  border-radius: 12px;
+  padding: 2.5rem;
+}
+
+.resumoCompra h2 {
+  font-size: 1.4rem;
+}
+
+.resumoCompra p {
+   margin: 2rem 0;
+}
+
+.resumoCompra output {
+  float: right;
+}
+
+.cupom {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.cupom input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.cupom button {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.total {
+  font-weight: bold;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+.finalizar {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  text-decoration: none;
+  background-color: #ff5722;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 2rem auto 0; 
+  width: 250px; 
+}
+
+.finalizar:hover{
+  background-color: #d84012;
+}
+/*FIM - Página do Carrinho*/
+
+
+/*Página Login*/
+    section.secaoLogin {
+      width: 790px;
+      background: #fffefc81;
+      border-radius: 16px;
+      padding: 4.5rem 2rem 3rem 2rem;
+      box-shadow: 0 20px 40px rgba(102, 31, 3, 0.15);
+      position: relative;
+      overflow: hidden;
+      margin: 2rem auto;
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    section.secaoLogin::before {
+      content: '';
+      position: absolute;
+      top: -60px;
+      right: -60px;
+      width: 160px;
+      height: 160px;
+      background: #f7d7b4;
+      border-radius: 50%;
+      filter: blur(70px);
+      opacity: 0.7;
+      z-index: 0;
+    }
+
+    aside.logoContainer {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    aside.logoContainer img#logo {
+      max-width: 150%;
+      max-height: 150px;
+      object-fit: contain;
+      user-select: none;
+    }
+
+    form.formularioLogin {
+      flex: 2;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    form.formularioLogin header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    form.formularioLogin header h1 {
+      font-weight: 600;
+      font-size: 2rem;
+      color: #222;
+      margin-bottom: 0.3rem;
+      letter-spacing: 1.2px;
+    }
+
+    form.formularioLogin header p {
+      color: #666;
+      font-weight: 300;
+      font-size: 0.9rem;
+    }
+
+    label.labelEmail,
+    label.labelSenha {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #444;
+      margin-bottom: 0.6rem;
+      display: block;
+    }
+
+    input#inputEmail,
+    input#inputSenha {
+      padding: 0.85rem 1rem;
+      font-size: 1rem;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      outline-offset: 2px;
+      width: 100%;
+            margin-bottom: 2.4rem;
+
+      font-weight: 300;
+      color: #222;
+    }
+
+    input#inputEmail:focus,
+    input#inputSenha:focus {
+      border-color: #f1bd77;
+      box-shadow: 0 0 8px #fc9357aa;
+      outline: none;
+    }
+
+    a.botaoEntrar {
+      margin-top: 0.6rem;
+      padding: 0.85rem 0;
+      background: #468d30;
+      border: none;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      text-align: center;
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 8px 15px rgba(107, 115, 255, 0.4);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      width: 100%;
+    }
+
+    a.botaoEntrar:hover {
+      background: #125006;
+      box-shadow: 0 10px 20px rgba(75, 212, 12, 0.329);
+    }
+
+    footer.rodapeLogin {
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      text-align: center;
+      color: #666;
+    }
+
+    footer.rodapeLogin a {
+      color: #8b3c0e;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+       footer.rodapeLogin p {
+      margin-bottom: 0.7rem;
+    }
+    footer.rodapeLogin a:hover {
+      text-decoration: underline;
+    }
+
+/*FIM - Página Login*/
+
+
+
+
+/*Página Endereço*/
+section.secaoEndereco {
+  justify-content: center;
+  max-width: 590px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 2.5rem 2rem 3rem 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  margin: 3rem auto;
+}
+
+section.secaoEndereco header {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+section.secaoEndereco header h1 {
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 1.2px;
+}
+
+form.formularioEndereco {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+label {
+  font-weight: 600;
+  color: #444;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+input, select {
+  padding: 0.85rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-weight: 300;
+  color: #222;
+  width: 100%;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline-offset: 2px;
+}
+
+input:focus, select:focus {
+  border-color: #f1bd77;
+  box-shadow: 0 0 8px #fc9357aa;
+  outline: none;
+}
+
+/* Campos em linha para número + complemento */
+.linhaCampos {
+  display: flex;
+  gap: 1rem;
+}
+
+.linhaCampos > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+a.botaoSalvar {
+  margin-top: 1.5rem;
+  padding: 1rem 0;
+  background: #468d30;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(1, 31, 11, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+}
+
+a.botaoSalvar:hover {
+  background: #125006;
+      box-shadow: 0 10px 20px rgba(75, 212, 12, 0.329);
+}
+/*FIM - Página Endereço*/
+
+
+
+
+
+/*Página Finalizar Pagamento*/
+
+.secaoResumoPagamento {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2.5rem 2rem 3rem 2rem;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  max-width: 900px;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+}
+
+.secaoResumoPagamento header h1 {
+  font-weight: 600;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2b2d42;
+}
+
+/* Conteúdo principal: resumo produtos + aside lado a lado */
+.conteudoPrincipal {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.resumoProdutos {
+  flex: 1 1 600px;
+}
+
+.resumoProdutos ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.resumoProdutos li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.resumoProdutos li:last-child {
+  border-bottom: none;
+}
+
+.resumoProdutos img {
+  width: 70px;
+  height: 70px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.infoProduto {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  color: #2b2d42;
+  font-weight: 600;
+}
+
+.quantidadeProduto {
+  font-weight: 400;
+  color: #555;
+}
+
+.precoProduto {
+  flex: 1;
+  text-align: right;
+  font-weight: 400;
+  color: #e60000;
+  font-size: 20px;
+  min-width: 45px;
+}
+
+.totalCompra {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1rem 0 0 0;
+  border-top: 2px solid #f0978c;
+  color: #222;
+}
+
+.asideCartao {
+  flex: 0 0 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nomeProduto{
+  text-align: left;
+}
+.asideCartao img {
+  max-width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(107, 115, 255, 0.4);
+}
+
+/* Formulário do finalizar pagamento, alguns códigos utilizados para estilização*/
+.formularioPagamento fieldset {
+  border: none;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+.formularioPagamento legend {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #2b2d42;
+}
+
+.formularioPagamento label {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  color: #444;
+}
+
+.formularioPagamento input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.dadosCartao label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  display: block;
+  color: #333;
+}
+
+.dadosCartao input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.2rem;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #222;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline-offset: 2px;
+}
+
+.dadosCartao input:focus {
+  border-color: #f1bd77;
+  box-shadow: 0 0 8px #fc9357aa;
+  outline: none;
+}
+
+.linhaCampos {
+  display: flex;
+  gap: 1rem;
+}
+
+.linhaCampos > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+a.botaoFinalizar {
+  width: 170%;
+  padding: 1.2rem 0;
+  background: #468d30;
+  border: none;
+  border-radius: 14px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(1, 31, 11, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+a.botaoFinalizar:hover {
+  background: #125006;
+  box-shadow: 0 10px 20px rgba(75, 212, 12, 0.329);
+}
+
 
 
 /*Seção do Footer*/
