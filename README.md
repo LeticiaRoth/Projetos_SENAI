@@ -5,7 +5,7 @@
 
 
 <p align="center">
-  <img src="PI_WordPet_SO/image/icones_nav/icone_principal.png" alt="Logo do WorldPet" width="200">
+  <img src="Projeto_Integrador_1TERMO_WordPet/image/icones_nav/icone_principal.png" alt="Logo do WorldPet" width="200">
   <br>
   <strong>
     Desenvolvedora: Letícia Alves Roth
