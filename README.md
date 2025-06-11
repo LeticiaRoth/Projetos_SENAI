@@ -1,7 +1,7 @@
 # Projeto Integrador - WORLDPET
 
 ### 💬 Recado
--> 09/06/2025 - Páginas Finalizadas Carrinho, Pagamento, Endereço e Finalizar compra (ajustas design)
+-> 11/06/2025 - Estilizar e documentar
 
 
 <p align="center">
