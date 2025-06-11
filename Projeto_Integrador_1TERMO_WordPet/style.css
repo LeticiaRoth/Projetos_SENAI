@@ -151,6 +151,17 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 /*PÁGINA HOME - ÍNICIO*/
 /*Carrossel*/
 .carousel {
@@ -168,6 +179,7 @@ body {
   animation: slideAnimation 15s infinite;
 }
 
+/*Para tomar conta de toda página*/
 .slides img {
   width: 1750px;
   height: auto;
@@ -222,7 +234,7 @@ body {
   }
 }
 
-/**/
+/*Ícones das patinhas do carrosel*/
 .iconeLeft,
 .iconeRight {
   position: absolute;
@@ -240,12 +252,14 @@ body {
   user-select: none;
 }
 
+/*Foto das patinhas - ESQUERDA*/
 .iconeLeft {
   left: 20px;
   background: url(image/imagens_home/imagens_carrossel_home/seta_esquerda.png);
   background-size: contain;
 }
 
+/*Foto das patinhas - DIREITA*/
 .iconeRight {
   right: 20px;
   background: url(image/imagens_home/imagens_carrossel_home/seta_direita.png);
@@ -253,7 +267,8 @@ body {
 }
 
 
-/*Seção dos benefícios*/
+
+/*Seção dos benefícios, página Home*/
 .beneficiosSite {
   display: flex;
   justify-content: space-around;
@@ -268,7 +283,7 @@ body {
 }
 
 .beneficio img {
-  width: 100px;
+  width: 110px;
   height: auto;
   margin-bottom: 5px;
   display: inline-block;
@@ -286,7 +301,7 @@ body {
 }
 
 .beneficio .linha {
-  width: 60px;
+  width: 70px;
   height: 5px;
   background: linear-gradient(to right, #0D47A1, #1976D2, #1565C0);
   margin: 0 auto 10px;
@@ -297,8 +312,7 @@ body {
   font-size: 14px;
   color: #333;
 }
-
-
+/*Fim da seção de Benefícios*/
 
 
 
@@ -316,7 +330,7 @@ body {
 
 /* Seção com gradiente azul */
 #secaoLancamentos {
-  background: linear-gradient(to bottom, #116cd4cc, #4da4df);
+  background: linear-gradient(to bottom, #116cd47e, #4da5dfa4);
   padding: 60px 10px 40px 10px;
   text-align: center;
 }
@@ -326,17 +340,17 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 72px;
+  gap: 73px;
 }
 
 /* Cartão individual de produto */
 .cartaoProdutoLancamento {
   background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
   padding: 20px;
   width: 260px;
-  /* aumentamos a largura do card */
+  /*Aumento da largura do card */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -356,19 +370,25 @@ body {
   border-radius: 5px;
 }
 
-/* Imagem maior */
+/* Tamanho da imagem */
 .imagemProduto {
-  width: 190px;
+  width: 200px;
   height: auto;
   margin: 12px 0;
 }
 
 /* Título do produto */
-.nomeProduto {
+.nomeProdutoLancamento {
   font-size: 1rem;
+  text-align: center;
   margin: 8px 0;
   color: #333;
   text-align: center;
+}
+
+.nomeProduto{
+  text-align: center;
+  margin-bottom: 7px;
 }
 
 /* Preço */
@@ -379,9 +399,9 @@ body {
   font-size: 26px;
 }
 
-/* Botões */
-.botaoDetalhes,
-.botaoCarrinho {
+/* CSS para os dois botões */
+.botaoDetalhesLancamento,
+.botaoCarrinhoLancamento {
   width: 100%;
   padding: 12px;
   margin: 4px 0;
@@ -389,42 +409,43 @@ body {
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 17px;
   text-decoration: none;
 }
 
-.botaoDetalhes {
+/*CSS do Botão Ver Mais detalhes  - HOVER*/
+.botaoDetalhesLancamento {
   background-color: #EF9737;
   color: white;
   transition: transform 0.3s ease;
 }
 
-/*Hover Botão Ver mais*/
-.botaoDetalhes:hover {
+
+.botaoDetalhesLancamento:hover {
   background-color: #b8641b;
   transform: translateY(-2px);
 }
 
-.botaoCarrinho {
+/*CSS do Botão Adicionar ao Carrinho  - HOVER*/
+.botaoCarrinhoLancamento {
   background-color: #70D17C;
   color: white;
   transition: transform 0.2s ease;
 }
 
-/*Hover adicionar ao Carrinho*/
-.botaoCarrinho:hover {
+.botaoCarrinhoLancamento:hover {
   transform: translateY(-2px);
   background-color: #328E3D;
 }
 
 
-/*Imagens centrais da Home*/
+
+/*Seção centrais da Home - Destaque Brinquedos e Destaque Rações*/
 .secaoDestaques {
   padding: 40px 20px;
   text-align: center;
-  background: linear-gradient(to bottom, #e0f0ff, #ffffff);
 }
-
+/*Subseção para adicionar o gap entre eles*/
 .galeriaDestaques {
   display: flex;
   justify-content: center;
@@ -432,13 +453,15 @@ body {
   flex-wrap: wrap;
 }
 
+/*Imagem de Destaque*/
 .imagemDestaque {
   max-width: 500px;
-  width: 100%;
+  width: 700%;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  margin-bottom: 40px;
 }
 
 .imagemDestaque img {
@@ -447,6 +470,7 @@ body {
   display: block;
 }
 
+/*Trasform para escalonar a imagem ao passar o mouse*/
 .imagemDestaque:hover {
   transform: scale(1.03);
 }
@@ -454,14 +478,13 @@ body {
 
 /*Seção de Marcas Parceiras*/
 .secaoMarcasParceiras {
-  padding: 40px 20px;
+  padding: 20px 20px;
   background-color: #fff;
   text-align: center;
 }
 
 .tituloMarcas {
   font-size: 1.8rem;
-  margin-bottom: 30px;
   color: #000;
 }
 
@@ -479,10 +502,12 @@ body {
   transition: transform 0.3s ease;
 }
 
+/*Hover para aumentar a logo de acordo com que passar o mouse*/
 .listaMarcas figure:hover {
   transform: scale(1.1);
 }
 
+/*Tamanho da imagem da Logo*/
 .listaMarcas img {
   width: 100%;
   height: auto;
@@ -512,7 +537,7 @@ body {
 /* Seção laranja de depoimentos */
 .secaoDepoimentos {
   background-color: #f28c28;
-  padding: 40px 20px;
+  padding: 50px 30px;
   font-family: Arial, sans-serif;
 }
 
@@ -523,29 +548,31 @@ body {
   flex-wrap: wrap;
 }
 
-/* Cartão individual */
+/* Seção do Cartão individual */
 .cartaoDepoimento {
   background-color: #fefefe;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(82, 22, 4, 0.342);
   display: flex;
   align-items: center;
   padding: 15px 20px;
-  max-width: 390px;
+  max-width: 430px;
   min-width: 350px;
   gap: 15px;
   text-align: justify;
 }
 
+
 .fotoCliente {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
 }
 
 .conteudoDepoimento {
   flex: 1;
 }
+
 
 .nomeCliente {
   font-size: 0.95rem;
@@ -556,10 +583,12 @@ body {
 
 .cartaoDepoimento p {
   font-size: 0.9rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
   color: #333;
 }
 
-/* Patinhas decorativas */
+/* Patinhas decorativas como setas para passar o feedback */
 .rodapeDecorativo {
   margin-top: 30px;
   display: flex;
@@ -570,7 +599,23 @@ body {
 .rodapeDecorativo img {
   height: 25px;
 }
+
 /*FIM PÁGINA HOME - ÍNICIO*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -669,6 +714,8 @@ body {
 
 
 /*IDS da navegação das seções animais dentro do catálogo*/
+
+/*ID navegação Página Cachorros*/
 #imagemCachorro {
   width: 210px;
   height: auto;
@@ -679,6 +726,7 @@ body {
   transform: scale(1.10);
 }
 
+/*ID navegação Página Gatos*/
 #imagemGato {
   width: 200px;
   height: auto;
@@ -689,6 +737,7 @@ body {
   transform: scale(1.10);
 }
 
+/*ID navegação Página Roedores*/
 #imagemRoedores {
   width: 200px;
   height: auto;
@@ -699,6 +748,7 @@ body {
   transform: scale(1.10);
 }
 
+/*ID navegação Página Aves*/
 #imagemAves {
   width: 200px;
   height: auto;
@@ -709,7 +759,7 @@ body {
   transform: scale(1.10);
 }
 
-
+/*ID navegação Página Peixes*/
 #imagemPeixe {
   width: 200px;
   height: auto;
@@ -719,9 +769,7 @@ body {
 #imagemPeixe:hover {
   transform: scale(1.10);
 }
-
 /*FIM - área de navegação*/
-
 
 
 
@@ -768,11 +816,18 @@ body {
   background-color: #fff;
   padding: 16px;
   width: 260px;
+  text-align: center;
   border-radius: 10px;
   box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
 }
 
+.cabecalhoProdutos{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/*Botão Favorito, ícone de representação*/
 .botaoFavorito {
   position: absolute;
   top: 10px;
@@ -785,6 +840,7 @@ body {
   cursor: pointer;
   transition: color 0.3s;
 }
+
 
 .botaoFavorito:hover {
   color: red;
@@ -799,11 +855,10 @@ body {
   height: auto;
 }
 
-.nomeProduto {
-  font-size: 1rem;
-  margin-bottom: 6px;
+.nomeProduto{
+  text-align: center;
+  color: #001424;
 }
-
 .precoProduto {
   color: #e60000;
   font-weight: bold;
@@ -818,6 +873,7 @@ body {
   gap: 10px;
   margin-top: 10px;
 }
+
 
 
 .botaoDetalhesCatalogo,
@@ -862,6 +918,20 @@ body {
   background-color: #328E3D;
 }
 /*FIM - Estilização dos cards utilizados dentro de toda a área de catálogo*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -927,6 +997,7 @@ main.carrinhoContainer {
   color: #e60000;
 }
 
+/*Botão mais e menos*/
 .produto figcaption button {
   background: none;
   border: none;
@@ -936,6 +1007,7 @@ main.carrinhoContainer {
   margin: 0 0.3rem;
 }
 
+/*Botão de Lixo*/
 .btnTrash {
   background: none;
   border: none;
@@ -1036,6 +1108,22 @@ main.carrinhoContainer {
   background-color: #d84012;
 }
 /*FIM - Página do Carrinho*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1193,6 +1281,18 @@ footer.rodapeLogin a:hover {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /*Página Endereço*/
 section.secaoEndereco {
   justify-content: center;
@@ -1290,6 +1390,15 @@ a.botaoSalvar:hover {
 
 
 
+
+
+
+
+
+
+
+
+
 /*Página Finalizar Pagamento*/
 .secaoResumoPagamento {
   margin: 0 auto;
@@ -1319,6 +1428,9 @@ a.botaoSalvar:hover {
 
 }
 
+.nomeProdutoCarrinho{
+  text-align: left;
+}
 .resumoProdutos {
   flex: 1 1 600px;
 }
@@ -1393,7 +1505,7 @@ a.botaoSalvar:hover {
   align-items: center;
 }
 
-.nomeProduto {
+.nomeProdutoCarrinho {
   text-align: left;
 }
 
@@ -1498,6 +1610,20 @@ a.botaoFinalizar:hover {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Página Perfil*/
 .bodyPerfil {
   margin: 0;
@@ -1553,7 +1679,6 @@ a.botaoFinalizar:hover {
 .navItem a:hover,
 .logoutItem a:hover {
   color: #d8b48b;
-  text-decoration: underline;
 }
 
 /* SECTION */
@@ -1643,6 +1768,18 @@ a.botaoFinalizar:hover {
   object-fit: cover;
 }
 /*FIM - Página Perfil Usuário*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1800,6 +1937,19 @@ a.botaoFinalizar:hover {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Página Edição Perfil*/
 #tituloEdicaoPerfil {
   color: white;
@@ -1862,6 +2012,24 @@ a.botaoFinalizar:hover {
 #formularioEdicaoPerfil a:hover {
   background-color: #5c3b18;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*Página Favoritos*/
@@ -1952,9 +2120,9 @@ a.botaoFinalizar:hover {
 /* Conteúdo do modal */
 .modalSair {
   background: white;
-  padding: 1.5rem 2rem;
+  padding: 2.5rem 2rem;
   border-radius: 8px;
-  max-width: 320px;
+  max-width: 380px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
@@ -1966,14 +2134,14 @@ a.botaoFinalizar:hover {
 }
 
 .modalSair p {
-  margin: 1rem 0 1.5rem;
+  margin: 0.8rem 0 1.5rem;
   font-size: 1rem;
   color: #555;
 }
 
 /* Botão para fechar o modal */
 .modalSair a {
-  background-color: #007bff;
+  background-color: #d11414be;
   border: none;
   color: white;
   padding: 0.5rem 1.25rem;
@@ -1983,6 +2151,9 @@ a.botaoFinalizar:hover {
   cursor: pointer;
 }
 
+.modalSair a:hover{
+  background-color: #b40000e7;
+}
 /* Controlar visibilidade do modal */
 #modalToggle:not(:checked)~.modalSairOverlay {
   visibility: hidden;
@@ -1992,176 +2163,38 @@ a.botaoFinalizar:hover {
 
 
 
+
+
+
+
+
+
+
+
+
 /*Página Cadastro*/
-.textVoltarProdutos {
-    font-size: 14px;
-    color: #000000;
-    text-align: left;
-    text-decoration: none;
-}
- 
-.textVoltarProdutos:hover {
-    text-decoration: underline;
-}
- 
-.containerCadastro {
-    background-color: #f2f0ef;
-    max-width: 900px;
-    margin: 40px auto;
-    border-radius: 12px;
-    margin: 0 auto;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-}
- 
-.formCadastro {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin: 0 auto;
-    width: 800px;
-}
- 
-#tituloFormCadastro {
-    text-align: center;
-    font-size: 2rem;
-    color: #140400;
-    margin-bottom: 0.5rem;
-}
- 
-.subtitleFormCadastro {
-    text-align: center;
-    color: #666;
-    font-size: 18px;
-    padding-top: 8px;
-}
- 
-.linhaCampos {
-  width: 610px;
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-}
- 
-.campoGrupo {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
- 
-.labelFormCadastro {
-    font-weight: 600;
-    color: #222;
-}
- 
-.inputFormCadastro {
-  margin-left: 20px;
-    border: 1.5px solid #773e08;
-    border-radius: 6px;
-    font-size: 1rem;
-    transition: all 0.2s ease;
-    box-shadow: 0 2px 2px rgba(117, 32, 116, 0.3);
-}
- .labelFormCadastro{
-   margin-left: 20px;
- }
-.inputFormCadastro:focus {
-    outline: none;
-    border-color: #e09430;
-    box-shadow: 0 0 5px rgba(117, 32, 116, 0.3);
-}
- 
-.botaoCadastrar {
-    margin-top: 16px;
-    margin: 0 auto;
-    padding: 15px;
-    background-color: #945105;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 3px 3px rgba(117, 32, 116, 0.3);
-   width: 280px;
-    color: white;
-    font-size: 17px;
-    font-weight: 600;
-    text-decoration: none;
-    text-align: center;
-}
- 
-.botaoCadastrar:hover {
-    background-color: #c28222;
-    transform: scale(1.02);
-}
- 
-.botaoFormCadastro {
-    text-align: center;
-}
- 
-.botaoFazerLogin {
-    color: #30072f;
-    text-decoration: none;
-    font-weight: 600;
-    text-align: center;
-    font-size: 18px;
-    transition: color .2s;
-    margin-bottom: 20px;
-}
- 
-.botaoFazerLogin:hover {
-    color: #d8943a;
-}
- 
-fieldset {
-    border: none;
-    padding: 0;
-    margin: 0;
-}
- 
-.checkBox {
-    display: flex;
-    align-items: center;
-    margin-top: -1rem;
-     margin-left: 20px;
-    margin-bottom: -1rem;
-    border: none; /*serve para tirar a borda padrão do fieldset*/
-    padding: 0;
-}
- 
-.labelBoxCheck {
-    font-size: 0.95rem;
-     margin-left: 20px;
-    color: #222;
-    font-size: 16px;
-    display: flex;
-    gap: 10px;
-    cursor: pointer;
-    margin: 15px 0;
-}
- 
-.inputBoxCheck {
-    width: 18px;
-    height: 18px;
-    accent-color: #af712a;
-    cursor: pointer;
-    box-shadow: 0 1px 1px rgba(117, 32, 116, 0.3);
-}
- 
-#textLembrarSenha {
-    padding-top: 5px;
-}
- 
-.containerPaginaCadastro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    background: linear-gradient(to top, #9e4b14, #d9d9d9);
-    padding: 1.5rem;
-}
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2171,7 +2204,14 @@ fieldset {
 
 
 /*Página Recuperar Senha*/
-#mainRecuperarSenha {
+#bodyRecuperarSenha{
+  background: linear-gradient(to top,#d1976748, #fff0a357, #faf6e62a);
+}
+#paginaRecuperacaoSenha{
+  margin-bottom: 90px;
+}
+
+#conteineRecuperarSenha {
   margin: 0 auto;
   background: white;
   border-radius: 12px;
@@ -2186,12 +2226,12 @@ section>header {
   margin-bottom: 1.5rem;
 }
 
-h1 {
+.esqueceuSenha {
   font-size: 1.5rem;
   margin: 0.5rem 0;
 }
 
-form {
+.caixaRecuperarSenha {
   display: grid;
   gap: 0.75rem;
 }
@@ -2213,7 +2253,7 @@ input:focus {
   outline: none;
 }
 
-button {
+.enviarSenha {
   margin-top: 1rem;
   padding: 0.75rem;
   background-color: #3f8b2d;
@@ -2221,11 +2261,12 @@ button {
   border: none;
   border-radius: 10px;
   font-size: 1rem;
+  text-align: center;
   cursor: pointer;
   transition: background 0.3s;
 }
 
-button:hover {
+.enviarSenha:hover {
   background-color: #2e6e20;
 }
 
@@ -2240,9 +2281,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
 
 
 
@@ -2317,12 +2355,30 @@ footer {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Página Contato*/
+#bodyContato{
+
+  background: linear-gradient(to top, #fff7e9, #e7d1a7bd);
+}
 .telaContato {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .caixaContato {
@@ -2375,23 +2431,26 @@ textarea {
 
 input:focus,
 textarea:focus {
-  border-color: #0078d4;
+  border-color: #775307;
   outline: none;
 }
 
 .botaoEnviar {
-  background-color: #0078d4;
+  background-color: #13910e;
   color: white;
   padding: 0.75rem;
   font-size: 1rem;
   border: none;
+  text-align: center;
+  width: 190px;
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s;
+  margin: 0 auto;
 }
 
 .botaoEnviar:hover {
-  background-color: #005fa3;
+  background-color: #0d7903b9;
 }
 
 .textoVoltar {
@@ -2414,12 +2473,22 @@ textarea:focus {
 
 
 
+
+
+
+
+
+
+
+
+
+
 /*Página Sobre Nós*/
 .paginaSobre {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -2642,6 +2711,24 @@ textarea:focus {
       }
     }
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*Seção do Footer*/

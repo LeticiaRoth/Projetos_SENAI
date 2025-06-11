@@ -11,7 +11,7 @@
 			/>
 		<link rel="stylesheet" href="style.css" />
 	</head>
-	<body id="bodyRecuperarSenha">
+	<body>
 		<header>
 			<section class="navegacaoPrincipal">
 				<figure class="logo">
@@ -45,23 +45,30 @@
 					</a>
 				</section>
 			</section>
-
+			<nav class="navegacaoSecundaria" aria-label="Categorias de produtos">
+				<ul>
+					<li><a href="produtos_higiene.html">Banho & Higiene</a></li>
+					<li><a href="produtos_racao.html">Ração</a></li>
+					<li><a href="produtos_acessorios.html">Brinquedos</a></li>
+					<li><a href="produtos_roupinhas.html">Roupas & Acessórios</a></li>
+				</ul>
+			</nav>
 		</header>
-		<main id="paginaRecuperacaoSenha">
-			<section id="conteineRecuperarSenha">
-				<header>
-					<img src="image/icones_nav/icone_principal.png" alt="Logo WorldPet" width="150">
-					<h1 class="esqueceuSenha">Esqueceu sua senha?</h1>
-					<p>Insira seu email para recuperar o acesso à sua conta</p>
-				</header>
-				<form  method="post" class="caixaRecuperarSenha">
-					<label for="email">Email cadastrado</label>
-					<input type="email" id="email" name="email" required>
-					<a href="emailRecuperarSenha.html" class="enviarSenha">Enviar link de recuperação</a>
-				</form>
-				<footer>
-					<small>Lembrou sua senha? <a href="login.html">Voltar ao login</a></small>
-				</footer>
+		<main>
+			<input type="checkbox" id="modalToggle" checked hidden />
+			<!-- Modal -->
+			<section class="modalSairOverlay">
+				<article class="modalSair">
+					<header>
+						<h2 id="modalSair">Email enviado</h2>
+					</header>
+					<p id="modalSair">Confira seu email para recuperação</p>
+					<footer>
+						<label for="modalToggle">
+						<a href="index.html">Fechar</a>
+						</label>
+					</footer>
+				</article>
 			</section>
 		</main>
 		<!--Footer-->

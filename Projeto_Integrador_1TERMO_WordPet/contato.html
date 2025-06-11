@@ -11,7 +11,7 @@
 			/>
 		<link rel="stylesheet" href="style.css" />
 	</head>
-	<body>
+	<body id="bodyContato">
 		<header>
 			<section class="navegacaoPrincipal">
 				<figure class="logo">
@@ -45,23 +45,19 @@
 					</a>
 				</section>
 			</section>
-			<nav class="navegacaoSecundaria" aria-label="Categorias de produtos">
-				<ul>
-					<li><a href="produtos_higiene.html">Banho & Higiene</a></li>
-					<li><a href="produtos_racao.html">Ração</a></li>
-					<li><a href="produtos_acessorios.html">Brinquedos</a></li>
-					<li><a href="produtos_roupinhas.html">Roupas & Acessórios</a></li>
-				</ul>
-			</nav>
+			
 		</header>
+		<!--Seção de Contato-->
 		<main class="telaContato">
+			<!--Caixa de contato-->
 			<section class="caixaContato">
 				<header>
 					<i class="bi bi-headset iconeContato"></i>
 					<h1 class="tituloContato">Atendimento ao Cliente</h1>
 					<p class="textoDescricao">Estamos aqui para te ajudar! Preencha o formulário abaixo e responderemos em breve.</p>
 				</header>
-				<form action="/enviarContato" method="post" class="formularioContato">
+				<!--Form com os campos-->
+				<form  method="post" class="formularioContato">
 					<label for="nome">Seu nome</label>
 					<input type="text" id="nome" name="nome" required>
 					<label for="email">Seu email</label>
@@ -69,11 +65,11 @@
 					<label for="assunto">Assunto</label>
 					<input type="text" id="assunto" name="assunto" required>
 					<label for="mensagem">Mensagem</label>
-					<textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-					<button type="submit" class="botaoEnviar">Enviar mensagem</button>
+					<input id="mensagem" name="mensagem" rows="5" required></input>
+					<a href="enviarmensagem.html"  class="botaoEnviar">Enviar mensagem</a>
 				</form>
 				<footer>
-					<p class="textoVoltar">Voltar para a <a href="/">página inicial</a></p>
+					<p class="textoVoltar">Voltar para a <a href="index.html">página inicial</a></p>
 				</footer>
 			</section>
 		</main>
