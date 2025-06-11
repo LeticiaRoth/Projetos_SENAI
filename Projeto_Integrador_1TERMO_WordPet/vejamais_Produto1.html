@@ -1,3 +1,5 @@
+
+<!--
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
@@ -32,9 +34,9 @@
                 <form class="barraPesquisa" role="search" aria-label="Barra de pesquisa" action="resultado_pesquisa.html">
                         <label for="campoPesquisa" class="campoPesquisa"></label>
                              <input id="campoPesquisa" type="text" placeholder="Pesquise aqui 🐾🐾🐾" />
-                        <button type="submit" aria-label="Buscar">
+                        <a href="resultadoBusca.html" aria-label="Buscar">
                                 <i class="bi bi-search"></i>
-                        </button>
+                        </a>
                 </form>
 
                 <!--Ícones de navegação Carrinho e Minha conta-->
@@ -59,9 +61,34 @@
             </nav>
         </header>
 
-        <main>
-            
-        </main>
+          <main class="mainVejaMais">
+    <section class="galeriaProduto">
+      <img src="https://via.placeholder.com/320x320.png?text=Produto" alt="Produto" class="imagemPrincipal">
+      <div class="miniaturas">
+        <img src="image/imagens_produtos_caes/imagens_secao_brinquedos/brinquedo_2.svg" alt="Miniatura 1">
+        <img src="https://via.placeholder.com/60x60.png?text=2" alt="Miniatura 2">
+        <img src="https://via.placeholder.com/60x60.png?text=3" alt="Miniatura 3">
+        <img src="https://via.placeholder.com/60x60.png?text=4" alt="Miniatura 4">
+      </div>
+    </section>
+
+    <section class="infoProduto">
+      <h1 class="nomeProduto">Shampoo para Cães Sanol - 500mL</h1>
+      <p class="precoProduto">R$25,34</p>
+      <p class="descricaoProduto">
+        Ideal para todos os tipos de pelos. Fragrância suave, limpeza eficaz e fórmula hipoalergênica. Proporcione conforto e bem-estar para seu pet.
+      </p>
+      <div class="quantidadeProduto">
+        <label for="quantidade">Quantidade: </label>
+        <input type="number" id="quantidade" name="quantidade" value="1" min="1">
+      </div>
+      <div class="botoesProduto">
+        <button class="btnAcao btnCarrinho">Adicionar ao carrinho</button>
+        <button class="btnAcao btnContinuar">Continuar comprando</button>
+      </div>
+    </section>
+  </main>
+
         <!--Footer-->
         <footer class="footer">
             <!-- Logo e links principais -->
@@ -115,3 +142,4 @@
         </footer>
     </body>
 </html>
+-->

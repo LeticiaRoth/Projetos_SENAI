@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Minha Conta</title>
+        <title>Perfil</title>
         <link rel="icon" href="image/ícones/icone_perfil_usuario.png" type="image/png" />
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
@@ -11,7 +11,7 @@
         />
         <link rel="stylesheet" href="style.css" />
     </head>
-    <body>
+    <body class="bodyPerfil">
         <header>
             <section class="navegacaoPrincipal">
                 <figure class="logo">
@@ -32,9 +32,9 @@
                 <form class="barraPesquisa" role="search" aria-label="Barra de pesquisa" action="resultado_pesquisa.html">
                         <label for="campoPesquisa" class="campoPesquisa"></label>
                              <input id="campoPesquisa" type="text" placeholder="Pesquise aqui 🐾🐾🐾" />
-                        <button type="submit" aria-label="Buscar">
+                        <a href="resultadoBusca.html" aria-label="Buscar">
                                 <i class="bi bi-search"></i>
-                        </button>
+                        </a>
                 </form>
 
                <!--Ícones de navegação Carrinho e Minha conta-->
@@ -59,8 +59,61 @@
             </nav>
         </header>
 
-        <main>
-            
+        <main class="mainPerfil">
+            <aside id="sidebarMenu">
+  <nav class="navigation">
+    <ul class="navList">
+      <li class="navItem"><a href="editarPerfil.html"><i class="bi bi-pencil-square"></i> Editar Perfil</a></li>
+      <li class="navItem"><a href="favoritos.html"><i class="bi bi-star"></i> Favoritos</a></li>
+      <li class="navItem"><a href="acompanharPedido.html"><i class="bi bi-box-seam"></i> Acompanhar Pedido</a></li>
+    </ul>
+    <ul class="logoutList">
+      <li class="logoutItem"><a href="sair.html"><i class="bi bi-box-arrow-left"></i> Sair</a></li>
+    </ul>
+  </nav>
+</aside>
+
+<section id="profileContent">
+  <figure class="userFigure">
+    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Foto do Usuário" class="userImage">
+    <figcaption class="userName">João Mendes</figcaption>
+  </figure>
+
+  <article class="userInfo">
+    <h2 class="sectionTitle">Informações do Usuário</h2>
+    <p class="infoText">Email: joao.mendes@email.com</p>
+    <p class="infoText">Telefone: (19) 99999-1234</p>
+  </article>
+
+  <article class="userAddress">
+    <h2 class="sectionTitle">Endereço</h2>
+    <address class="addressBlock">
+      Rua das Flores, 123<br>
+      Jardim Primavera<br>
+      Hortolândia - SP<br>
+      CEP 13183-250
+    </address>
+  </article>
+
+  <article class="purchaseHistory">
+    <h2 class="sectionTitle">Últimas Compras</h2>
+    <ul class="purchaseList">
+      <li class="purchaseItem">
+        <img src="https://via.placeholder.com/50" alt="Teclado" class="productImage">
+        Teclado Mecânico Redragon - 22/05/2025
+      </li>
+      <li class="purchaseItem">
+        <img src="image/imagens_produtos_peixes/imagens_secao_higiene/banho_3.svg" alt="Mouse" class="productImage">
+        Mouse Logitech G502 - 10/05/2025
+      </li>
+      <li class="purchaseItem">
+        <img src="https://via.placeholder.com/50" alt="Notebook" class="productImage">
+        Notebook Dell Inspiron - 01/05/2025
+      </li>
+    </ul>
+  </article>
+</section>
+
         </main>
         <!--Footer-->
         <footer class="footer">
