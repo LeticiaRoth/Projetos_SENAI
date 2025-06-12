@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Inserir Endereço</title>
+		<link rel="icon" href="image/ícones/icone_endereco.svg" type="image/png" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+			rel="stylesheet"
+			/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body id="bodyEndereco">
+		<header>
+			<section class="navegacaoPrincipal">
+				<figure class="logo">
+					<a href="index.html">
+					<img src="image/icones_nav/icone_principal.png" alt="Logo World Pet" />
+					</a>
+				</figure>
+				<!--Menu Principal-->
+				<nav>
+					<ul class="menuPrincipal">
+						<li><a href="index.html">Início</a></li>
+						<li><a href="catalogo.html">Catálogo</a></li>
+						<li><a href="contato.html">Contato</a></li>
+						<li><a href="sobrenos.html">Sobre nós</a></li>
+					</ul>
+				</nav>
+				<!--Barra de navegação-->
+				<form class="barraPesquisa" role="search" action="resultado_pesquisa.html">
+					<label for="campoPesquisa" class="campoPesquisa"></label>
+					<input id="campoPesquisa" type="text" placeholder="Pesquise aqui 🐾🐾🐾" />
+					<a href="resultadoBusca.html" aria-label="Buscar">
+					<i class="bi bi-search"></i>
+					</a>
+				</form>
+				<!--Ícones de navegação Carrinho e Minha conta-->
+				<section class="iconesNavegacao" >
+					<a href="carrinho.html">
+					<i class="bi bi-cart-fill" class="iconesPrincipais"></i> Carrinho
+					</a>
+					<a href="perfil.html" >
+						<i class="bi bi-person-fill" class="iconesPrincipais"></i>
+						<p>Minha conta</p>
+					</a>
+				</section>
+			</section>
+			<!--Nav Secundária-->
+			<nav class="navegacaoSecundaria">
+				<ul>
+					<li><a href="produtos_higiene.html">Banho & Higiene</a></li>
+					<li><a href="produtos_racao.html">Ração</a></li>
+					<li><a href="produtos_brinquedos.html">Brinquedos</a></li>
+					<li><a href="produtos_roupinhas.html">Roupas & Acessórios</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<!--Seção de endereço-->
+			<section class="secaoEndereco" aria-label="Formulário de Inserção de Endereço">
+				<header>
+					<h1>Inserir Endereço</h1>
+				</header>
+				<!--Formulário para cadastro do endereço-->
+				<form class="formularioEndereco" novalidate>
+					<label for="inputNomeCompleto">Nome Completo</label>
+					<input type="text" id="inputNomeCompleto" placeholder="Seu nome completo" required />
+					<label for="inputRua">Rua</label>
+					<input type="text" id="inputRua" placeholder="Nome da rua" required />
+					<div class="linhaCampos">
+						<div>
+							<label for="inputNumero">Número</label>
+							<input type="text" id="inputNumero" placeholder="123" required />
+						</div>
+						<div>
+							<label for="inputComplemento">Complemento</label>
+							<input type="text" id="inputComplemento" placeholder="Apto, Bloco, etc." />
+						</div>
+					</div>
+					<label for="inputBairro">Bairro</label>
+					<input type="text" id="inputBairro" placeholder="Bairro" required />
+					<label for="inputCidade">Cidade</label>
+					<input type="text" id="inputCidade" placeholder="Cidade" required />
+					<label for="selectEstado">Estado</label>
+					<!--Cria uma drop para selecionar o estado, usando o option-->
+					<select id="selectEstado" required>
+						<option value="" disabled selected>Selecione o estado</option>
+						<option value="AC">Acre</option>
+						<option value="AL">Alagoas</option>
+						<option value="AP">Amapá</option>
+						<option value="AM">Amazonas</option>
+						<option value="BA">Bahia</option>
+						<option value="CE">Ceará</option>
+						<option value="DF">Distrito Federal</option>
+						<option value="ES">Espírito Santo</option>
+						<option value="GO">Goiás</option>
+						<option value="MA">Maranhão</option>
+						<option value="MT">Mato Grosso</option>
+						<option value="MS">Mato Grosso do Sul</option>
+						<option value="MG">Minas Gerais</option>
+						<option value="PA">Pará</option>
+						<option value="PB">Paraíba</option>
+						<option value="PR">Paraná</option>
+						<option value="PE">Pernambuco</option>
+						<option value="PI">Piauí</option>
+						<option value="RJ">Rio de Janeiro</option>
+						<option value="RN">Rio Grande do Norte</option>
+						<option value="RS">Rio Grande do Sul</option>
+						<option value="RO">Rondônia</option>
+						<option value="RR">Roraima</option>
+						<option value="SC">Santa Catarina</option>
+						<option value="SP">São Paulo</option>
+						<option value="SE">Sergipe</option>
+						<option value="TO">Tocantins</option>
+					</select>
+					<label for="inputCep">CEP</label>
+					<input type="text" id="inputCep" placeholder="00000-000" pattern="\d{5}-?\d{3}" required />
+					<label for="inputTelefone">Telefone</label>
+					<input type="tel" id="inputTelefone" placeholder="(00) 00000-0000" pattern="\(?\d{2}\)?\s?\d{4,5}-?\d{4}" required />
+					<!--Link estilizado como um botão para encaminhar para Finalizar Pagamento-->
+					<a href="finalizarPagamento.html" class="botaoSalvar">Salvar Endereço</a>
+				</form>
+			</section>
+		</main>
+		<!--Footer-->
+		<footer class="footer">
+			<!-- Logo e links principais -->
+			<section class="footerTop">
+				<a href="index.html" class="footerLogo">
+				<img src="image/icones_nav/icone_principal.png" alt="Logo World Pet"/>
+				</a>
+				<nav class="footerNav">
+					<a href="catalogo.html">Catálogo</a>
+					<a href="sobrenos.html">Sobre Nós</a>
+					<a href="contato.html">Contato</a>
+				</nav>
+			</section>
+			<!-- Conteúdo dividido em colunas -->
+			<section class="footerContent">
+				<article class="footerColuna">
+					<h3>Sobre a WorldPet</h3>
+					<p>Somos apaixonados por pets! Aqui você encontra produtos selecionados com carinho para garantir o bem-estar do seu companheiro.</p>
+				</article>
+				<article class="footerColuna">
+					<h3>Atendimento</h3>
+					<p>Email: atendimento@worldpet.com</p>
+					<p>Telefone: (19) 9876-5432</p>
+				</article>
+				<article class="footerColuna">
+					<h3>Formas de Pagamento</h3>
+					<ul class="iconesPagamento">
+						<li><img src="image/imagens_footer/imagens_pagamento/visa_pagamento.svg" alt="Forma de pagamento, cartão Visa"/></li>
+						<li><img src="image/imagens_footer/imagens_pagamento/mastercad_pagamento.svg" alt="Forma de pagamento, cartão Mastercard"/></li>
+						<li><img src="image/imagens_footer/imagens_pagamento/elo_pagamento.svg" alt="Forma de pagamento, cartão Elo"/></li>
+						<li><img src="image/imagens_footer/imagens_pagamento/pix_pagamento.svg" alt="Forma de pagamento,  Pix"/></li>
+					</ul>
+				</article>
+				<article class="footerColuna">
+					<h3>Siga nas Redes</h3>
+					<ul class="iconesRedes">
+						<li><a href="#"><img src="image/imagens_footer/imagens_redes_sociais/facebook_redes_sociais.svg" alt="Logo do FacebookFacebook"/></a></li>
+						<li><a href="#"><img src="image/imagens_footer/imagens_redes_sociais/instagram_redes_sociais.svg" alt="Logo do Instagram"/></a></li>
+						<li><a href="#"><img src="image/imagens_footer/imagens_redes_sociais/twitter_redes_sociais.svg" alt="Logo do Twitter"/></a></li>
+						<li><a href="#"><img src="image/imagens_footer/imagens_redes_sociais/youtube_redes_sociais.svg" alt="Logo do YouTube"/></a></li>
+					</ul>
+				</article>
+			</section>
+			<!-- Rodapé final -->
+			<section class="footerBottom">
+				<p>&copy; 2025 WorldPet. Todos os direitos reservados.</p>
+				<p>Desenvolvido por Letícia Alves Roth para os amantes de animais.</p>
+			</section>
+		</footer>
+	</body>
+</html>

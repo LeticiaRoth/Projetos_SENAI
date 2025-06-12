@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Resultado Busca</title>
+		<link rel="icon" href="image/ícones/icone_Pesquisa.svg" type="image/png" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+			rel="stylesheet"
+			/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<section class="navegacaoPrincipal">
+				<figure class="logo">
+					<a href="index.html">
+					<img src="image/icones_nav/icone_principal.png" alt="Logo World Pet" />
+					</a>
+				</figure>
+				<!--Menu principla-->
+				<nav >
+					<ul class="menuPrincipal">
+						<li><a href="index.html">Início</a></li>
+						<li><a href="catalogo.html">Catálogo</a></li>
+						<li><a href="contato.html">Contato</a></li>
+						<li><a href="sobrenos.html">Sobre nós</a></li>
+					</ul>
+				</nav>
+				<!--Barra de pesquisa-->
+				<form class="barraPesquisa" role="search" action="resultado_pesquisa.html">
+					<label for="campoPesquisa" class="campoPesquisa"></label>
+					<input id="campoPesquisa" type="text" placeholder="Brinquedos para cães e gatos" />
+					<a href="resultadoBusca.html" aria-label="Buscar">
+					<i class="bi bi-search"></i>
+					</a>
+				</form>
+				<!--Ícones de navegação Carrinho e Minha conta-->
+				<section class="iconesNavegacao" >
+					<a href="carrinho.html">
+					<i class="bi bi-cart-fill" class="iconesPrincipais"></i> Carrinho
+					</a>
+					<a href="perfil.html" >
+						<i class="bi bi-person-fill" class="iconesPrincipais"></i>
+						<p>Minha conta</p>
+					</a>
+				</section>
+			</section>
+			<!--Nav secundária-->
+			<nav class="navegacaoSecundaria" >
+				<ul>
+					<li><a href="produtos_higiene.html">Banho & Higiene</a></li>
+					<li><a href="produtos_racao.html">Ração</a></li>
+					<li><a href="produtos_brinquedos.html">Brinquedos</a></li>
+					<li><a href="produtos_roupinhas.html">Roupas & Acessórios</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<header class="resultadoBusca">
+				<h1>Resultados para: "Brinquedos para cães e gatos"</h1>
+			</header>
+			<!--Seção Cachorro-->
+			<section class="secaoProdutos">
+				<!--Grade de Produtos Cachorro- LINHAS -->
+				<section class="gradeProdutos">
+					<!--Cards de cada produtos-->
+					<article class="cartaoProduto">
+						<a class="botaoFavorito">
+						<i class="bi bi-heart-fill"></i>
+						</a>
+						<figure class="figuraProduto">
+							<img src="image/imagens_produtos_caes/imagens_secao_brinquedos/brinquedo_2.svg" alt="Produto 1 - Seção Brinquedos, comedor interativo para filhotes nas cores azul e amarelo" class="imagemProduto"/>
+						</figure>
+						<header class="cabecalhoProduto">
+							<h3 class="nomeProduto">Comedor interativo para Filhotes, Cobasi</h3>
+						</header>
+						<p class="precoProduto">R$18,75</p>
+						<section class="acoesProduto">
+								<a href="vejamais_ProdutoHigiene.html" class="botaoDetalhesCatalogo">Ver mais detalhes</a>
+							<a href="carrinho.html" class="botaoCarrinhoCatalogo">Adicionar ao carrinho</a>
+						</section>
+					</article>
+					<article class="cartaoProduto">
+						<a class="botaoFavorito">
+						<i class="bi bi-heart-fill"></i>
+						</a>
+						<figure class="figuraProduto">
+							<img src="image/imagens_produtos_caes/imagens_secao_brinquedos/brinquedo_1.svg" alt="Produto 2 - Seção Brinquedos, mordedor com bolinha para cães, em três cores, laranja, azul e verde" class="imagemProduto"/>
+						</figure>
+						<header class="cabecalhoProduto">
+							<h3 class="nomeProduto">Mordedor com bolinha para Cães, Petz</h3>
+						</header>
+						<p class="precoProduto">R$7,90</p>
+						<section class="acoesProduto">
+								<a href="vejamais_ProdutoHigiene.html" class="botaoDetalhesCatalogo">Ver mais detalhes</a>
+							<a href="carrinho.html" class="botaoCarrinhoCatalogo">Adicionar ao carrinho</a>
+						</section>
+					</article>
+					<article class="cartaoProduto">
+						<a class="botaoFavorito">
+						<i class="bi bi-heart-fill"></i>
+						</a>
+						<figure class="figuraProduto">
+							<img src="image/imagens_produtos_caes/imagens_secao_brinquedos/brinquedo_4.svg" alt="Produto 3 - Seção Briquedos, mordedor de  galinha de borracha para cães" class="imagemProduto"/>
+						</figure>
+						<header class="cabecalhoProduto">
+							<h3 class="nomeProduto">Mordedor Galinha de Borracha, Petz</h3>
+						</header>
+						<p class="precoProduto">R$8,34</p>
+						<section class="acoesProduto">
+							<a href="vejamais_ProdutoHigiene.html" class="botaoDetalhesCatalogo">Ver mais detalhes</a>
+							<a href="carrinho.html" class="botaoCarrinhoCatalogo">Adicionar ao carrinho</a>
+						</section>
+					</article>
+					<article class="cartaoProduto">
+						<a class="botaoFavorito">
+						<i class="bi bi-heart-fill"></i>
+						</a>
+						<figure class="figuraProduto">
+							<img src="image/imagens_produtos_caes/imagens_secao_brinquedos/brinquedo_5.svg" alt="Produto 4 - Seção Brinquedos, mordedor no formato de osso, material borracha para filhotes, nas cores azul e rosa" class="imagemProduto"/>
+						</figure>
+						<header class="cabecalhoProduto">
+							<h3 class="nomeProduto">Mordedor de Osso para Filhotes, Worldogs</h3>
+						</header>
+						<p class="precoProduto">R$7,16</p>
+						<section class="acoesProduto">
+								<a href="vejamais_ProdutoHigiene.html" class="botaoDetalhesCatalogo">Ver mais detalhes</a>
+							<a href="carrinho.html" class="botaoCarrinhoCatalogo">Adicionar ao carrinho</a>
+						</section>
+					</article>
+					<article class="cartaoProduto">
+						<a class="botaoFavorito">
+						<i class="bi bi-heart-fill"></i>
+						</a>
+						<figure class="figuraProduto">
+							<img src="image/imagens_produtos_caes/imagens_secao_brinquedos/brinquedo_3.svg" alt="Produto 5 - Seção Brinquedos, mordedor para colar no chão com bolinha na ponta" class="imagemProduto"/>
+						</figure>
+						<header class="cabecalhoProduto">
+							<h3 class="nomeProduto">Mordedor para colar no chão, Cobasi</h3>
+						</header>
+						<p class="precoProduto">R$13,23</p>
+						<section class="acoesProduto">
+								<a href="vejamais_ProdutoHigiene.html" class="botaoDetalhesCatalogo">Ver mais detalhes</a>
+							<a href="carrinho.html" class="botaoCarrinhoCatalogo">Adicionar ao carrinho</a>
+						</section>
+					</article>
+				</section>
+			</section>
+			<!--Fim seção Cachorros de Banho e Higiene-->
+			<!--Seção de Gatos-->
+			<section class="secaoProdutos">
+				<!--Grade de Produtos Gatos- LINHAS -->
+				<section class="gradeProdutos">
+					<!--Cards de cada produtos-->
+					<article class="cartaoProduto">
+						<a class="botaoFavorito">
+						<i class="bi bi-heart-fill"></i>
+						</a>
+						<figure class="figuraProduto">
+							<img src="image/imagens_produtos_gatos/imagens_secao_brinquedos/brinquedo_2.svg" alt="Produto 6 - Seção Brinquedos, bolinha interativa para gatos filhotes" class="imagemProduto"/>
+						</figure>
+						<header class="cabecalhoProduto">
+							<h3 class="nomeProduto">Bolinha Interativa para Gatos Filhotes, Odontpet</h3>
+						</header>
+						<p class="precoProduto">R$8,56</p>
+						<section class="acoesProduto">
+								<a href="vejamais_ProdutoHigiene.html" class="botaoDetalhesCatalogo">Ver mais detalhes</a>
+							<a href="carrinho.html" class="botaoCarrinhoCatalogo">Adicionar ao carrinho</a>
+						</section>
+					</article>
+					<article class="cartaoProduto">
+						<a class="botaoFavorito">
+						<i class="bi bi-heart-fill"></i>
+						</a>
+						<figure class="figuraProduto">
+							<img src="image/imagens_produtos_gatos/imagens_secao_brinquedos/brinquedo_3.svg" alt="Produto 7 - laser modelo de patinha para gatos" class="imagemProduto"/>
+						</figure>
+						<header class="cabecalhoProduto">
+							<h3 class="nomeProduto">Laser vermelho formato de Para, Petz</h3>
+						</header>
+						<p class="precoProduto">R$4,90</p>
+						<section class="acoesProduto">
+							<a href="vejamais_ProdutoHigiene.html" class="botaoDetalhesCatalogo">Ver mais detalhes</a>
+							<a href="carrinho.html" class="botaoCarrinhoCatalogo">Adicionar ao carrinho</a>
+						</section>
+					</article>
+					<article class="cartaoProduto">
+						<a class="botaoFavorito">
+						<i class="bi bi-heart-fill"></i>
+						</a>
+						<figure class="figuraProduto">
+							<img src="image/imagens_produtos_gatos/imagens_secao_brinquedos/brinquedo_1.svg" alt="Produto 8 - arranhador vertical para gatos" class="imagemProduto"/>
+						</figure>
+						<header class="cabecalhoProduto">
+							<h3 class="nomeProduto">Arranhador Vertical para gatos, Petz</h3>
+						</header>
+						<p class="precoProduto">R$12,10</p>
+						<section class="acoesProduto">
+								<a href="vejamais_ProdutoHigiene.html" class="botaoDetalhesCatalogo">Ver mais detalhes</a>
+							<a href="carrinho.html" class="botaoCarrinhoCatalogo">Adicionar ao carrinho</a>
+						</section>
+					</article>
+					<article class="cartaoProduto">
+						<a class="botaoFavorito">
+						<i class="bi bi-heart-fill"></i>
+						</a>
+						<figure class="figuraProduto">
+							<img src="image/imagens_produtos_gatos/imagens_secao_brinquedos/brinquedo_5.svg" alt="Produto 9 - Seção brinquedos, mola interativa com um brinquedo de rato na ponta para gatos" class="imagemProduto"/>
+						</figure>
+						<header class="cabecalhoProduto">
+							<h3 class="nomeProduto">Mola interativa para Gatos, Cobasi </h3>
+						</header>
+						<p class="precoProduto">R$9,30</p>
+						<section class="acoesProduto">
+								<a href="vejamais_ProdutoHigiene.html" class="botaoDetalhesCatalogo">Ver mais detalhes</a>
+							<a href="carrinho.html" class="botaoCarrinhoCatalogo">Adicionar ao carrinho</a>
+						</section>
+					</article>
+					<article class="cartaoProduto">
+						<a class="botaoFavorito">
+						<i class="bi bi-heart-fill"></i>
+						</a>
+						<figure class="figuraProduto">
+							<img src="image/imagens_produtos_gatos/imagens_secao_brinquedos/brinquedo_4.svg" alt="Produto 10 - Seção brinquedos, briquedos de ratinhos em quatro cores, cinza, vermelho, laranja e rosa" class="imagemProduto"/>
+						</figure>
+						<header class="cabecalhoProduto">
+							<h3 class="nomeProduto">Brinquedo rato de borracha colorido, Cobasi</h3>
+						</header>
+						<p class="precoProduto">R$3,12</p>
+						<section class="acoesProduto">
+								<a href="vejamais_ProdutoHigiene.html" class="botaoDetalhesCatalogo">Ver mais detalhes</a>
+							<a href="carrinho.html" class="botaoCarrinhoCatalogo">Adicionar ao carrinho</a>
+						</section>
+					</article>
+				</section>
+			</section>
+			<!--Fim seção de Gatos-->
+		</main>
+		<!--Footer-->
+		<footer class="footer">
+			<!-- Logo e links principais -->
+			<section class="footerTop">
+				<a href="index.html" class="footerLogo">
+				<img src="image/icones_nav/icone_principal.png" alt="Logo World Pet"/>
+				</a>
+				<nav class="footerNav">
+					<a href="catalogo.html">Catálogo</a>
+					<a href="sobrenos.html">Sobre Nós</a>
+					<a href="contato.html">Contato</a>
+				</nav>
+			</section>
+			<!-- Conteúdo dividido em colunas -->
+			<section class="footerContent">
+				<article class="footerColuna">
+					<h3>Sobre a WorldPet</h3>
+					<p>Somos apaixonados por pets! Aqui você encontra produtos selecionados com carinho para garantir o bem-estar do seu companheiro.</p>
+				</article>
+				<article class="footerColuna">
+					<h3>Atendimento</h3>
+					<p>Email: atendimento@worldpet.com</p>
+					<p>Telefone: (19) 9876-5432</p>
+				</article>
+				<article class="footerColuna">
+					<h3>Formas de Pagamento</h3>
+					<ul class="iconesPagamento">
+						<li><img src="image/imagens_footer/imagens_pagamento/visa_pagamento.svg" alt="Forma de pagamento, cartão Visa"/></li>
+						<li><img src="image/imagens_footer/imagens_pagamento/mastercad_pagamento.svg" alt="Forma de pagamento, cartão Mastercard"/></li>
+						<li><img src="image/imagens_footer/imagens_pagamento/elo_pagamento.svg" alt="Forma de pagamento, cartão Elo"/></li>
+						<li><img src="image/imagens_footer/imagens_pagamento/pix_pagamento.svg" alt="Forma de pagamento,  Pix"/></li>
+					</ul>
+				</article>
+				<article class="footerColuna">
+					<h3>Siga nas Redes</h3>
+					<ul class="iconesRedes">
+						<li><a href="#"><img src="image/imagens_footer/imagens_redes_sociais/facebook_redes_sociais.svg" alt="Logo do FacebookFacebook"/></a></li>
+						<li><a href="#"><img src="image/imagens_footer/imagens_redes_sociais/instagram_redes_sociais.svg" alt="Logo do Instagram"/></a></li>
+						<li><a href="#"><img src="image/imagens_footer/imagens_redes_sociais/twitter_redes_sociais.svg" alt="Logo do Twitter"/></a></li>
+						<li><a href="#"><img src="image/imagens_footer/imagens_redes_sociais/youtube_redes_sociais.svg" alt="Logo do YouTube"/></a></li>
+					</ul>
+				</article>
+			</section>
+			<!-- Rodapé final -->
+			<section class="footerBottom">
+				<p>&copy; 2025 WorldPet. Todos os direitos reservados.</p>
+				<p>Desenvolvido por Letícia Alves Roth para os amantes de animais.</p>
+			</section>
+		</footer>
+	</body>
+</html>

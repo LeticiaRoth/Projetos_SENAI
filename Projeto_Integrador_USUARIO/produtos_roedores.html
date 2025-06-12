@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Roedores</title>
+		<link rel="icon" href="image/ícones/icone_catalogo.png" type="image/png" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+			rel="stylesheet"
+			/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<section class="navegacaoPrincipal">
+				<figure class="logo">
+					<a href="index.html">
+					<img src="image/icones_nav/icone_principal.png" alt ="Logo World Pet" />
+					</a>
+				</figure>
+				<!--Menu principal-->
+				<nav >
+					<ul class="menuPrincipal">
+						<li><a href="index.html">Início</a></li>
+						<li><a href="catalogo.html">Catálogo</a></li>
+						<li><a href="contato.html">Contato</a></li>
+						<li><a href="sobrenos.html">Sobre nós</a></li>
+					</ul>
+				</nav>
+				<!-- Barra de pesquisa - ESTÁTICA-->
+				<form class="barraPesquisa" role="search"  action="resultado_pesquisa.html">
+					<label for="campoPesquisa" class="campoPesquisa"></label>
+					<input id="campoPesquisa" type="text" placeholder="Pesquise aqui 🐾🐾🐾" />
+					<a href="resultadoBusca.html" aria-label="Buscar">
+                    <i class="bi bi-search"></i>
+                    </a>
+					</a>
+				</form>
+				<!--Ícones de navegação Carrinho e Minha conta-->
+				<section class="iconesNavegacao" >
+					<a href="carrinho.html">
+					<i class="bi bi-cart-fill" class="iconesPrincipais"></i> Carrinho
+					</a>
+					<a href="perfil.html" >
+						<i class="bi bi-person-fill" class="iconesPrincipais"></i>
+						<p>Minha conta</p>
+					</a>
+				</section>
+			</section>
+			<!--Nav secundária-->
+			<nav class="navegacaoSecundaria" >
+				<ul>
+					<li><a href="produtos_higiene.html">Banho & Higiene</a></li>
+					<li><a href="produtos_racao.html">Ração</a></li>
+					<li><a href="produtos_brinquedos.html">Brinquedos</a></li>
+					<li><a href="produtos_roupinhas.html">Roupas & Acessórios</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<!--Banner Catálogo - Informações Gerais-->
+			<img src="image/imagens_banners/banner_pagina_roedores.png" alt="Imagem do Banner, com escrita catálogo para seu roedor, com imagens de coelhos e chinchilas"/>
+		
+			<!--Seção de Banho e Higiene-->
+			<section class="secaoProdutos">
+				<header class="cabecalhoSecao">
+					<h2 class="tituloSecao">Banho & Higiene</h2>
+					<p class="subtituloSecao">Confira o que temos de novo e compre para o seu roedor de estimação!</p>
+				</header>
+				<!--Grade de Produtos Banho e Higiene- LINHAS -->
+				<section class="gradeProdutos">
+					<!--Cards de cada produtos-->
+					<article class="cartaoProduto">
+						<a class="botaoFavorito">
+						<i class="bi bi-heart-fill"></i>
+						</a>
+						<figure class="figuraProduto">
+							<img src="image/imagens_produtos_roedores/imagens_secao_higiene/banho_1.svg" alt="Produto 1 - Seção Higiene, pó para banho seco em chinchilas" class="imagemProduto"/>
+						</figure>
+						<header class="cabecalhoProduto">
+							<h3 class="nomeProduto">Pó para Banho a Seco para Chinchilas, Prefere 1Kg</h3>
+						</header>
+						<p class="precoProduto">R$13,45</p>
+						<section class="acoesProduto">
+							<a href="vejamais_ProdutoHigiene.html" class="botaoDetalhesCatalogo">Ver mais detalhes</a>
+							<a href="carrinho.html" class="botaoCarrinhoCatalogo">Adicionar ao carrinho</a>
+						</section>
+					</article>
+					<article class="cartaoProduto">
+						<a class="botaoFavorito">
+						<i class="bi bi-heart-fill"></i>
+						</a>
+						<figure class="figuraProduto">
+							<img src="image/imagens_produtos_roedores/imagens_secao_higiene/banho_2.svg" alt="Produto 2 - Seção Higiene, shampoo para coelhos e hamster, Sanol 500mL" class="imagemProduto"/>
+						</figure>
+						<header class="cabecalhoProduto">
+							<h3 class="nomeProduto">Shampoo para Coelho e Hamster, Sanol 500mL</h3>
+						</header>
+						<p class="precoProduto">R$15,70</p>
+						<section class="acoesProduto">
+							<a href="vejamais_ProdutoHigiene.html" class="botaoDetalhesCatalogo">Ver mais detalhes</a>
+							<a href="carrinho.html" class="botaoCarrinhoCatalogo">Adicionar ao carrinho</a>
+						</section>
+					</article>
+					<article class="cartaoProduto">
+						<a class="botaoFavorito">
+						<i class="bi bi-heart-fill"></i>
+						</a>
+						<figure class="figuraProduto">
+							<img src="image/imagens_produtos_roedores/imagens_secao_higiene/banho_3.svg" alt="Produto 3 - Seção Higiene, areia para caixa de roedores" class="imagemProduto"/>
+						</figure>
+						<header class="cabecalhoProduto">
+							<h3 class="nomeProduto">Areia para caixa roedores, Progato 1Kg</h3>
+						</header>
+						<p class="precoProduto">R$28,34</p>
+						<section class="acoesProduto">
+							<a href="vejamais_ProdutoHigiene.html" class="botaoDetalhesCatalogo">Ver mais detalhes</a>
+							<a href="carrinho.html" class="botaoCarrinhoCatalogo">Adicionar ao carrinho</a>
+						</section>
+					</article>
+					<article class="cartaoProduto">
+						<a class="botaoFavorito">
+						<i class="bi bi-heart-fill"></i>
+						</a>
+						<figure class="figuraProduto">
+							<img src="image/imagens_produtos_roedores/imagens_secao_higiene/banho_4.svg" alt="Produto 4 - Seção Higiene, granulado higiênico de madeira para hamster" class="imagemProduto"/>
+						</figure>
+						<header class="cabecalhoProduto">
+							<h3 class="nomeProduto">Granulado Higiêncio para Hamster, IpetWoods 1,5Kg</h3>
+						</header>
+						<p class="precoProduto">R$21,50</p>
+						<section class="acoesProduto">
+							<a href="vejamais_ProdutoHigiene.html" class="botaoDetalhesCatalogo">Ver mais detalhes</a>
+							<a href="carrinho.html" class="botaoCarrinhoCatalogo">Adicionar ao carrinho</a>
+						</section>
+					</article>
+					<article class="cartaoProduto">
+						<a class="botaoFavorito">
+						<i class="bi bi-heart-fill"></i>
+						</a>
+						<figure class="figuraProduto">
+							<img src="image/imagens_produtos_roedores/imagens_secao_higiene/banho_5.svg" alt="Produto 5 - Seção Higiene, areia para xixi hamster" class="imagemProduto"/>
+						</figure>
+						<header class="cabecalhoProduto">
+							<h3 class="nomeProduto">Areia Xixi Hamster, Hamster 200g</h3>
+						</header>
+						<p class="precoProduto">R$15,23</p>
+						<section class="acoesProduto">
+							<a href="vejamais_ProdutoHigiene.html" class="botaoDetalhesCatalogo">Ver mais detalhes</a>
+							<a href="carrinho.html" class="botaoCarrinhoCatalogo">Adicionar ao carrinho</a>
+						</section>
+					</article>
+				</section>
+			</section>
+			<!--Fim seção de Banho e Higiene-->
+			<!--Seção de Rações-->
+			<section class="secaoProdutos">
+				<header class="cabecalhoSecao">
+					<h2 class="tituloSecao">Ração</h2>
+					<p class="subtituloSecao">Nutrição de verdade e sabor irresistível para o seu roedor favorito!</p>
+				</header>
+				<!--Grade de Produtos Rações- LINHAS -->
+				<section class="gradeProdutos">
+					<!--Cards de cada produtos-->
+					<article class="cartaoProduto">
+						<a class="botaoFavorito">
+						<i class="bi bi-heart-fill"></i>
+						</a>
+						<figure class="figuraProduto">
+							<img src="image/imagens_produtos_roedores/imagens_secao_racao/racao_1.svg" alt="Produto 1 - Seção Ração, ração para coelho com pedaços de maça, Reino de Aves" class="imagemProduto"/>
+						</figure>
+						<header class="cabecalhoProduto">
+							<h3 class="nomeProduto">Ração Pedaços de Maça para Coelhos, Reino de Aves 500g</h3>
+						</header>
+						<p class="precoProduto">R$23,78</p>
+						<section class="acoesProduto">
+							<a href="vejamais_ProdutoRacao.html" class="botaoDetalhesCatalogo">Ver mais detalhes</a>
+							<a href="carrinho.html" class="botaoCarrinhoCatalogo">Adicionar ao carrinho</a>
+						</section>
+					</article>
+					<article class="cartaoProduto">
+						<a class="botaoFavorito">
+						<i class="bi bi-heart-fill"></i>
+						</a>
+						<figure class="figuraProduto">
+							<img src="image/imagens_produtos_roedores/imagens_secao_racao/racao_2.svg" alt="Produto 2 - Ração para coelho adulto, 500g" class="imagemProduto"/>
+						</figure>
+						<header class="cabecalhoProduto">
+							<h3 class="nomeProduto">Ração para Coelho Adulto, NuTrópica 500g</h3>
+						</header>
+						<p class="precoProduto">R$18,70</p>
+						<section class="acoesProduto">
+							<a href="vejamais_ProdutoRacao.html" class="botaoDetalhesCatalogo">Ver mais detalhes</a>
+							<a href="carrinho.html" class="botaoCarrinhoCatalogo">Adicionar ao carrinho</a>
+						</section>
+					</article>
+					<article class="cartaoProduto">
+						<a class="botaoFavorito">
+						<i class="bi bi-heart-fill"></i>
+						</a>
+						<figure class="figuraProduto">
+							<img src="image/imagens_produtos_roedores/imagens_secao_racao/racao_3.svg" alt="Produto 3 - Seção Ração para chinchilhas 500g" class="imagemProduto">
+						</figure>
+						<header class="cabecalhoProduto">
+							<h3 class="nomeProduto">Ração Vegetais para Chinchilas, MegaZoo 500g</h3>
+						</header>
+						<p class="precoProduto">R$18,80</p>
+						<section class="acoesProduto">
+							<a href="vejamais_ProdutoRacao.html" class="botaoDetalhesCatalogo">Ver mais detalhes</a>
+							<a href="carrinho.html" class="botaoCarrinhoCatalogo">Adicionar ao carrinho</a>
+						</section>
+					</article>
+					<article class="cartaoProduto">
+						<a class="botaoFavorito">
+						<i class="bi bi-heart-fill"></i>
+						</a>
+						<figure class="figuraProduto">
+							<img src="image/imagens_produtos_roedores/imagens_secao_racao/racao_4.svg" alt="Produto 4 - Seção Ração para chinchilas e porquinho da índia" class="imagemProduto">
+						</figure>
+						<header class="cabecalhoProduto">
+							<h3 class="nomeProduto">Ração Porquinho da Índia e Chinchila, NutricoinPET 700g</h3>
+						</header>
+						<p class="precoProduto">R$16,90</p>
+						<section class="acoesProduto">
+							<a href="vejamais_ProdutoRacao.html" class="botaoDetalhesCatalogo">Ver mais detalhes</a>
+							<a href="carrinho.html" class="botaoCarrinhoCatalogo">Adicionar ao carrinho</a>
+						</section>
+					</article>
+					<article class="cartaoProduto">
+						<a class="botaoFavorito">
+						<i class="bi bi-heart-fill"></i>
+						</a>
+						<figure class="figuraProduto">
+							<img src="image/imagens_produtos_roedores/imagens_secao_racao/racao_5.svg" alt="Produto 5 - Seção Ração sabor vegetais para hamster" class="imagemProduto">
+						</figure>
+						<header class="cabecalhoProduto">
+							<h3 class="nomeProduto">Ração Vegetais para Hamster, Real Friends 500g</h3>
+						</header>
+						<p class="precoProduto">R$16,43</p>
+						<section class="acoesProduto">
+							<a href="vejamais_ProdutoRacao.html" class="botaoDetalhesCatalogo">Ver mais detalhes</a>
+							<a href="carrinho.html" class="botaoCarrinhoCatalogo">Adicionar ao carrinho</a>
+						</section>
+					</article>
+				</section>
+			</section>
+			<!--Fim seção de Rações-->
+			<!-- Seção de Brinquedos-->
+			<section class="secaoProdutos">
+				<header class="cabecalhoSecao">
+					<!-- Grade Produtos Brinquedos - LINHAS -->
+					<h2 class="tituloSecao">Brinquedos</h2>
+					<p class="subtituloSecao">Brinquedos que estimulam, divertem e fortalece o seu roedor!</p>
+				</header>
+				<section class="gradeProdutos">
+					<!-- Card de cada produto-->
+					<article class="cartaoProduto">
+						<a class="botaoFavorito">
+						<i class="bi bi-heart-fill"></i>
+						</a>
+						<figure class="figuraProduto">
+							<img src="image/imagens_produtos_roedores/imagens_secao_brinquedo/brinquedo_1.svg" alt="Produto 1 - Seçao Brinquedos, bolas para roedores" class="imagemProduto">
+						</figure>
+						<header class="cabecalhoProduto">
+							<h3 class="nomeProduto">Bolas interativas para roedores, RoedoresLIFE</h3>
+						</header>
+						<p class="precoProduto">R$12,90</p>
+						<section class="acoesProduto">
+							<a href="vejamais_Produto_Brinquedos.html" class="botaoDetalhesCatalogo">Ver mais detalhes</a>
+							<a href="carrinho.html" class="botaoCarrinhoCatalogo">Adicionar ao carrinho</a>
+						</section>
+					</article>
+					<article class="cartaoProduto">
+						<a class="botaoFavorito">
+						<i class="bi bi-heart-fill"></i>
+						</a>
+						<figure class="figuraProduto">
+							<img src="image/imagens_produtos_roedores/imagens_secao_brinquedo/brinquedo_2.svg" alt="Produto 2 - gaiola para hamster ou chinchilas" class="imagemProduto">
+						</figure>
+						<header class="cabecalhoProduto">
+							<h3 class="nomeProduto">Gaiola decorada para Hamster e Chinchilas</h3>
+						</header>
+						<p class="precoProduto">R$18,90</p>
+						<section class="acoesProduto">
+						<a href="vejamais_Produto_Brinquedos.html" class="botaoDetalhesCatalogo">Ver mais detalhes</a>
+							<a href="carrinho.html" class="botaoCarrinhoCatalogo">Adicionar ao carrinho</a>
+						</section>
+					</article>
+					<article class="cartaoProduto">
+						<a class="botaoFavorito">
+						<i class="bi bi-heart-fill"></i>
+						</a>
+						<figure class="figuraProduto">
+							<img src="image/imagens_produtos_roedores/imagens_secao_brinquedo/brinquedo_3.svg" alt="Produto 3- Seção Brinquedos mordedores pequenos para hamsters" class="imagemProduto">
+						</figure>
+						<header class="cabecalhoProduto">
+							<h3 class="nomeProduto">Mordedor pequendo para Hamster, Cobasi</h3>
+						</header>
+						<p class="precoProduto">R$15,95</p>
+						<section class="acoesProduto">
+							<a href="vejamais_Produto_Brinquedos.html" class="botaoDetalhesCatalogo">Ver mais detalhes</a>
+							<a href="carrinho.html" class="botaoCarrinhoCatalogo">Adicionar ao carrinho</a>
+						</section>
+					</article>
+					<article class="cartaoProduto">
+						<a class="botaoFavorito">
+						<i class="bi bi-heart-fill"></i>
+						</a>
+						<figure class="figuraProduto">
+							<img src="image/imagens_produtos_roedores/imagens_secao_brinquedo/brinquedo_4.svg" alt="Produto 4 - Seção Brinquedos Bola de lã para Colegos, Cobasi" class="imagemProduto">
+						</figure>
+						<header class="cabecalhoProduto">
+							<h3 class="nomeProduto">Bola de lã para Colegos, Cobasi</h3>
+						</header>
+						<p class="precoProduto">R$9,90</p>
+						<section class="acoesProduto">
+							<a href="vejamais_Produto_Brinquedos.html" class="botaoDetalhesCatalogo">Ver mais detalhes</a>
+							<a href="carrinho.html" class="botaoCarrinhoCatalogo">Adicionar ao carrinho</a>
+						</section>
+					</article>
+					<article class="cartaoProduto">
+						<a class="botaoFavorito">
+						<i class="bi bi-heart-fill"></i>
+						</a>
+						<figure class="figuraProduto">
+							<img src="image/imagens_produtos_roedores/imagens_secao_brinquedo/brinquedo_5.svg" alt="Produto 5 - Seção Brinquedo, Túnel de Madeira para Chinchilas, Petz" class="imagemProduto">
+						</figure>
+						<header class="cabecalhoProduto">
+							<h3 class="nomeProduto">Túnel de Madeira para Chinchilas, Petz</h3>
+						</header>
+						<p class="precoProduto">R$13,34</p>
+						<section class="acoesProduto">
+						<a href="vejamais_Produto_Brinquedos.html" class="botaoDetalhesCatalogo">Ver mais detalhes</a>
+							<a href="carrinho.html" class="botaoCarrinhoCatalogo">Adicionar ao carrinho</a>
+						</section>
+					</article>
+				</section>
+			</section>
+			<!-- Fim seção de Brinquedos-->
+			<!-- Seção de Roupas e Acessrórios-->
+			<section class="secaoProdutos">
+				<header class="cabecalhoSecao">
+					<h2 class="tituloSecao">Roupas & Acessórios</h2>
+					<p class="subtituloSecao">Confira o que temos de novo para o seu roedor mais estiloso!</p>
+				</header>
+				<!--Grade Produtos Roupas e Acessórios-->
+				<section class="gradeProdutos">
+					<!-- Card de cada produto-->
+					<article class="cartaoProduto">
+						<a class="botaoFavorito">
+						<i class="bi bi-heart-fill"></i>
+						</a>
+						<figure class="figuraProduto">
+							<img src="image/imagens_produtos_roedores/imagens_secao_roupa_acessorios/roupa_1.svg" alt="Produto 1 - Seção Roupas, roupa de coelho estilizado de cenoura" class="imagemProduto">
+						</figure>
+						<header class="cabecalhoProduto">
+							<h3 class="nomeProduto">Roupa de cenoura para Coelho, PetLove</h3>
+						</header>
+						<p class="precoProduto">R$28,60</p>
+						<section class="acoesProduto">
+							<a href="vejamais_ProdutoRoupas.html" class="botaoDetalhesCatalogo">Ver mais detalhes</a>
+							<a href="carrinho.html" class="botaoCarrinhoCatalogo">Adicionar ao carrinho</a>
+						</section>
+					</article>
+					<article class="cartaoProduto">
+						<a class="botaoFavorito">
+						<i class="bi bi-heart-fill"></i>
+						</a>
+						<figure class="figuraProduto">
+							<img src="image/imagens_produtos_roedores/imagens_secao_roupa_acessorios/roupa_2.svg" alt="Produto 2 - Seção Roupa, roupa de grio para coelhos de porte médio, diversas cores" class="imagemProduto">
+						</figure>
+						<header class="cabecalhoProduto">
+							<h3 class="nomeProduto">Roupa de Frio - Coelho porte médio</h3>
+						</header>
+						<p class="precoProduto">R$21,90</p>
+						<section class="acoesProduto">
+							<a href="vejamais_ProdutoRoupas.html" class="botaoDetalhesCatalogo">Ver mais detalhes</a>
+							<a href="carrinho.html" class="botaoCarrinhoCatalogo">Adicionar ao carrinho</a>
+						</section>
+					</article>
+					<article class="cartaoProduto">
+						<a class="botaoFavorito">
+						<i class="bi bi-heart-fill"></i>
+						</a>
+						<figure class="figuraProduto">
+							<img src="image/imagens_produtos_roedores/imagens_secao_roupa_acessorios/roupa_3.svg" alt="Produto 3 - Coleira para hamster cor de rosa" class="imagemProduto">
+						</figure>
+						<header class="cabecalhoProduto">
+							<h3 class="nomeProduto">Coleira cor de rosa para Hamster, Cobasi</h3>
+						</header>
+						<p class="precoProduto">R$10,20</p>
+						<section class="acoesProduto">
+							<a href="vejamais_ProdutoRoupas.html" class="botaoDetalhesCatalogo">Ver mais detalhes</a>
+							<a href="carrinho.html" class="botaoCarrinhoCatalogo">Adicionar ao carrinho</a>
+						</section>
+					</article>
+					<article class="cartaoProduto">
+						<a class="botaoFavorito">
+						<i class="bi bi-heart-fill"></i>
+						</a>
+						<figure class="figuraProduto">
+							<img src="image/imagens_produtos_roedores/imagens_secao_roupa_acessorios/roupa_4.svg" alt="Produto 4 - Fantasia com chapéu e gravata" class="imagemProduto">
+						</figure>
+						<header class="cabecalhoProduto">
+							<h3 class="nomeProduto">Roupa personalizada para Hamster, Cobasi</h3>
+						</header>
+						<p class="precoProduto">R$13,75</p>
+						<section class="acoesProduto">
+							<a href="vejamais_ProdutoRoupas.html" class="botaoDetalhesCatalogo">Ver mais detalhes</a>
+							<a href="carrinho.html" class="botaoCarrinhoCatalogo">Adicionar ao carrinho</a>
+						</section>
+					</article>
+					<article class="cartaoProduto">
+						<a class="botaoFavorito">
+						<i class="bi bi-heart-fill"></i>
+						</a>
+						<figure class="figuraProduto">
+							<img src="image/imagens_produtos_roedores/imagens_secao_roupa_acessorios/roupa_5.svg" alt="Produto 5 - Roupa para roedoer personalizada do capitão américa" class="imagemProduto">
+						</figure>
+						<header class="cabecalhoProduto">
+							<h3 class="nomeProduto">Roupa personalizada do Capitão América</h3>
+						</header>
+						<p class="precoProduto">R$9,50</p>
+						<section class="acoesProduto">
+							<a href="vejamais_ProdutoRoupas.html" class="botaoDetalhesCatalogo">Ver mais detalhes</a>
+							<a href="carrinho.html" class="botaoCarrinhoCatalogo">Adicionar ao carrinho</a>
+						</section>
+					</article>
+				</section>
+				<!-- Fim Seção de Roupas e Acessrórios-->
+			</section>
+		</main>
+		<!--Footer-->
+		<footer class="footer">
+			<!-- Logo e links principais -->
+			<section class="footerTop">
+				<a href="index.html" class="footerLogo">
+				<img src="image/icones_nav/icone_principal.png" alt="Logo World Pet">
+				</a>
+				<nav class="footerNav">
+					<a href="catalogo.html">Catálogo</a>
+					<a href="sobrenos.html">Sobre Nós</a>
+					<a href="contato.html">Contato</a>
+				</nav>
+			</section>
+			<!-- Conteúdo dividido em colunas -->
+			<section class="footerContent">
+				<article class="footerColuna">
+					<h3>Sobre a WorldPet</h3>
+					<p>Somos apaixonados por pets! Aqui você encontra produtos selecionados com carinho para garantir o bem-estar do seu companheiro.</p>
+				</article>
+				<article class="footerColuna">
+					<h3>Atendimento</h3>
+					<p>Email: atendimento@worldpet.com</p>
+					<p>Telefone: (19) 9876-5432</p>
+				</article>
+				<article class="footerColuna">
+					<h3>Formas de Pagamento</h3>
+					<ul class="iconesPagamento">
+						<li><img src="image/imagens_footer/imagens_pagamento/visa_pagamento.svg" alt="Visa"></li>
+						<li><img src="image/imagens_footer/imagens_pagamento/mastercad_pagamento.svg" alt="Mastercard"></li>
+						<li><img src="image/imagens_footer/imagens_pagamento/elo_pagamento.svg" alt="Elo"></li>
+						<li><img src="image/imagens_footer/imagens_pagamento/pix_pagamento.svg" alt="Pix"></li>
+					</ul>
+				</article>
+				<article class="footerColuna">
+					<h3>Siga nas Redes</h3>
+					<ul class="iconesRedes">
+						<li><a href="#"><img src="image/imagens_footer/imagens_redes_sociais/facebook_redes_sociais.svg" alt="Facebook"></a></li>
+						<li><a href="#"><img src="image/imagens_footer/imagens_redes_sociais/instagram_redes_sociais.svg" alt="Instagram"></a></li>
+						<li><a href="#"><img src="image/imagens_footer/imagens_redes_sociais/twitter_redes_sociais.svg" alt="Twitter"></a></li>
+						<li><a href="#"><img src="image/imagens_footer/imagens_redes_sociais/youtube_redes_sociais.svg" alt="YouTube"></a></li>
+					</ul>
+				</article>
+			</section>
+			<!-- Rodapé final -->
+			<section class="footerBottom">
+				<p>&copy; 2025 WorldPet. Todos os direitos reservados.</p>
+				<p>Desenvolvido por Letícia Alves Roth para os amantes de animais.</p>
+			</section>
+		</footer>
+	</body>
+</html>
