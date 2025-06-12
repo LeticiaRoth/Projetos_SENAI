@@ -40,7 +40,7 @@
 					<i class="bi bi-cart-fill" class="iconesPrincipais"></i> Carrinho
 					</a>
 					<a href="perfil.html" >
-						<i class="bi bi-person-fill" class="iconesPrincipais"></i>
+						<img src="image/icones_nav/icone_minha_conta.png" class="iconesPrincipais" alt="ícone gatinho que representa a conta logada"/>
 						<p>Minha conta</p>
 					</a>
 				</section>
@@ -55,18 +55,22 @@
 			</nav>
 		</header>
 		<main class="mainPerfil">
+			<!--Navegação dentro do ASIDE na Página Perfil-->
 			<aside id="sidebarMenu">
 				<nav class="navigation">
 					<ul class="navList">
+						<!--Links de Navegação-->
 						<li class="navItem"><a href="perfil.html"><i class="bi bi-person-fill"></i> Minha conta</a></li>
 						<li class="navItem"><a href="favoritos.html"><i class="bi bi-star"></i> Favoritos</a></li>
 						<li class="navItem"><a href="acompanharPedido.html"><i class="bi bi-box-seam"></i> Acompanhar Pedido</a></li>
 					</ul>
+					<!--Link de LOG OUT-->
 					<ul class="logoutList">
 						<li class="logoutItem"><a href="sair.html"><i class="bi bi-box-arrow-left"></i> Sair</a></li>
 					</ul>
 				</nav>
 			</aside>
+			<!--Seção com os INPUTS e LABELS para a edição do Perfil-->
 			<section>
 				<h2 id="tituloEdicaoPerfil">Editar Perfil</h2>
 				<form id="formularioEdicaoPerfil">
@@ -78,8 +82,9 @@
 					<input type="password" id="senha" name="senha" placeholder="Nova senha">
 					<label for="confirmarSenha">Confirmar Senha</label>
 					<input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Repita a nova senha">
-					<a >Salvar Alterações</a>
-					<a>Cancelar</a>
+					<!--Links estilizados como botões para Salvar ou Cancelar-->
+					<a href="salvarAlteracoes.html" class="botaoSalvarAlteracoes">Salvar Alterações</a>
+					<a href="cancelarAlteracoes.html" class="botaoCancelarAlteracoes">Cancelar</a>
 				</form>
 			</section>
 		</main>

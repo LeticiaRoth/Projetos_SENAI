@@ -631,8 +631,11 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
+.nomeCategoria p{
+  color: #000;
+}
 #tituloCategorias {
-  color: #050005;
+  color: #000000;
   font-size: 30px;
   margin-bottom: 60px;
   text-align: center;
@@ -939,7 +942,7 @@ body {
 
 
 
-/*Página do Carrinho*/
+/*PÁGINA DO CARRINHO*/
 main.carrinhoContainer {
   display: flex;
   justify-content: center;
@@ -1023,8 +1026,8 @@ main.carrinhoContainer {
 
 .navegacao a {
   font-weight: bold;
-  background-color: #444343;
-  border: 1px solid #312f2e;
+  background-color: #6b6966;
+  border: 1px solid #000000;
   padding: 0.8rem 1.5rem;
   font-size: 1rem;
   border-radius: 5px;
@@ -1034,10 +1037,11 @@ main.carrinhoContainer {
 }
 
 .navegacao a:hover {
-  background-color: #05214de1
+  color: white;
+  background-color: #06054df1
 }
 
-/* Resumo da Compra - aside*/
+/* Resumo da Compra - ASIDE*/
 .resumoCompra {
   margin-left: 30px;
   flex: 1;
@@ -1072,14 +1076,6 @@ main.carrinhoContainer {
   border-radius: 4px;
 }
 
-.cupom button {
-  background-color: #eee;
-  border: 1px solid #ccc;
-  padding: 0.5rem;
-  font-size: 1.2rem;
-  border-radius: 4px;
-  cursor: pointer;
-}
 
 .total {
   font-weight: bold;
@@ -1128,15 +1124,21 @@ main.carrinhoContainer {
 
 
 /*Página Login*/
+
+#bodyLogin{
+  background-color: wheat;
+}
+/*Conteiner do Login*/
 section.secaoLogin {
   width: 790px;
-  background: #fffefc81;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffffef;
   border-radius: 16px;
   padding: 4.5rem 2rem 3rem 2rem;
   box-shadow: 0 20px 40px rgba(102, 31, 3, 0.15);
   position: relative;
   overflow: hidden;
-  margin: 2rem auto;
+  margin: 0 auto;
   display: flex;
   gap: 2rem;
   align-items: center;
@@ -1157,6 +1159,7 @@ section.secaoLogin::before {
   z-index: 0;
 }
 
+/*Estilização do ASIDE - Logo*/
 aside.logoContainer {
   flex: 1;
   display: flex;
@@ -1172,6 +1175,7 @@ aside.logoContainer img#logo {
   user-select: none;
 }
 
+/*Formulário do Login*/
 form.formularioLogin {
   flex: 2;
   position: relative;
@@ -1200,6 +1204,7 @@ form.formularioLogin header p {
   font-size: 0.9rem;
 }
 
+/*Estilização do Label*/
 label.labelEmail,
 label.labelSenha {
   font-weight: 600;
@@ -1224,6 +1229,7 @@ input#inputSenha {
   color: #222;
 }
 
+/*Foco para quando é selecionado*/
 input#inputEmail:focus,
 input#inputSenha:focus {
   border-color: #f1bd77;
@@ -1231,6 +1237,7 @@ input#inputSenha:focus {
   outline: none;
 }
 
+/*Links estilizados como botão*/
 a.botaoEntrar {
   margin-top: 0.6rem;
   padding: 0.85rem 0;
@@ -1248,11 +1255,13 @@ a.botaoEntrar {
   width: 100%;
 }
 
+/*Hover*/
 a.botaoEntrar:hover {
   background: #125006;
   box-shadow: 0 5px 9px rgba(75, 212, 12, 0.329);
 }
 
+/*Rodapé do container, onde foram colocados os links para as páginas de Cadastro e Recuperação de Senha*/
 footer.rodapeLogin {
   margin-top: 1.5rem;
   font-size: 0.9rem;
@@ -1294,6 +1303,10 @@ footer.rodapeLogin a:hover {
 
 
 /*Página Endereço*/
+#bodyEndereco{
+  background-color: wheat;
+}
+/*Seção que engloba o Forms*/
 section.secaoEndereco {
   justify-content: center;
   max-width: 590px;
@@ -1322,6 +1335,7 @@ form.formularioEndereco {
   gap: 1.2rem;
 }
 
+/*Estilização do label, input e select*/
 label {
   font-weight: 600;
   color: #444;
@@ -1343,11 +1357,12 @@ select {
   outline-offset: 2px;
 }
 
+/*Foco para quando o campo input e select é selecionado*/
 input:focus,
 select:focus {
-  border-color: #f1bd77;
+ border-color: #f1bd77;
   box-shadow: 0 0 8px #fc9357aa;
-  outline: none;
+  outline: none; 
 }
 
 /* Campos em linha para número + complemento */
@@ -1362,6 +1377,7 @@ select:focus {
   flex-direction: column;
 }
 
+/*Link estilizado como botão para encaminhar para Página Finalizar Pagamento*/
 a.botaoSalvar {
   margin-top: 1.5rem;
   padding: 1rem 0;
@@ -1400,6 +1416,9 @@ a.botaoSalvar:hover {
 
 
 /*Página Finalizar Pagamento*/
+#bodyFinalizarPagamento{
+  background-color: wheat;
+}
 .secaoResumoPagamento {
   margin: 0 auto;
   background: #fff;
@@ -1456,9 +1475,10 @@ a.botaoSalvar:hover {
   border-bottom: none;
 }
 
+/*Estilização das informações do Produto*/
 .resumoProdutos img {
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   border-radius: 12px;
   object-fit: cover;
   margin-right: 1rem;
@@ -1475,14 +1495,22 @@ a.botaoSalvar:hover {
 }
 
 .quantidadeProduto {
-  font-weight: 400;
-  color: #555;
+  font-weight:bold;
+  color: #292a33ee;
 }
 
+.nomeProdutoCarrinho {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  color: #000;
+}
+
+
+/*Preço do produto e do total da compra*/
 .precoProdutoCarrinho {
   flex: 1;
   text-align: right;
-  font-weight: 400;
+  font-weight: bold;
   color: #e60000;
   font-size: 20px;
   min-width: 45px;
@@ -1494,26 +1522,13 @@ a.botaoSalvar:hover {
   font-size: 1.5rem;
   font-weight: 700;
   padding: 1rem 0 0 0;
+  margin-bottom: 15px;
   border-top: 2px solid #f0978c;
-  color: #222;
+  color: #350303;
 }
 
-.asideCartao {
-  flex: 0 0 280px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.nomeProdutoCarrinho {
-  text-align: left;
-}
 
-.asideCartao img {
-  max-width: 100%;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(107, 115, 255, 0.4);
-}
 
 /* Formulário do finalizar pagamento, alguns códigos utilizados para estilização*/
 .formularioPagamento fieldset {
@@ -1546,6 +1561,7 @@ a.botaoSalvar:hover {
   cursor: pointer;
 }
 
+/*Estilização dos campos digitados pelo usuário*/
 .dadosCartao label {
   font-weight: 600;
   font-size: 0.9rem;
@@ -1584,18 +1600,17 @@ a.botaoSalvar:hover {
   flex-direction: column;
 }
 
-/*Mudar o botão*/
+/*Link estilizado como botão para encaminhar para Página Conclusão de Pagamento*/
 .botaoFinalizar {
   display: block;
   margin: 0 auto;
   width: 290px;
   padding: 1rem 0;
   background: #468d30;
-  border: none;
   text-decoration: none;
   border-radius: 14px;
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 17px;
+  font-weight: bold;
   color: white;
   text-align: center;
   cursor: pointer;
@@ -1610,12 +1625,312 @@ a.botaoFinalizar:hover {
 }
 
 
+/*Página Confirmação de Pagamento, com link para acompanhar*/
+#bodyConclusaoPagamento{
+  background-color: wheat;
+}
+.containerPrincipal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-bottom: 50px;
+
+}
+
+.caixaMensagem {
+  background: white;
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  max-width: 700px;
+  text-align: center;
+}
+
+.iconSucesso {
+  color: #28a745;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.tituloPrincipal {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.mensagemConfirmacao {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+/*Estilização dos botões*/
+.botaoLink {
+  background-color: #28a745;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.botaoLink:hover {
+  background-color: #1e7e34;
+}
+
+footer {
+  font-size: 15px;
+  margin-top: 1.5rem;
+}
+
+/*Texto que direciona para página de contato*/
+.textoAjuda{
+  font-size: 15px;
+}
+.textoAjuda a {
+  color: #b05f00;
+  font-size: 15px;
+
+  text-decoration: none;
+}
+
+.textoAjuda a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+/*Página Cadastro*/
+#bodyCadastro{
+  background-color: wheat;
+}
+.cadastroContainer {
+  background-color: #ffffff;
+  max-width: 900px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+.cadastroForm {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 800px;
+}
+
+#cadastroTitulo {
+  text-align: center;
+  font-size: 2rem;
+  color: #070707;
+  margin-bottom: 0.5rem;
+}
+
+.cadastroSubtitulo {
+  text-align: center;
+  color: #666;
+  font-size: 18px;
+  padding-top: 8px;
+}
+
+.grupoCamposLinha {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.grupoCampo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.labelCadastro {
+  font-weight: 600;
+  color: #222;
+}
+
+.inputCadastro {
+  padding: 12px;
+  border: 1.5px solid #000000;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 2px rgba(71, 67, 71, 0.3);
+}
+
+.inputCadastro:focus {
+ border-color: #f1bd77;
+  box-shadow: 0 0 8px #fc9357aa;
+  outline: none;
+}
+
+/*Estilização dos botões*/
+.botaoCadastrarConta {
+  margin: 0 auto;
+  width: 300px;
+  margin-top: 16px;
+  padding: 15px;
+  background-color: #055c1c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 3px 3px rgba(117, 32, 116, 0.3);
+
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+}
+
+.botaoCadastrarConta:hover {
+  background-color: #072e0a;
+}
+
+.botaoIrLogin {
+  color: #222221;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  font-size: 18px;
+  transition: color .2s;
+}
+
+.botaoIrLogin:hover {
+  color: #382206;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*Estilização do checkbox*/
+.checkboxGrupo {
+  display: flex;
+  align-items: center;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  border: none;
+  padding: 0;
+}
+
+.checkboxLabel {
+  font-size: 0.95rem;
+  color: #222;
+  font-size: 16px;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  margin: 15px 0;
+}
+
+.checkboxInput {
+  width: 18px;
+  height: 18px;
+  accent-color: #055481;
+  cursor: pointer;
+  box-shadow: 0 1px 1px rgba(60, 179, 235, 0.3);
+}
+
+#textoLembrarSenha {
+  padding-top: 5px;
+}
 
 
 
 
 
 
+/*Página Recuperar Senha*/
+#bodyRecuperarSenha{
+  background: wheat
+}
+#paginaRecuperacaoSenha{
+  margin-bottom: 90px;
+}
+
+#conteineRecuperarSenha {
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  max-width: 440px;
+
+}
+
+section>header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/*Estilização do texto*/
+.esqueceuSenha {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.caixaRecuperarSenha {
+  display: grid;
+  gap: 0.75rem;
+}
+
+label {
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+input {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border 0.3s;
+}
+
+/*Foco da caixa*/
+input:focus {
+   border-color: #f1bd77;
+  box-shadow: 0 0 8px #fc9357aa;
+  outline: none;
+}
+
+.enviarSenha {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: #3f8b2d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.enviarSenha:hover {
+  background-color: #2e6e20;
+}
+
+footer {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+a {
+  color: #b05f00;
+  text-decoration: none;
+}
 
 
 
@@ -1627,7 +1942,7 @@ a.botaoFinalizar:hover {
 /*Página Perfil*/
 .bodyPerfil {
   margin: 0;
-  background: linear-gradient(to bottom, #f3957d, #f1c2ac);
+  background: wheat;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -1635,7 +1950,7 @@ a.botaoFinalizar:hover {
   display: flex;
   max-width: 1500px;
   margin: 2rem auto;
-  background: #1e293b;
+  background: #682803;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -1643,8 +1958,8 @@ a.botaoFinalizar:hover {
 
 /* ASIDE */
 #sidebarMenu {
-  background-color: #1e293b;
-  color: #290808;
+  background-color: #682803;
+  color: #8a0505;
   width: 250px;
   padding: 2rem;
   display: flex;
@@ -1653,6 +1968,7 @@ a.botaoFinalizar:hover {
   height: 190%;
 }
 
+/*Navegações da side bar*/
 .navigation .navList,
 .logoutList {
   list-style: none;
@@ -1696,6 +2012,7 @@ a.botaoFinalizar:hover {
   margin-bottom: 2rem;
 }
 
+/*Estilo do perfil usuário*/
 .userImage {
   border-radius: 50%;
   width: 100px;
@@ -1706,17 +2023,18 @@ a.botaoFinalizar:hover {
   background-color: #fff;
 }
 
+/*Estilização das informações*/
 .userName {
   font-size: 1.6rem;
   font-weight: bold;
-  color: #1e293b;
+  color: #000103;
 }
 
-/* ARTICLES */
+
 .sectionTitle {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
-  color: #0f172a;
+  color: #405da1;
 }
 
 .userInfo,
@@ -1738,7 +2056,8 @@ a.botaoFinalizar:hover {
   line-height: 1.6;
 }
 
-/* FOOTER - Últimas compras */
+
+/* FOOTER - Últimas compras, histórico */
 .purchaseHistory {
   margin-top: 2rem;
 }
@@ -1756,14 +2075,14 @@ a.botaoFinalizar:hover {
   align-items: center;
   gap: 1rem;
   background-color: #ffffff;
-  padding: 0.75rem;
+  padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .productImage {
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   border-radius: 8px;
   object-fit: cover;
 }
@@ -1776,14 +2095,146 @@ a.botaoFinalizar:hover {
 
 
 
+/*Página Edição Perfil*/
+#tituloEdicaoPerfil {
+  color: white;
+  margin-top: 30px;
+}
+
+/* Encaixa o formulário no conteúdo principal com bom espaçamento */
+#formularioEdicaoPerfil {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 7rem;
+  width: 1000px;
+  margin: 2rem auto;
+  background-color: #ffffff;
+  /* azul escuro do layout */
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+/* Labels visíveis no fundo escuro */
+#formularioEdicaoPerfil label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: #000000;
+  font-size: 1rem;
+}
+
+/* Inputs com contraste e largura fluida */
+#formularioEdicaoPerfil input {
+  padding: 1rem;
+  margin-right: 40px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+  width: 90%;
+}
+
+#formularioEdicaoPerfil input:focus {
+  border-color: #ffa24d;
+  outline: none;
+}
 
 
+/* Botões alinhados, não estourando a largura */
+.botaoSalvarAlteracoes{
+  background-color: #055c1c;
+  width: 170px;
+  padding: 14px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.botaoCancelarAlteracoes{
+  background-color: #9b0b0b;
+  width: 170px;
+  padding: 14px;
+  color: white;
+  margin-left: 200px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+}
+#formularioEdicaoPerfil a:hover {
+  background-color: #5c3b18;
+
+}
 
 
+/*Página Favoritos*/
+.favoritosSection {
+  width: 1200px;
+  padding: 1.5rem;
+  background-color: #fdfdfd;
+}
 
+.sectionTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
 
+.favoriteList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+}
 
+.favoriteItem {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  justify-content: space-between;
+}
 
+/*Informações do produto favoritos*/
+.productImage {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-right: 1rem;
+}
+
+.productInfo {
+  flex-grow: 1;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.productPrice {
+  display: block;
+  color: #d35400;
+  margin-top: 0.25rem;
+  font-weight: bold;
+}
+
+.icons {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  color: #555;
+  cursor: pointer;
+}
+
+.icons i:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+.text-danger {
+  color: red;
+}
 
 
 
@@ -1842,16 +2293,12 @@ a.botaoFinalizar:hover {
 .areaSair {
   margin-top: auto;
 }
+
+/*ícone do caminhão com 75%*/
+#caminhao_icone{
+  left: 75%;
+}
 /*CSS para o ASIDE - FIM*/
-
-
-
-
-
-
-
-
-
 
 
 /* Conteúdo principal */
@@ -1869,6 +2316,7 @@ a.botaoFinalizar:hover {
 }
 
 .nomeUsuario {
+  text-align: left;
   color: #5c3b18;
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
@@ -1879,7 +2327,7 @@ a.botaoFinalizar:hover {
 #tituloProgressoEntrega {
   color: #a25c2a;
   margin-top: 3rem;
-  font-size: 1.2rem;
+  font-size: 26px;
 }
 
 .barraEntregaContainer {
@@ -1950,68 +2398,6 @@ a.botaoFinalizar:hover {
 
 
 
-/*Página Edição Perfil*/
-#tituloEdicaoPerfil {
-  color: white;
-  margin-top: 30px;
-}
-
-/* Encaixa o formulário no conteúdo principal com bom espaçamento */
-#formularioEdicaoPerfil {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem 7rem;
-  width: 1000px;
-  margin: 2rem auto;
-  background-color: #ffffff;
-  /* azul escuro do layout */
-  padding: 2rem;
-  border-radius: 12px;
-}
-
-/* Labels visíveis no fundo escuro */
-#formularioEdicaoPerfil label {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bolder;
-  color: #000000;
-  font-size: 1rem;
-}
-
-/* Inputs com contraste e largura fluida */
-#formularioEdicaoPerfil input {
-  padding: 1rem;
-  margin-right: 40px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
-  background-color: #fff;
-  color: #333;
-  width: 90%;
-}
-
-#formularioEdicaoPerfil input:focus {
-  border-color: #ffa24d;
-  outline: none;
-}
-
-
-/* Botões alinhados, não estourando a largura */
-#formularioEdicaoPerfil a {
-  padding: 0.75rem;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  width: 300px;
-  cursor: pointer;
-  text-align: center;
-  background-color: #a25c2a;
-  color: white;
-  transition: background 0.3s;
-}
-
-#formularioEdicaoPerfil a:hover {
-  background-color: #5c3b18;
-}
 
 
 
@@ -2031,74 +2417,6 @@ a.botaoFinalizar:hover {
 
 
 
-
-/*Página Favoritos*/
-.favoritosSection {
-  width: 1200px;
-  padding: 1.5rem;
-  background-color: #fdfdfd;
-}
-
-.sectionTitle {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: #333;
-}
-
-.favoriteList {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  gap: 1rem;
-}
-
-.favoriteItem {
-  display: flex;
-  align-items: center;
-  background-color: #f8f9fa;
-  padding: 1rem;
-  border-radius: 0.75rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  justify-content: space-between;
-}
-
-.productImage {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-  margin-right: 1rem;
-}
-
-.productInfo {
-  flex-grow: 1;
-  font-size: 0.95rem;
-  color: #333;
-}
-
-.productPrice {
-  display: block;
-  color: #d35400;
-  margin-top: 0.25rem;
-  font-weight: bold;
-}
-
-.icons {
-  display: flex;
-  gap: 0.5rem;
-  font-size: 1.25rem;
-  color: #555;
-  cursor: pointer;
-}
-
-.icons i:hover {
-  transform: scale(1.1);
-  transition: transform 0.2s ease;
-}
-
-.text-danger {
-  color: red;
-}
 
 
 /*Modal Sair da conta*/
@@ -2172,7 +2490,6 @@ a.botaoFinalizar:hover {
 
 
 
-/*Página Cadastro*/
 
 
 
@@ -2203,152 +2520,14 @@ a.botaoFinalizar:hover {
 
 
 
-/*Página Recuperar Senha*/
-#bodyRecuperarSenha{
-  background: linear-gradient(to top,#d1976748, #fff0a357, #faf6e62a);
-}
-#paginaRecuperacaoSenha{
-  margin-bottom: 90px;
-}
-
-#conteineRecuperarSenha {
-  margin: 0 auto;
-  background: white;
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-  max-width: 400px;
-  width: 90%;
-}
-
-section>header {
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-.esqueceuSenha {
-  font-size: 1.5rem;
-  margin: 0.5rem 0;
-}
-
-.caixaRecuperarSenha {
-  display: grid;
-  gap: 0.75rem;
-}
-
-label {
-  font-size: 0.95rem;
-  margin-top: 0.5rem;
-}
-
-input {
-  padding: 0.6rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  transition: border 0.3s;
-}
-
-input:focus {
-  border-color: #48a868;
-  outline: none;
-}
-
-.enviarSenha {
-  margin-top: 1rem;
-  padding: 0.75rem;
-  background-color: #3f8b2d;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  font-size: 1rem;
-  text-align: center;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.enviarSenha:hover {
-  background-color: #2e6e20;
-}
-
-footer {
-  text-align: center;
-  margin-top: 1.5rem;
-  font-size: 0.9rem;
-}
-
-a {
-  color: #b05f00;
-  text-decoration: none;
-}
 
 
 
 
 
 
-/*Página Confirmação de Pagamento, com link para acompanhar*/
-.containerPrincipal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
 
-.caixaMensagem {
-  background: white;
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-  width: 90%;
-  max-width: 400px;
-  text-align: center;
-}
 
-.iconSucesso {
-  color: #28a745;
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.tituloPrincipal {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.mensagemConfirmacao {
-  font-size: 1rem;
-  color: #333;
-  margin-bottom: 2rem;
-}
-
-.botaoLink {
-  background-color: #28a745;
-  color: white;
-  padding: 0.75rem 1.25rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
-  transition: background 0.3s;
-}
-
-.botaoLink:hover {
-  background-color: #1e7e34;
-}
-
-footer {
-  margin-top: 1.5rem;
-  font-size: 0.9rem;
-}
-
-.textoAjuda a {
-  color: #b05f00;
-  text-decoration: none;
-}
-
-.textoAjuda a:hover {
-  text-decoration: underline;
-}
 
 
 
@@ -2484,6 +2663,9 @@ textarea:focus {
 
 
 /*Página Sobre Nós*/
+#bodySobreNos{
+  background-color: wheat;
+}
 .paginaSobre {
   display: flex;
   flex-direction: column;
@@ -2505,6 +2687,7 @@ textarea:focus {
   background-color: #2c2c2c;
 }
 
+/*Imagem*/
 .imagemBloco {
   flex: 1;
 }
@@ -2516,9 +2699,10 @@ textarea:focus {
   display: block;
 }
 
+/*Texto*/
 .textoBloco {
   flex: 2;
-  background-color: #e0e0e0;
+  background-color: #ffffff;
   color: #1e1e1e;
   padding: 2rem;
   display: flex;
@@ -2529,6 +2713,7 @@ textarea:focus {
 .textoBloco h2 {
   margin-bottom: 0.75rem;
   font-size: 1.8rem;
+  color: #c44b1f;
 }
 
 .textoBloco p {
@@ -2584,133 +2769,263 @@ textarea:focus {
   text-align: left;
   margin-bottom: 2rem;
 }
+/*Seção FAQ
+/* Estilo geral da seção */
+#faq {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff9f4;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-/*Página Veja Mais
-  .mainVejaMais{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-      padding: 2rem;
-    }
+/* Título da seção */
+#tituloPerguntasFrequentes {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ff7f50;
+}
 
-    .galeriaProduto {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
+/* Estilo do container de cada pergunta */
+.detailsFaq {
+  margin-bottom: 15px;
+  border: 1px solid #ffd8c2;
+  border-radius: 8px;
+  background-color: #fff;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
 
-    .imagemPrincipal {
-      width: 320px;
-      height: 320px;
-      object-fit: contain;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
+.detailsFaq:hover {
+  box-shadow: 0 2px 10px rgba(255, 127, 80, 0.2);
+}
 
-    .miniaturas {
-      display: flex;
-      gap: 0.5rem;
-      justify-content: center;
-    }
+/* Estilo do título da pergunta */
+.tituloPergunta {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 15px 20px;
+  cursor: pointer;
+  background-color: #ffe5d5;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
 
-    .miniaturas img {
-      width: 60px;
-      height: 60px;
-      object-fit: cover;
-      border-radius: 5px;
-      transition: transform 0.3s ease;
-      cursor: pointer;
-    }
+.tituloPergunta:hover {
+  background-color: #ffdab9;
+}
 
-    .miniaturas img:hover {
-      transform: scale(1.5);
-      z-index: 2;
-    }
+/* Estilo do texto da resposta */
+.textoAparecer {
+  font-size: 1rem;
+  color: #555;
+  padding: 15px 20px;
+  line-height: 1.6;
+  background-color: #fffaf7;
+}
 
-    .infoProduto {
-      max-width: 400px;
-      background-color: #fff;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    }
+/*Seção de Termos*/
+#termosUso {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff9f4;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #444;
+}
 
-    .nomeProduto {
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
-    }
+#tituloTermos {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ff7f50;
+}
 
-    .precoProduto {
-      color: #e53935;
-      font-size: 1.3rem;
-      margin-bottom: 1rem;
-    }
+.textoTermos {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
 
-    .descricaoProduto {
-      margin-bottom: 1rem;
-      line-height: 1.5;
-      color: #555;
-    }
+.listaTermos {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
 
-    .quantidadeProduto {
-      margin-bottom: 1rem;
-    }
-
-    .quantidadeProduto input {
-      width: 60px;
-      padding: 0.3rem;
-      font-size: 1rem;
-    }
-
-    .botoesProduto {
-      display: flex;
-      gap: 1rem;
-    }
-
-    .btnAcao {
-      padding: 0.7rem 1.2rem;
-      border: none;
-      border-radius: 6px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.2s ease;
-    }
-
-    .btnCarrinho {
-      background-color: #4CAF50;
-      color: white;
-    }
-
-    .btnCarrinho:hover {
-      background-color: #3e8e41;
-    }
-
-    .btnContinuar {
-      background-color: #f0ad4e;
-      color: white;
-    }
-
-    .btnContinuar:hover {
-      background-color: #ec971f;
-    }
-
-    @media (max-width: 768px) {
-      main {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .imagemPrincipal {
-        width: 100%;
-        height: auto;
-      }
-
-      .infoProduto {
-        width: 90%;
-      }
-    }
+.listaTermos li {
+  margin-bottom: 15px;
+  background-color: #fffaf7;
+  padding: 15px;
+  border-left: 5px solid #ffb692;
+  border-radius: 6px;
+}
 */
+
+
+
+/*Âncora que será usada nas páginas*/
+/* Estilo do botão voltar ao topo */
+#voltar-topo {
+  position: absolute;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 1000;
+}
+#voltar-topo img {
+  width: 5%;
+  height: 100%;
+  object-fit: contain;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+/*Página Veja Mais*/
+ .paginaProduto {
+  display: flex;
+  max-width: 1200px;
+  margin: 40px auto;
+  gap: 40px;
+  padding: 20px;
+}
+
+.galeriaProduto {
+  flex: 1;
+}
+
+.imagemPrincipal {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.detalhesProdutoVejaMais {
+  flex: 1.2;
+}
+
+.marcaProdutoVejaMais {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+}
+
+.nomeProdutoVejaMais {
+  font-size: 1.5rem;
+  color: #222;
+  margin-top: 5px;
+}
+
+.codigoProduto,
+.avaliacaoProduto {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.infoProdutoVejaMais {
+  margin-top: 20px;
+  padding-left: 20px;
+  list-style-type: disc;
+  color: #444;
+}
+
+.opcoesPeso {
+  margin-top: 20px;
+}
+
+.botoesPeso {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.botaoPeso {
+  padding: 8px 16px;
+  border: 2px solid #ccc;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.botaoPeso.ativo {
+  border-color: #752074;
+  background-color: #f3e0f7;
+  font-weight: bold;
+}
+
+.precoKg {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.compraProduto {
+  margin-top: 30px;
+}
+
+.precoProdutoVejaMais {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.quantidadeVejaMais {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.quantidadeVejaMais button {
+  width: 32px;
+  height: 32px;
+  background-color: #eee;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.quantidadeVejaMais input {
+  width: 50px;
+  text-align: center;
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.botaoAdicionarVejaMais {
+  margin: 0 auto;
+  background-color: #5cb85c;
+  color: white;
+  padding: 15px;
+  width: 150%;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.botaoAdicionarVejaMais:hover {
+  background-color: #449d44;
+}
 
 
 

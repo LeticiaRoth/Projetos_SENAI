@@ -11,7 +11,7 @@
 			/>
 		<link rel="stylesheet" href="style.css" />
 	</head>
-	<body>
+	<body id="bodyFinalizarPagamento">
 		<header>
 			<section class="navegacaoPrincipal">
 				<figure class="logo">
@@ -55,6 +55,7 @@
 			</nav>
 		</header>
 		<main>
+			<!--Seção de Resumo da Compra-->
 			<section class="secaoResumoPagamento" >
 				<header>
 					<h1>Finalizar Compra</h1>
@@ -63,7 +64,8 @@
 					<article class="resumoProdutos" aria-label="Produtos selecionados">
 						<ul>
 							<li>
-								<img src="image/imagens_produtos_aves/imagens_secao_racao/racao_3.svg" alt="" />
+								<!--Produto 1-->
+								<img src="image/imagens_produtos_aves/imagens_secao_racao/racao_3.svg" alt="Ração Sabor frutas, NuTrópica 300g" />
 								<div class="infoProduto">
 									<p class="nomeProdutoCarrinho">Ração Sabor frutas, NuTrópica 300g</p>
 									<p class="quantidadeProduto">Quantidade: 1</p>
@@ -71,7 +73,8 @@
 								<p class="precoProdutoCarrinho">R$15,67</p>
 							</li>
 							<li>
-								<img src="image/imagens_produtos_gatos/imagens_secao_racao/racao_4.png" alt="" />
+								<!--Produto 2-->
+								<img src="image/imagens_produtos_gatos/imagens_secao_racao/racao_4.png" alt="Ração de Frango, Whiskas 900g" />
 								<div class="infoProduto">
 									<p class="nomeProdutoCarrinho">Ração de Frango, Whiskas 900g</p>
 									<p class="quantidadeProduto">Quantidade: 1</p>
@@ -79,7 +82,8 @@
 								<p class="precoProdutoCarrinho">R$78,90</p>
 							</li>
 							<li>
-								<img src="image/imagens_produtos_caes/imagens_secao_racao/racao_3.png" alt="" />
+								<!--Produto 3-->
+								<img src="image/imagens_produtos_caes/imagens_secao_racao/racao_3.png" alt="Ração Carne e Vegetais, Pedigree 2,7Kg" />
 								<div class="infoProduto">
 									<p class="nomeProdutoCarrinho">Ração Carne e Vegetais, Pedigree 2,7Kg </p>
 									<p class="quantidadeProduto">Quantidade: 1</p>
@@ -93,8 +97,10 @@
 						</div>
 					</article>
 				</div>
+				<!--Formulário de Pagamento-->
 				<form class="formularioPagamento" >
 					<fieldset>
+						<!--Utiliza o radio para o usuário selecionar a forma de pagamento-->
 						<legend>Forma de Pagamento</legend>
 						<label>
 						<input type="radio" name="formaPagamento" value="cartao" />
@@ -113,6 +119,7 @@
 						PIX
 						</label>
 					</fieldset>
+					<!--Dados do cartão-->
 					<fieldset class="dadosCartao" aria-label="Dados do cartão de crédito">
 						<label for="nomeTitular">Nome do Titular</label>
 						<input type="text" id="nomeTitular" placeholder="Nome como no cartão" />
@@ -129,6 +136,7 @@
 							</div>
 						</div>
 					</fieldset>
+					<!--Link estilizado como botão para encaminhar para Página Conclusão Pagamento-->
 					<a href="conclusaoPagamento.html" class="botaoFinalizar">Finalizar Compra</a>
 				</form>
 			</section>

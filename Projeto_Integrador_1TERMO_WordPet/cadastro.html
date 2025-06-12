@@ -11,7 +11,7 @@
 			/>
 		<link rel="stylesheet" href="style.css" />
 	</head>
-	<body >
+	<body id="bodyCadastro" >
 		<header>
 			<section class="navegacaoPrincipal">
 				<figure class="logo">
@@ -55,6 +55,64 @@
 			</nav>
 		</header>
 		<main>
+			<!--Container de Cadastro-->
+			<article class="cadastroContainer">
+  <form class="cadastroForm">
+    <section>
+    
+
+      <h1 id="cadastroTitulo">Seja Bem-vindo à WordlPet</h1>
+      <p class="cadastroSubtitulo">Crie sua conta e acesse todos os nossos produtos!</p>
+    </section>
+	<!--Seção de Campo-->
+    <section class="grupoCamposLinha">
+      <fieldset class="grupoCampo">
+        <label for="nome" class="labelCadastro">Nome Completo</label>
+        <input type="text" id="nome" name="nome" class="inputCadastro" placeholder="Insira seu nome completo" autofocus />
+      </fieldset>
+      <fieldset class="grupoCampo">
+        <label for="nascimento" class="labelCadastro">Data de Nascimento</label>
+        <input type="date" id="nascimento" name="nascimento" class="inputCadastro" />
+      </fieldset>
+    </section>
+	<!--Seção de Campo-->
+    <section class="grupoCamposLinha">
+      <fieldset class="grupoCampo">
+        <label for="cpf" class="labelCadastro">CPF</label>
+        <input type="text" id="cpf" name="cpf" class="inputCadastro" placeholder="000.000.000-00" />
+      </fieldset>
+      <fieldset class="grupoCampo">
+        <label for="email" class="labelCadastro">Email</label>
+        <input type="email" id="email" name="email" class="inputCadastro" placeholder="Insira seu e-mail 'seu@email.com'" />
+      </fieldset>
+    </section>
+	<!--Seção de Campo-->
+    <section class="grupoCamposLinha">
+      <fieldset class="grupoCampo">
+        <label for="senha" class="labelCadastro">Criar Senha</label>
+        <input type="password" id="senha" name="senha" class="inputCadastro" placeholder="Crie uma senha" />
+      </fieldset>
+      <fieldset class="grupoCampo">
+        <label for="confirmarSenha" class="labelCadastro">Confirmar Senha</label>
+        <input type="password" id="confirmarSenha" name="confirmarSenha" class="inputCadastro" placeholder="Confirme a senha" />
+      </fieldset>
+    </section>
+	<!--Seção de Checkbox para lembrar a senha-->
+    <fieldset class="checkboxGrupo">
+      <label class="checkboxLabel" for="lembrarSenha">
+        <input type="checkbox" name="lembrarSenha" id="lembrarSenha" class="checkboxInput">
+        <p id="textoLembrarSenha">Lembrar Senha</p>
+      </label>
+    </fieldset>
+
+		<!--Links estilizados para servir como botão-->
+    <a href="endereco.html" class="botaoCadastrarConta" >Cadastrar</a>
+
+    <a href="login.html" class="botaoIrLogin" >Já possui conta? Fazer login</a>
+  </form>
+</article>
+
+		</main>
 			
 		<!--Footer-->
 		<footer class="footer">

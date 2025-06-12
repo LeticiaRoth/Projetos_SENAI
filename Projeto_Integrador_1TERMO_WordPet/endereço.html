@@ -11,7 +11,7 @@
 			/>
 		<link rel="stylesheet" href="style.css" />
 	</head>
-	<body>
+	<body id="bodyEndereco">
 		<header>
 			<section class="navegacaoPrincipal">
 				<figure class="logo">
@@ -55,10 +55,12 @@
 			</nav>
 		</header>
 		<main>
+			<!--Seção de endereço-->
 			<section class="secaoEndereco" aria-label="Formulário de Inserção de Endereço">
 				<header>
 					<h1>Inserir Endereço</h1>
 				</header>
+				<!--Formulário para cadastro do endereço-->
 				<form class="formularioEndereco" novalidate>
 					<label for="inputNomeCompleto">Nome Completo</label>
 					<input type="text" id="inputNomeCompleto" placeholder="Seu nome completo" required />
@@ -79,6 +81,7 @@
 					<label for="inputCidade">Cidade</label>
 					<input type="text" id="inputCidade" placeholder="Cidade" required />
 					<label for="selectEstado">Estado</label>
+					<!--Cria uma drop para selecionar o estado, usando o option-->
 					<select id="selectEstado" required>
 						<option value="" disabled selected>Selecione o estado</option>
 						<option value="AC">Acre</option>
@@ -113,6 +116,7 @@
 					<input type="text" id="inputCep" placeholder="00000-000" pattern="\d{5}-?\d{3}" required />
 					<label for="inputTelefone">Telefone</label>
 					<input type="tel" id="inputTelefone" placeholder="(00) 00000-0000" pattern="\(?\d{2}\)?\s?\d{4,5}-?\d{4}" required />
+					<!--Link estilizado como um botão para encaminhar para Finalizar Pagamento-->
 					<a href="finalizarPagamento.html" class="botaoSalvar">Salvar Endereço</a>
 				</form>
 			</section>

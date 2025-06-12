@@ -40,7 +40,7 @@
 					<i class="bi bi-cart-fill" class="iconesPrincipais"></i> Carrinho
 					</a>
 					<a href="perfil.html" >
-						<i class="bi bi-person-fill" class="iconesPrincipais"></i>
+						<img src="image/icones_nav/icone_minha_conta.png" class="iconesPrincipais" alt="ícone gatinho que representa a conta logada"/>
 						<p>Minha conta</p>
 					</a>
 				</section>
@@ -57,6 +57,7 @@
 		<main class="mainPerfil">
 			<aside id="sidebarMenu">
 				<nav class="navigation">
+					<!--Links de navegação do Sidebar-->
 					<ul class="navList">
 						<li class="navItem"><a href="editarPerfil.html"><i class="bi bi-pencil-square"></i> Editar Perfil</a></li>
 						<li class="navItem"><a href="favoritos.html"><i class="bi bi-star"></i> Favoritos</a></li>
@@ -69,18 +70,20 @@
 			</aside>
 			<section id="conteudoPerfil">
 				<header>
-					<h1 class="nomeUsuario">João Mendes</h1>
+					<h1 class="nomeUsuario">Marcela Alcantara</h1>
 				</header>
 				<section aria-labelledby="tituloAcompanhamento">
 					<h2 id="tituloAcompanhamento">Acompanhar Pedido</h2>
 					<p ><i class="bi bi-receipt"></i> Número do Pedido: <mark>#123456</mark></p>
 					<p ><i class="bi bi-cash-coin"></i> Valor Total: R$ 349,90</p>
+					<!--Processo de entraga utilizando os ícones do bootstrap-->
 					<section aria-labelledby="tituloProgressoEntrega">
 						<h3 id="tituloProgressoEntrega"><i class="bi bi-geo-alt-fill"></i> Progresso da Entrega</h3>
 						<p >Status atual: Saiu para entrega</p>
+						<!--Linh-->
 						<div class="barraEntregaContainer">
 							<progress id="barraProgressoEntrega" value="75" max="100"></progress>
-							<i class="bi bi-truck iconeCaminhao" style="left: 75%;"></i>
+							<i class="bi bi-truck iconeCaminhao" id="caminhao_icone"></i>
 							<i class="bi bi-house-fill iconeCasa"></i>
 						</div>
 						<p>75% do caminho percorrido</p>

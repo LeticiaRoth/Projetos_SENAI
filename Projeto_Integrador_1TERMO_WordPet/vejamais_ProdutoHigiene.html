@@ -1,14 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Login</title>
-        <link rel="icon" href="image/icones_nav/icone_principal.png" type="image/png" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+        <title>Contato</title>
+        <link rel="icon" href="image/ícones/icone_contato.png" type="image/png" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="style.css" />
     </head>
-    <body id="bodyLogin">
+    <body>
         <header>
             <section class="navegacaoPrincipal">
                 <figure class="logo">
@@ -17,7 +21,6 @@
                     </a>
                 </figure>
 
-                <!--Navegação Primária-->
                 <nav aria-label="Menu principal">
                     <ul class="menuPrincipal">
                         <li><a href="index.html">Início</a></li>
@@ -27,11 +30,10 @@
                     </ul>
                 </nav>
 
-                <!-- Barra de pesquisa - ESTÁTICA-->
                 <form class="barraPesquisa" role="search" aria-label="Barra de pesquisa" action="resultado_pesquisa.html">
                         <label for="campoPesquisa" class="campoPesquisa"></label>
                              <input id="campoPesquisa" type="text" placeholder="Pesquise aqui 🐾🐾🐾" />
-                       <a href="resultadoBusca.html" aria-label="Buscar">
+                        <a href="resultadoBusca.html" aria-label="Buscar">
                                 <i class="bi bi-search"></i>
                         </a>
                 </form>
@@ -48,42 +50,62 @@
                 </section>
             </section>
 
-            
-        </header>
-       
-        <main>
-              <section class="secaoLogin">
-      <aside class="logoContainer" >
-        <img id="logo" src="image/icones_nav/icone_principal.png" alt="Logo da WorldPet" />
-      </aside>
-
-        <!--Formulário de Login-->
-      <form class="formularioLogin">
-        <!--Header com nome e a Logo-->
-        <header>
-          <h1>Login na WordlPet</h1>
-          <p>Entre na sua conta para continuar comprando</p>
+            <nav class="navegacaoSecundaria" aria-label="Categorias de produtos">
+                <ul>
+                    <li><a href="produtos_higiene.html">Banho & Higiene</a></li>
+                    <li><a href="produtos_racao.html">Ração</a></li>
+                    <li><a href="produtos_acessorios.html">Brinquedos</a></li>
+                    <li><a href="produtos_roupinhas.html">Roupas & Acessórios</a></li>
+                </ul>
+            </nav>
         </header>
 
-        <label class="labelEmail" for="inputEmail">Email</label>
-        <input type="email" id="inputEmail" placeholder="seuemail@exemplo.com" required />
+          <main class="paginaProduto">
 
-        <label class="labelSenha" for="inputSenha">Senha</label>
-        <input type="password" id="inputSenha" placeholder="••••••••" required />
-
-        <a href="endereço.html" class="botaoEntrar">Entrar</a>
-
-        <!--Links que para Página de Cadastro e Recuperação de Con-->
-        <footer class="rodapeLogin">
-          <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
-         <p>Esqueceu sua senha? <a href="recuperarSenha.html">Esqueci senha</a></p>
-        </footer>
-      </form>
+    <section class="galeriaProduto">
+      <img src="image/imagens_produtos_roedores/imagens_secao_higiene/banho_4.svg" alt="Granulado Higiêncio para Hamster, IpetWoods 1,5Kg" class="imagemPrincipal">
     </section>
 
-        </main>
+    <section class="detalhesProdutoVejaMais">
+      <h2 class="marcaProdutoVejaMais">IpetWoods</h2>
+      <h1 class="nomeProdutoVejaMais">Granulado Higiêncio para Hamster, IpetWoods 1,5Kg</h1>
+      <p class="codigoProdutoVejaMais">Código: 3546549</p>
+      <p class="avaliacaoProduto">⭐ 4.8 (8285 opiniões)</p>
 
-  <!--Footer-->
+      <ul class="infoProdutoVejaMais">
+        <li>Indicada para cães adultos;</li>
+        <li>Blend de proteínas;</li>
+        <li>Músculos mais fortes;</li>
+        <li>Redução do odor das fezes;</li>
+        <li>Mais rendimento por quilo;</li>
+        <li>Saúde e vitalidade;</li>
+        <li>Livre de aromatizantes e corantes artificiais.</li>
+      </ul>
+
+      <div class="opcoesPeso">
+        <label>Escolha uma opção:</label>
+        <div class="botoesPeso">
+          <button class="botaoPeso ativo">1,5 kg</button>
+          <button class="botaoPeso">2,0 kg</button>
+        </div>
+      </div>
+
+      <div class="compraProduto">
+        <p class="precoProdutoVejaMais">R$ 21,50</p>
+        <div class="quantidadeVejaMais">
+  <label for="inputQuantidade">Quantidade:</label>
+  <button type="button">-</button>
+  <input type="number" id="inputQuantidade" value="1" min="1" />
+  <button type="button">+</button>
+</div>
+        <a href="carrinho.html"     class="botaoAdicionarVejaMais">Adicionar ao carrinho</a>
+      </div>
+    </section>
+    
+  </main>
+ 
+
+        <!--Footer-->
         <footer class="footer">
             <!-- Logo e links principais -->
             <section class="footerTop">
@@ -111,16 +133,16 @@
                 <article class="footerColuna">
                     <h3>Formas de Pagamento</h3>
                     <ul class="iconesPagamento">
-                        <li><img src="image/imagens_footer/imagens_pagamento/visa_pagamento.svg" alt="Forma de pagameento - Cartão Visa"/></li>
-                        <li><img src="image/imagens_footer/imagens_pagamento/mastercad_pagamento.svg" alt="Forma de pagameento - Cartão Mastercard"/></li>
-                        <li><img src="image/imagens_footer/imagens_pagamento/elo_pagamento.svg" alt="Forma de pagameento - Cartão Elo"/></li>
-                        <li><img src="image/imagens_footer/imagens_pagamento/pix_pagamento.svg" alt="Forma de pagameento - Pix"/></li>
+                        <li><img src="image/imagens_footer/imagens_pagamento/visa_pagamento.svg" alt="Forma de pagamento, cartão Visa"/></li>
+                        <li><img src="image/imagens_footer/imagens_pagamento/mastercad_pagamento.svg" alt="Forma de pagamento, cartão Mastercard"/></li>
+                        <li><img src="image/imagens_footer/imagens_pagamento/elo_pagamento.svg" alt="Forma de pagamento, cartão Elo"/></li>
+                        <li><img src="image/imagens_footer/imagens_pagamento/pix_pagamento.svg" alt="Forma de pagamento,  Pix"/></li>
                     </ul>
                 </article>
                 <article class="footerColuna">
                     <h3>Siga nas Redes</h3>
                     <ul class="iconesRedes">
-                        <li><a href="#"><img src="image/imagens_footer/imagens_redes_sociais/facebook_redes_sociais.svg" alt="Logo do Facebook"/></a></li>
+                        <li><a href="#"><img src="image/imagens_footer/imagens_redes_sociais/facebook_redes_sociais.svg" alt="Logo do FacebookFacebook"/></a></li>
                         <li><a href="#"><img src="image/imagens_footer/imagens_redes_sociais/instagram_redes_sociais.svg" alt="Logo do Instagram"/></a></li>
                         <li><a href="#"><img src="image/imagens_footer/imagens_redes_sociais/twitter_redes_sociais.svg" alt="Logo do Twitter"/></a></li>
                         <li><a href="#"><img src="image/imagens_footer/imagens_redes_sociais/youtube_redes_sociais.svg" alt="Logo do YouTube"/></a></li>
