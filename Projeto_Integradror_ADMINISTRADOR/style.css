@@ -1,0 +1,323 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/*Página Login - HOME DO ADMINISTRADOR*/
+#bodyLogin {
+  background: linear-gradient(135deg, #e8f5e9, #fff3e0);
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+main.containerLogin {
+  display: flex;
+  max-width: 900px;
+  width: 100%;
+  height: 520px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+section.formularioLogin {
+  padding: 50px 40px;
+  flex-basis: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.formularioLogin h1 {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+section.formularioLogin .subtitulo {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+label {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+}
+
+input:focus {
+  border-color: #2e7d32;
+  box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.2);
+}
+
+a {
+  background-color: #2e7d32;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: #256428;
+}
+
+/*Aside que funciona como a navegação do admin*/
+aside.areaImagem {
+  background-color: #2e7d32;
+  flex-basis: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+aside.areaImagem img {
+  max-width: 200px;
+  height: auto;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+
+
+
+/* Sidebar fixa lateral */
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background-color: #4caf50;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+/* Logo com imagem */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+.logo img {
+  max-width: 170px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+/* Navegação: ocupar espaço restante e organizar links */
+.sidebar nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+/* Listas do menu sem estilos padrão */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Espaçamento entre itens */
+nav ul.menu-principal li,
+nav ul.menu-sair li {
+  margin: 10px 0;
+}
+
+/* Links do menu */
+nav ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 12px 20px;
+  color: white;
+  transition: background 0.3s ease;
+  font-size: 1rem;
+  border-left: 4px solid transparent;
+}
+
+/* Ícones com espaçamento */
+nav ul li a i.bi {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* Efeito hover e ativo */
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-left: 4px solid #ffffff;
+}
+
+/* Menu Sair fica sempre no rodapé d */
+nav ul.menu-sair {
+  margin-top: auto;
+  padding-bottom: 20px;
+}
+
+/*Estilização da Página dashboard*/
+.dashboard {
+  padding: 20px;
+  margin-left: 260px; /* para respeitar sidebar fixa */
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  flex: 1 1 200px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.card .icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+}
+
+.card .content .title {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0 0 4px 0;
+  font-weight: 600;
+}
+
+.card .content .value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 6px 0;
+  color: #333;
+}
+
+.card .content .subtitle {
+  font-size: 0.75rem;
+  color: #999;
+  margin: 0;
+}
+
+/* Cores dos ícones igual ao modelo da imagem enviada */
+
+.card-users .icon {
+  background-color: #f0ad4e; /* Laranja */
+}
+
+.card-products .icon {
+  background-color: #5cb85c; /* Verde */
+}
+
+.card-orders .icon {
+  background-color: #d9534f; /* Vermelho */
+}
+
+.card-feedbacks .icon {
+  background-color: #5bc0de; /* Azul */
+}
+
+
+body {
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+  padding: 2rem;
+}
+
+section {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.graficoAreaConteudo,
+.graficoBarraConteudo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 200px;
+  border-left: 1px solid #240d0d;
+  border-bottom: 1px solid #ccc;
+  padding: 1rem 0 0 1rem;
+  gap: 1rem;
+}
+
+.graficoAreaConteudo figure,
+.graficoBarraConteudo figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50px;
+}
+
+.graficoAreaConteudo figure::before,
+.graficoBarraConteudo figure::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: var(--altura);
+  background-color: rgba(54, 162, 235, 0.6);
+  border-radius: 4px 4px 0 0;
+  transition: height 0.3s;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
