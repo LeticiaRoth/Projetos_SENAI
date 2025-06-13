@@ -1,11 +1,12 @@
 # Projeto Integrador - WORLDPET
 
 ### 💬 Recado
--> 11/06/2025 - Estilizar e documentar
+-> Parte Usuário - FINALIZADA
+-> Parte Administrador - ANDAMENTO
 
 
 <p align="center">
-  <img src="Projeto_Integrador_1TERMO_WordPet/image/icones_nav/icone_principal.png" alt="Logo do WorldPet" width="200">
+  <img src="Projeto_Integrador_USUARIO/image/icones_nav/icone_principal.png" alt="Logo do WorldPet" width="200">
   <br>
   <strong>
     Desenvolvedora: Letícia Alves Roth
