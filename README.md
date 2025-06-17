@@ -36,10 +36,16 @@ O objetivo principal é garantir praticidade e bem-estar para os tutores e seus 
 - Finalização das comprar
 - Inserir endereço
 
+
 #### ADMINISTRADOR
 - Adicionar produtos
 - Excluir produtos
-- 
+- Visualizar Produto
+- Editar produto
+- Visualizar dashboard
+- Visualizar pedidos
+- Visualizar clientes
+- Desativar e ativar usuários
 
 
 ---
