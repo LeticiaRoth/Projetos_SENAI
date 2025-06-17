@@ -25,11 +25,22 @@ O objetivo principal é garantir praticidade e bem-estar para os tutores e seus 
 
 ### 💡 Funcionalidades do Site 
 
+#### USUÁRIO
 - Catálogo completo de produtos pet
 - Sistema de busca e categorias
 - Carrossel de destaques e lançamentos
 - Carrinho de compras
 - Depoimentos de clientes
+- Visualização dos catálogos por animais e categorias
+- Login e cadastro dos usuários
+- Finalização das comprar
+- Inserir endereço
+
+#### ADMINISTRADOR
+- Adicionar produtos
+- Excluir produtos
+- 
+
 
 ---
 
