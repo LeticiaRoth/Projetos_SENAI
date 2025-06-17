@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WorldPet | Painel do Administrador</title>
+  <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <aside class="barraLateral" aria-label="Menu de navegação administrativo">
+    <header class="areaLogo">
+      <img src="images/icone_principal.png" alt="Logo WorldPet" />
+    </header>
+    <nav>
+      <ul class="menuPrincipal">
+        <li><a href="dashboard.html" class="ativo"><i class="bi bi-speedometer2"></i> Dashboard</a></li>
+        <li><a href="gestao_produtos.html"><i class="bi bi-box-seam"></i> Gestão de Produtos</a></li>
+        <li><a href="painel_pedidos.html"><i class="bi bi-cart4"></i> Painel de Pedidos</a></li>
+        <li><a href="clientes.html"><i class="bi bi-people"></i> Clientes</a></li>
+      </ul>
+      <ul class="menuSair">
+        <li><a href="modal_sair.html"><i class="bi bi-box-arrow-right"></i> Sair</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+
+   <main class="conteudoEdicao">
+    <section class="secaoFormulario">
+      <h1 class="tituloEdicao">Editar Produto</h1>
+
+      <section class="secaoImagemProduto">
+        <img src="imagens/racao_golden.png" alt="Imagem do Produto" class="imagemProduto" />
+        <figcaption class="legendaImagem">Imagem atual do produto</figcaption>
+      </section>
+
+      <form action="produto-atualizado.html" method="post" class="formularioEdicao">
+
+        <label for="nomeProduto" class="etiquetaCampo">Nome do Produto:</label>
+        <input type="text" id="nomeProduto" name="nomeProduto" value="Ração Golden 15kg" class="campoTexto" required>
+
+        <label for="categoriaProduto" class="etiquetaCampo">Categoria:</label>
+        <select id="categoriaProduto" name="categoriaProduto" class="campoSelecao">
+          <option value="caes" selected>Cães</option>
+          <option value="gatos">Gatos</option>
+          <option value="higiene">Higiene</option>
+          <option value="brinquedos">Brinquedos</option>
+          <option value="roupas">Roupas</option>
+        </select>
+
+        <label for="precoProduto" class="etiquetaCampo">Preço:</label>
+        <input type="number" id="precoProduto" name="precoProduto" value="199.90" step="0.01" class="campoTexto" required>
+
+        <label for="estoqueProduto" class="etiquetaCampo">Estoque:</label>
+        <input type="number" id="estoqueProduto" name="estoqueProduto" value="42" class="campoTexto" required>
+
+        <label for="descricaoProduto" class="etiquetaCampo">Descrição:</label>
+        <textarea id="descricaoProduto" name="descricaoProduto" rows="4" class="campoTexto">Ração premium para cães adultos.</textarea>
+
+        <footer class="botoesFormulario">
+          <a href="gestao_produtos.html" class="botaoSalvarEdicao"><i class="bi bi-check2-circle"></i> Salvar</a>
+          <a href="gestao_produtos.html" class="botaoCancelarEdicao"><i class="bi bi-x-circle"></i> Cancelar</a>
+        </footer>
+
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>

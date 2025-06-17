@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WorldPet | Painel do Administrador</title>
+  <!-- Ícones do Bootstrap -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Menu lateral -->
+  <aside class="barraLateral" aria-label="Menu de navegação administrativo">
+    <header class="areaLogo">
+      <img src="images/icone_principal.png" alt="Logo WorldPet" />
+    </header>
+    <nav>
+      <ul class="menuPrincipal">
+        <li><a href="dashboard.html" class="ativo"><i class="bi bi-speedometer2"></i> Dashboard</a></li>
+        <li><a href="gestao_produtos.html"><i class="bi bi-box-seam"></i> Gestão de Produtos</a></li>
+        <li><a href="painel_pedidos.html"><i class="bi bi-cart4"></i> Pedidos</a></li>
+        <li><a href="clientes.html"><i class="bi bi-people"></i> Clientes</a></li>
+      </ul>
+      <ul class="menuSair">
+        <li><a href="modal_sair.html"><i class="bi bi-box-arrow-right"></i> Sair</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Conteúdo principal: formulário de produto -->
+  <main id="areaAdicionarProduto">
+    <section id="secaoFormularioProduto">
+      <h1 id="tituloAdicionarProduto">Adicionar Novo Produto</h1>
+
+      <form id="formularioCadastroProduto">
+        <fieldset class="grupoCampos">
+          <legend>Informações Básicas</legend>
+
+          <label for="imagemProduto">Foto do Produto:</label>
+          <figure id="imagemProduto">
+            <!-- Imagem fixa no código -->
+            <img src="images/icone_principal.png" alt="Imagem exemplo do produto" class="imagemExemploProduto">
+          </figure>
+
+          <label for="nomeProduto">Nome do Produto:</label>
+          <input type="text" id="nomeProduto" name="nomeProduto" required>
+
+          <label for="marcaProduto">Marca:</label>
+          <input type="text" id="marcaProduto" name="marcaProduto" required>
+
+          <label for="descricaoProduto">Descrição:</label>
+          <textarea id="descricaoProduto" name="descricaoProduto" rows="4" required></textarea>
+
+          <label for="precoProduto">Preço (R$):</label>
+          <input type="number" id="precoProduto" name="precoProduto" step="0.01" required>
+        </fieldset>
+
+        <fieldset class="grupoCampos">
+          <legend>Categorias</legend>
+
+            <!--Dropbox da seção de animais-->
+          <label for="categoriaAnimal">Animal:</label>
+          <select id="categoriaAnimal" name="categoriaAnimal" required>
+            <option value="">Selecione</option>
+            <option value="caes">Cães</option>
+            <option value="gatos">Gatos</option>
+            <option value="aves">Aves</option>
+            <option value="roedores">Roedores</option>
+            <option value="peixes">Peixes</option>
+          </select>
+
+          <!--Dropbox da seção de categoria-->
+          <label for="categoriaProduto">Categoria:</label>
+          <select id="categoriaProduto" name="categoriaProduto" required>
+            <option value="">Selecione</option>
+            <option value="banhoHigiene">Banho & Higiene</option>
+            <option value="racao">Ração</option>
+            <option value="roupa">Roupa</option>
+            <option value="brinquedos">Brinquedos</option>
+          </select>
+        </fieldset>
+
+        <!-- Botões -->
+        <section id="acoesFormulario">
+          <label for="abrirModalCancelar" id="botaoCancelar">Cancelar</label>
+          <a href="gestao_produtos.html" id="botaoAdicionar">Adicionar Produto</a>
+        </section>
+      </form>
+    </section>
+
+    <!-- Modal para confirmar cancelamento -->
+    <section id="overlayConfirmacao">
+      <input type="checkbox" id="abrirModalCancelar">
+      <label for="abrirModalCancelar" id="fundoModal"></label>
+
+      <article id="janelaModal">
+        <header>
+          <h2>Tem certeza que deseja cancelar?</h2>
+        </header>
+        <footer id="acoesModal">
+          <a href="dashboard.html" id="botaoConfirmarCancelar">Sim, cancelar</a>
+          <label for="abrirModalCancelar" id="botaoFecharModal">Voltar</label>
+        </footer>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

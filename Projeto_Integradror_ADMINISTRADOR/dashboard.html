@@ -11,119 +11,91 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <aside class="sidebar" aria-label="Menu de navegação administrativo">
-    <header class="logo">
+  <aside class="barraLateral" aria-label="Menu de navegação administrativo">
+    <header class="areaLogo">
       <img src="images/icone_principal.png" alt="Logo WorldPet" />
     </header>
     <nav>
-      <ul class="menu-principal">
-        <li><a href="#" class="active"><i class="bi bi-speedometer2"></i> Dashboard</a></li>
-        <li><a href="#"><i class="bi bi-box-seam"></i> Gestão de Produtos</a></li>
-        <li><a href="#"><i class="bi bi-cart4"></i> Pedidos</a></li>
-        <li><a href="#"><i class="bi bi-people"></i> Clientes</a></li>
+      <ul class="menuPrincipal">
+        <li><a href="dashboard.html" class="ativo"><i class="bi bi-speedometer2"></i> Dashboard</a></li>
+        <li><a href="gestao_produtos.html"><i class="bi bi-box-seam"></i> Gestão de Produtos</a></li>
+        <li><a href="painel_pedidos.html"><i class="bi bi-cart4"></i> Painel de Pedidos</a></li>
+        <li><a href="clientes.html"><i class="bi bi-people"></i> Painel de Clientes</a></li>
       </ul>
-      <ul class="menu-sair">
-        <li><a href="#"><i class="bi bi-box-arrow-right"></i> Sair</a></li>
+      <ul class="menuSair">
+        <li><a href="modal_sair.html"><i class="bi bi-box-arrow-right"></i> Sair</a></li>
       </ul>
     </nav>
   </aside>
-  <main class="dashboard">
-  <section class="cards">
-    <article class="card card-users">
-      <div class="icon">
-        <i class="bi bi-people-fill"></i>
-      </div>
-      <div class="content">
-        <p class="title">Usuários Ativos</p>
-        <p class="value">1,245</p>
-        <p class="subtitle">Nos últimos 24h</p>
-      </div>
-    </article>
 
-    <article class="card card-products">
-      <div class="icon">
-        <i class="bi bi-box-seam"></i>
-      </div>
-      <div class="content">
-        <p class="title">Produtos em Estoque</p>
-        <p class="value">3,432</p>
-        <p class="subtitle">Atualizado recentemente</p>
-      </div>
-    </article>
+  <main>
+    <!--Cartões que ficam no dashboard para infromações gerais-->
 
-    <article class="card card-orders">
-      <div class="icon">
-        <i class="bi bi-basket-fill"></i>
-      </div>
-      <div class="content">
-        <p class="title">Pedidos do Dia</p>
-        <p class="value">256</p>
-        <p class="subtitle">Pedidos processados hoje</p>
-      </div>
-    </article>
+    <!--Usuários ativos-->
+    <section class="cartoesResumo">
+      <article class="cartaoInformativo usuariosAtivos">
+        <header class="iconeCartao">
+          <i class="bi bi-people-fill"></i>
+        </header>
+        <section class="conteudoCartao">
+          <p class="tituloCartao">Usuários Ativos</p>
+          <p class="valorCartao">1.245</p>
+          <p class="descricaoCartao">Nos últimos 24h</p>
+        </section>
+      </article>
 
-    <article class="card card-feedbacks">
-      <div class="icon">
-        <i class="bi bi-chat-dots-fill"></i>
-      </div>
-      <div class="content">
-        <p class="title">Feedbacks Enviados</p>
-        <p class="value">98</p>
-        <p class="subtitle">Feedbacks recebidos</p>
-      </div>
-    </article>
-  </section>
+      <!--Produtos em estoque-->
+      <article class="cartaoInformativo produtosEstoque">
+        <header class="iconeCartao">
+          <i class="bi bi-box-seam"></i>
+        </header>
+        <section class="conteudoCartao">
+          <p class="tituloCartao">Produtos em Estoque</p>
+          <p class="valorCartao">3.432</p>
+          <p class="descricaoCartao">Atualizado recentemente</p>
+        </section>
+      </article>
 
+      <!--Pedidos processados no dia atual-->
+      <article class="cartaoInformativo pedidosDia">
+        <header class="iconeCartao">
+          <i class="bi bi-basket-fill"></i>
+        </header>
+        <section class="conteudoCartao">
+          <p class="tituloCartao">Pedidos do Dia</p>
+          <p class="valorCartao">256</p>
+          <p class="descricaoCartao">Pedidos processados hoje</p>
+        </section>
+      </article>
 
-  <section class="graficoArea">
-    <header>
-      <h2>📊 Produtos Vendidos por Seção</h2>
-    </header>
-    <article class="graficoAreaConteudo">
-      <figure style="--altura: 60%">
-        <figcaption>Brinquedos</figcaption>
-      </figure>
-      <figure style="--altura: 100%">
-        <figcaption>Rações</figcaption>
-      </figure>
-      <figure style="--altura: 72%">
-        <figcaption>Roupas</figcaption>
-      </figure>
-      <figure style="--altura: 38%">
-        <figcaption>Banho & Higiene</figcaption>
-      </figure>
-    </article>
-  </section>
+      <!--Feedbacks enviados-->
+      <article class="cartaoInformativo feedbacksRecebidos">
+        <header class="iconeCartao">
+          <i class="bi bi-chat-dots-fill"></i>
+        </header>
+        <section class="conteudoCartao">
+          <p class="tituloCartao">Feedbacks Enviados</p>
+          <p class="valorCartao">98</p>
+          <p class="descricaoCartao">Feedbacks recebidos</p>
+        </section>
+      </article>
+    </section>
 
-  <section class="graficoBarra">
-    <header>
-      <h2>📈 Vendas Mensais</h2>
-    </header>
-    <article class="graficoBarraConteudo">
-      <figure style="--altura: 25%">
-        <figcaption>Janeiro</figcaption>
+    <!--Seção com gráficos em imagens-->
+    <section class="secaoResumo">
+      <h2 class="tituloResumo">📊 Produtos Vendidos por Seção</h2>
+      <figure class="areaGrafico">
+        <img src="images/icone_principal.png" alt="Gráfico de Produtos por Seção">
+        <figcaption class="legendaGrafico">Gráfico ilustrativo das seções de produtos vendidos</figcaption>
       </figure>
-      <figure style="--altura: 35%">
-        <figcaption>Fevereiro</figcaption>
-      </figure>
-      <figure style="--altura: 45%">
-        <figcaption>Março</figcaption>
-      </figure>
-      <figure style="--altura: 60%">
-        <figcaption>Abril</figcaption>
-      </figure>
-      <figure style="--altura: 80%">
-        <figcaption>Maio</figcaption>
-      </figure>
-      <figure style="--altura: 100%">
-        <figcaption>Junho</figcaption>
-      </figure>
-    </article>
-  </section>
+    </section>
 
-
-</main>
-
-
+    <section class="secaoResumo">
+      <h2 class="tituloResumo">📈 Vendas Mensais</h2>
+      <figure class="areaGrafico">
+        <img src="images/icone_principal.png" alt="Gráfico de Vendas Mensais">
+        <figcaption class="legendaGrafico">Representação gráfica das vendas por mês</figcaption>
+      </figure>
+    </section>
+  </main>
 </body>
-</html>
