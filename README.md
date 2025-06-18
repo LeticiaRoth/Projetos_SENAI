@@ -2,7 +2,7 @@
 
 ### 💬 Recado
 -> Parte Usuário - FINALIZADA
--> Parte Administrador - ANDAMENTO
+-> Parte Administrador - Finalizada
 
 
 <p align="center">
