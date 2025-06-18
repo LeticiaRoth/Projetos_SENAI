@@ -1,10 +1,5 @@
 # Projeto Integrador - WORLDPET
 
-### 💬 Recado
--> Parte Usuário - FINALIZADA
--> Parte Administrador - Finalizada
-
-
 <p align="center">
   <img src="Projeto_Integrador_USUARIO/image/icones_nav/icone_principal.png" alt="Logo do WorldPet" width="200">
   <br>
