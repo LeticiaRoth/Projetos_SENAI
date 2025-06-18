@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>WorldPet | Painel do Administrador</title>
+  <title>Adicionar produto</title>
+  <link rel="icon" href="images/icones/icone_principal.png" type="image/png" />
   <!-- Ícones do Bootstrap -->
   <link 
     rel="stylesheet" 
@@ -33,16 +34,17 @@
   <!-- Conteúdo principal: formulário de produto -->
   <main id="areaAdicionarProduto">
     <section id="secaoFormularioProduto">
-      <h1 id="tituloAdicionarProduto">Adicionar Novo Produto</h1>
+      <h1 id="tituloAdicionarProduto"><i class="bi bi-plus-square-fill">Adicionar Novo Produto</i></h1>
 
       <form id="formularioCadastroProduto">
         <fieldset class="grupoCampos">
           <legend>Informações Básicas</legend>
 
-          <label for="imagemProduto">Foto do Produto:</label>
-          <figure id="imagemProduto">
+          <label class="imagemProdutoAdicionar">Foto do Produto:</label>
+          <figure id="imagemProdutoAdicionar">
             <!-- Imagem fixa no código -->
-            <img src="images/icone_principal.png" alt="Imagem exemplo do produto" class="imagemExemploProduto">
+            <img src="images/imagens_produtos_gatos/imagens_secao_racao/racao_3.png" alt="Imagem exemplo do produto" class="imagemExemploProduto">
+            <figcaption class="legendaImagemAdicionar">Imagem Ração GoldeN Gatos</figcaption>
           </figure>
 
           <label for="nomeProduto">Nome do Produto:</label>

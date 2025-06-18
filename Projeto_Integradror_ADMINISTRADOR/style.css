@@ -17,46 +17,45 @@ body {
   min-height: 100vh;
 }
 
-main.containerLogin {
+.containerLogin {
   display: flex;
-  max-width: 900px;
-  width: 100%;
-  height: 520px;
+  width: 750px;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
+
 }
 
 section.formularioLogin {
-  padding: 50px 40px;
-  flex-basis: 55%;
+  padding: 32px;
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 section.formularioLogin h1 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #2e7d32;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   font-weight: bold;
 }
 
 section.formularioLogin .subtitulo {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: #555;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
 }
 
 label {
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   color: #333;
 }
 
@@ -64,7 +63,7 @@ input {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
-  font-size: 1rem;
+  font-size: 0.95rem;
   outline: none;
 }
 
@@ -76,19 +75,31 @@ input:focus {
 a {
   background-color: #2e7d32;
   color: white;
-  padding: 12px;
+  padding: 10px;
   text-align: center;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
 a:hover {
   background-color: #256428;
+}
+
+section.logoLogin {
+  background-color: #0b3d10;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.logoLogin img {
+  max-width: 150px;
 }
 
 
@@ -393,8 +404,8 @@ main {
 }
 
 .imagemProduto {
-  width: 10px;
-  height: 10px;
+  width: 90px;
+  height: 90px;
   object-fit: cover;
   border-radius: 6px;
 }
@@ -466,6 +477,7 @@ td {
 .tituloPainelPedidos {
   text-align: center;
   color: #2d3436;
+  font-size: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -740,7 +752,7 @@ a.botaoConfirmar:hover {
 
 
 #paginaModalDesativado{
-  background-color: rgba(245, 222, 179, 0.466);
+  background-color:  rgba(245, 222, 179, 0.466);
 }
 
 /*Modal usuário desativado*/
@@ -816,6 +828,8 @@ a.botaoRetornarGestao:hover {
 /*Modal usuário ativado*/
 main.fundoModalAtivado {
   display: flex;
+  margin: 0 auto;
+  background-color: rgba(245, 222, 179, 0.466);
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -834,7 +848,7 @@ section.cartaoModalAtivado {
 
 .iconeAtivadoAnimado {
   font-size: 3rem;
-  color: #2a9d8f;
+  color: #2a9d3d;
   animation: pulsar 1.2s ease-in-out infinite alternate;
 }
 
@@ -886,17 +900,19 @@ a.botaoRetornarGestao:hover {
 /*Página Adicionar - BOTÃO*/
 #areaAdicionarProduto {
   padding: 30px;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.541);
 }
 
 #secaoFormularioProduto {
   max-width: 800px;
   margin: auto;
+  background-color: #fcffff;
 }
 
 #tituloAdicionarProduto {
   text-align: center;
-  color: #2e7d32;
+  margin-left: 4px;
+  color: #1f1101;
   margin-bottom: 30px;
 }
 
@@ -915,6 +931,7 @@ a.botaoRetornarGestao:hover {
 
 .imagemExemploProduto {
   width: 200px;
+  justify-content: center;
   height: auto;
   border-radius: 10px;
   margin-top: 10px;
@@ -949,16 +966,27 @@ textarea {
   margin-top: 20px;
 }
 
-#botaoAdicionar,
+
 #botaoCancelar {
   text-decoration: none;
-  padding: 12px 24px;
+  padding: 12px 20px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease;
   text-align: center;
 }
+
+#botaoAdicionar{
+  text-decoration: none;
+  padding: 17px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
 
 #botaoAdicionar {
   background-color: #4caf50;
@@ -978,9 +1006,16 @@ textarea {
   background-color: #b71c1c;
 }
 
+.legendaImagemAdicionar{
+  font-size: 0.9rem;
+  text-align: center;
+  color: #666;
+  margin-top: 0.5rem;
+}
 
-
-
+.imagemExemploProduto{
+  margin-left: 230px;
+}
 
 /*Página Visualizar - BOTÃO CATÁLOGO*/
 header#cabecalhoPagina {
@@ -993,6 +1028,7 @@ h1.tituloPagina {
   color: #005f73;
   margin: 0;
 }
+
 
 main#conteudoPrincipal {
   max-width: 900px;
@@ -1166,16 +1202,21 @@ nav a.botaoConfirmar {
 
 
 /*Página Editar*/
-
+#bodyEdicao{
+  background-color: rgba(245, 222, 179, 0.486);
+}
 .conteudoEdicao {
   padding: 2rem;
   max-width: 700px;
   margin: auto;
   background-color: white;
   border-radius: 0.5rem;
+  border: 5px solid;
+  border-color: #422602b7;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/*Título da edição*/
 .tituloEdicao {
   text-align: center;
   font-size: 2rem;
@@ -1187,8 +1228,9 @@ nav a.botaoConfirmar {
   margin-bottom: 1rem;
 }
 
+/*Imagem produto da página editar*/
 .imagemProduto {
-  width: 160px;
+  width: 260px;
   height: auto;
   border-radius: 0.3rem;
   border: 1px solid #ccc;
@@ -1202,6 +1244,7 @@ nav a.botaoConfirmar {
 
 .secaoFormulario {
   display: flex;
+  margin: 0 auto;
   flex-direction: column;
 }
 

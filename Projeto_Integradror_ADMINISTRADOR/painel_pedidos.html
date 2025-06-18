@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Painel Pedidos</title>
+    <link rel="icon" href="images/icones/icone_principal.png" type="image/png" />
+
+  <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <aside class="barraLateral" aria-label="Menu de navegação administrativo">
+    <header class="areaLogo">
+      <img src="images/icones/icone_principal.png" alt="Logo WorldPet" />
+    </header>
+    <nav>
+      <ul class="menuPrincipal">
+        <li><a href="dashboard.html"><i class="bi bi-speedometer2"></i> Dashboard</a></li>
+        <li><a href="gestao_produtos.html"><i class="bi bi-box-seam"></i> Gestão de Produtos</a></li>
+        <li><a href="painel_pedidos.html" class="ativo"><i class="bi bi-cart4" class="ativo"></i> Panel de Pedidos</a></li>
+        <li><a href="clientes.html"><i class="bi bi-people"></i> Painel de Clientes</a></li>
+      </ul>
+      <ul class="menuSair">
+        <li><a href="modal_sair.html"><i class="bi bi-box-arrow-right"></i> Sair</a></li>
+      </ul>
+    </nav>
+  </aside>
+   
+  <main>
+     <section class="secaoTabelaPedidos">
+         <header>
+    <h1 class="tituloPainelPedidos"><i class="bi bi-box-seam"></i> Administração de Pedidos - WorldPet</h1>
+  </header>
+      <table class="tabelaPedidosAdmin">
+  <thead>
+    <tr>
+      <th class="colunaUsuario">Nome do Cliente</th>
+      <th class="colunaUser">@User</th>
+      <th class="colunaImagem">Foto do Produto</th>
+      <th class="colunaPreco">Preço</th>
+      <th class="colunaEndereco">Endereço de Entrega</th>
+      <th class="colunaStatus">Status</th>
+      <th class="colunaSituacao">Situação</th>
+    </tr>
+  </thead>
+<tbody>
+  <tr class="linhaPedido">
+    <td class="celulaNome">Marina Castro</td>
+    <td class="celulaUser">@marinac</td>
+    <td class="celulaImagem"><img src="images/imagens_produtos_gatos/imagens_secao_racao/racao_1.png" alt="Ração Nuggets Recheados, Cat & Cat 1Kg" class="imagemProdutoPedido"></td>
+    <td class="celulaPreco">R$34,56</td>
+    <td class="celulaEndereco">Rua Augusta, 1500 - São Paulo, SP</td>
+    <td class="celulaStatus"><i class="bi bi-clock statusPendenteIcone"></i> Pendente</td>
+    <td class="celulaSituacao"><time datetime="2025-06-17">17/06/2025</time></td>
+  </tr>
+  <tr class="linhaPedido">
+    <td class="celulaNome">André Moreira</td>
+    <td class="celulaUser">@andre.moreira</td>
+    <td class="celulaImagem"><img src="images/imagens_produtos_caes/imagens_secao_brinquedos/brinquedo_2.svg" alt="Comedor interativo para filhotes, Petz" class="imagemProdutoPedido"></td>
+    <td class="celulaPreco">R$12,86</td>
+    <td class="celulaEndereco">Av. Paulista, 1578 - Bela Vista, São Paulo</td>
+    <td class="celulaStatus"><i class="bi bi-check-circle-fill statusEntregueIcone"></i> Entregue</td>
+    <td class="celulaSituacao"><time datetime="2025-06-15">15/06/2025</time></td>
+  </tr>
+  <tr class="linhaPedido">
+    <td class="celulaNome">Clara Bezerra</td>
+    <td class="celulaUser">@clarab</td>
+    <td class="celulaImagem"><img src="images/imagens_produtos_roedores/imagens_secao_roupa_acessorios/roupa_5.svg" alt="Roupa personalizada do Capitão América" class="imagemProdutoPedido"></td>
+    <td class="celulaPreco">R$9,50</td>
+    <td class="celulaEndereco">Rua das Acácias, 500 - Boa Viagem, Recife</td>
+    <td class="celulaStatus"><i class="bi bi-truck statusCaminhoIcone"></i> A caminho</td>
+    <td class="celulaSituacao"><time datetime="2025-06-18">18/06/2025</time></td>
+  </tr>
+  <tr class="linhaPedido">
+    <td class="celulaNome">Rafael Lima</td>
+    <td class="celulaUser">@rafa.lima</td>
+    <td class="celulaImagem"><img src="images/imagens_produtos_roedores/imagens_secao_racao/racao_2.svg" alt="Ração para Coelho Adulto, NuTrópica 500g" class="imagemProdutoPedido"></td>
+    <td class="celulaPreco">R$18,70</td>
+    <td class="celulaEndereco">Av. Sete de Setembro, 1234 - Centro, Curitiba</td>
+    <td class="celulaStatus"><i class="bi bi-check-circle-fill statusEntregueIcone"></i> Entregue</td>
+    <td class="celulaSituacao"><time datetime="2025-06-14">14/06/2025</time></td>
+  </tr>
+  <tr class="linhaPedido">
+    <td class="celulaNome">Juliana Ramos</td>
+    <td class="celulaUser">@juhramos</td>
+    <td class="celulaImagem"><img src="images/imagens_produtos_gatos/imagens_secao_higiene/banho_1.svg" alt="Shampoo para gatos, Sanol 500mL" class="imagemProdutoPedido"></td>
+    <td class="celulaPreco">R$15,90</td>
+    <td class="celulaEndereco">Rua XV de Novembro, 80 - Centro, Blumenau</td>
+    <td class="celulaStatus"><i class="bi bi-clock statusPendenteIcone"></i> Pendente</td>
+    <td class="celulaSituacao"><time datetime="2025-06-17">17/06/2025</time></td>
+  </tr>
+  <tr class="linhaPedido">
+    <td class="celulaNome">Henrique Souza</td>
+    <td class="celulaUser">@hsouza</td>
+    <td class="celulaImagem"><img src="images/imagens_banho_higiene/produto_higiene_cachorro.svg" alt="Shampoo Pelos Claros, Sanon 500mL" class="imagemProdutoPedido"></td>
+    <td class="celulaPreco">R$25,34</td>
+    <td class="celulaEndereco">Rua das Laranjeiras, 150 - Laranjeiras, Rio de Janeiro</td>
+    <td class="celulaStatus"><i class="bi bi-truck statusCaminhoIcone"></i> A caminho</td>
+    <td class="celulaSituacao"><time datetime="2025-06-18">18/06/2025</time></td>
+  </tr>
+  <tr class="linhaPedido">
+    <td class="celulaNome">Daniela Prado</td>
+    <td class="celulaUser">@daniprado</td>
+    <td class="celulaImagem"><img src="images/imagens_produtos_caes/imagens_secao_roupas_acessorios/roupa_2.svg" alt="Coleira azul - Cães Filhotes" class="imagemProdutoPedido"></td>
+    <td class="celulaPreco">R$23,12</td>
+    <td class="celulaEndereco">Av. Cristóvão Colombo, 2900 - Floresta, Porto Alegre</td>
+    <td class="celulaStatus"><i class="bi bi-check-circle-fill statusEntregueIcone"></i> Entregue</td>
+    <td class="celulaSituacao"><time datetime="2025-06-14">14/06/2025</time></td>
+  </tr>
+  <tr class="linhaPedido">
+    <td class="celulaNome">Rodrigo Nunes</td>
+    <td class="celulaUser">@rodrinunes</td>
+    <td class="celulaImagem"><img src="images/imagens_produtos_gatos/imagens_secao_higiene/banho_1.svg" alt="Shampoo para gatos, Sanol 500mLs" class="imagemProdutoPedido"></td>
+    <td class="celulaPreco">R$15,90</td>
+    <td class="celulaEndereco">Rua Bela Cintra, 1055 - Consolação, São Paulo</td>
+    <td class="celulaStatus"><i class="bi bi-clock statusPendenteIcone"></i> Pendente</td>
+    <td class="celulaSituacao"><time datetime="2025-06-17">17/06/2025</time></td>
+  </tr>
+  <tr class="linhaPedido">
+    <td class="celulaNome">Fernanda Rocha</td>
+    <td class="celulaUser">@fernandinha</td>
+    <td class="celulaImagem"><img src="images/imagens_produtos_caes/imagens_secao_racao/racao_4.png" alt="Ração Carne e Vegetais, Pedigree 2,7Kg" class="imagemProdutoPedido"></td>
+    <td class="celulaPreco">R$78,90</td>
+    <td class="celulaEndereco">Av. Brasil, 1980 - Copacabana, Rio de Janeiro</td>
+    <td class="celulaStatus"><i class="bi bi-truck statusCaminhoIcone"></i> A caminho</td>
+    <td class="celulaSituacao"><time datetime="2025-06-18">18/06/2025</time></td>
+  </tr>
+  <tr class="linhaPedido">
+    <td class="celulaNome">Leticia Mendes</td>
+    <td class="celulaUser">@mendes_lele</td>
+    <td class="celulaImagem"><img src="images/imagens_produtos_roedores/imagens_secao_brinquedo/brinquedo_3.svg" alt="Mordedor pequendo para Hamster, Cobasi" class="imagemProdutoPedido"></td>
+    <td class="celulaPreco">R$15,95</td>
+    <td class="celulaEndereco">Rua da Aurora, 425 - Santo Amaro, Recife</td>
+    <td class="celulaStatus"><i class="bi bi-check-circle-fill statusEntregueIcone"></i> Entregue</td>
+    <td class="celulaSituacao"><time datetime="2025-06-15">15/06/2025</time></td>
+  </tr>
+  <tr class="linhaPedido">
+    <td class="celulaNome">Luiza Alves</td>
+    <td class="celulaUser">@lu_alvesz</td>
+    <td class="celulaImagem"><img src="images/imagens_produtos_gatos/imagens_secao_racao/racao_4.png" alt="Ração de Frango, Whiskas 900g" class="imagemProdutoPedido"></td>
+    <td class="celulaPreco">R$78,90</td>
+    <td class="celulaEndereco">Rua da Aurora, 425 - Santo Amaro, Recife</td>
+    <td class="celulaStatus"><i class="bi bi-check-circle-fill statusEntregueIcone"></i> Entregue</td>
+    <td class="celulaSituacao"><time datetime="2025-06-15">15/06/2025</time></td>
+  </tr>
+  <tr class="linhaPedido">
+    <td class="celulaNome">Lucas Azevedo</td>
+    <td class="celulaUser">@lucazevedo</td>
+    <td class="celulaImagem"><img src="images/imagens_produtos_aves/imagens_secao_racao/racao_3.svg" alt="Ração Sabor frutas, NuTrópica 300g" class="imagemProdutoPedido"></td>
+    <td class="celulaPreco">R$15,67</td>
+    <td class="celulaEndereco">Rua da Aurora, 425 - Santo Amaro, Recife</td>
+    <td class="celulaStatus"><i class="bi bi-check-circle-fill statusEntregueIcone"></i> Entregue</td>
+    <td class="celulaSituacao"><time datetime="2025-06-15">15/06/2025</time></td>
+  </tr>
+</tbody>
+
+</table>
+
+    </section>
+  </main>
+</body>
+</html>
