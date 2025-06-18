@@ -1037,8 +1037,8 @@ main.carrinhoContainer {
 }
 
 .navegacao a:hover {
-  color: white;
-  background-color: #06054df1
+  color: rgb(255, 255, 255);
+  background-color: #242425f1
 }
 
 /* Resumo da Compra - ASIDE*/
@@ -2529,6 +2529,8 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 8px;
   resize: vertical;
+  font-family: Arial, Helvetica, sans-serif;
+  resize: none;
 }
 
 input:focus,
