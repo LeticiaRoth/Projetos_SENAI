@@ -1229,6 +1229,10 @@ nav a.botaoConfirmar {
 }
 
 /*Imagem produto da página editar*/
+#descricaoProduto{
+  resize: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
 .imagemProduto {
   width: 260px;
   height: auto;
