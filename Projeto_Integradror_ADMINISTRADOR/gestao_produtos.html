@@ -1,207 +1,201 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gestão Produtos</title>
-    <link rel="icon" href="images/icones/icone_principal.png" type="image/png" />
-
-  <link 
-    rel="stylesheet" 
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-  />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <aside class="barraLateral" aria-label="Menu de navegação administrativo">
-    <header class="areaLogo">
-      <img src="images/icones/icone_principal.png" alt="Logo WorldPet" />
-    </header>
-    <nav>
-      <ul class="menuPrincipal">
-        <li><a href="dashboard.html" ><i class="bi bi-speedometer2"></i> Dashboard</a></li>
-        <li><a href="gestao_produtos.html" class="ativo"><i class="bi bi-box-seam"></i> Gestão de Produtos</a></li>
-        <li><a href="painel_pedidos.html"><i class="bi bi-cart4"></i> Painel de Pedidos</a></li>
-        <li><a href="clientes.html"><i class="bi bi-people"></i> Painel de Clientes</a></li>
-      </ul>
-      <ul class="menuSair">
-        <li><a href="modal_sair.html"><i class="bi bi-box-arrow-right"></i> Sair</a></li>
-      </ul>
-    </nav>
-  </aside>
-  <main>
-      <header class="cabecalhoGestao">
-  <h1 class="tituloPagina">Gestão de Produtos - WorldPet</h1>
-  <section class="areaControles">
-  <section class="grupoFiltros">
-    <section class="filtroCategoria">
-      <label for="selecaoAnimal" class="rotuloFiltro">Animal:</label>
-      <select id="selecaoAnimal" class="caixaSelecao">
-        <option value="todos">Todos</option>
-        <option value="caes">Cães</option>
-        <option value="gatos">Gatos</option>
-        <option value="aves">Aves</option>
-        <option value="peixes">Peixes</option>
-      </select>
-    </section>
-
-    <section class="filtroCategoria">
-      <label for="selecaoTipo" class="rotuloFiltro">Tipo de Produto:</label>
-      <select id="selecaoTipo" class="caixaSelecao">
-        <option value="todos">Todos</option>
-        <option value="racao">Ração</option>
-        <option value="higiene">Higiene</option>
-        <option value="brinquedos">Brinquedos</option>
-        <option value="roupas">Roupas</option>
-      </select>
-    </section>
-  </section>
-
-  <a href="adicionar.html"    class="botaoAdicionarProduto">
-    <i class="bi bi-plus-circle-fill"></i> Adicionar Produto
-  </a>
-</section>
-
-</header>
-
-    <section class="areaTabelaProdutos">
-      <table class="tabelaProdutos">
-        <thead>
-          <tr>
-            <th>Imagem</th>
-            <th>Produto</th>
-            <th>Categoria</th>
-            <th>Animal</th>
-            <th>Preço</th>
-            <th>Estoque</th>
-            <th>Ações</th>
-          </tr>
-        </thead>
-       <tbody>
-  <tr>
-    <td><img src="images/imagens_banho_higiene/produto_higiene_cachorro.svg" alt="Shampoo Pelos Claros, Sanon 500mL" class="imagemItemTabela" /></td>
-    <td>Shampoo Pelos Claros, Sanon 500mL</td>
-    <td>Banho & Higiene</td>
-    <td>Cachorro</td>
-    <td>R$25,34</td>
-    <td>25</td>
-    <td class="colunaAcoes">
-      <a href="visualizar.html" class="botaoAcao visualizar" title="Visualizar"><i class="bi bi-eye-fill"></i></a>
-      <a href="edicao.html" class="botaoAcao editar" title="Editar"><i class="bi bi-pencil-fill"></i></a>
-      <a href="modal_excluir.html" class="botaoAcao excluir" title="Excluir"><i class="bi bi-trash-fill"></i></a>
-    </td>
-  </tr>
-  <tr>
-    <td><img src="images/imagens_produtos_caes/imagens_secao_higiene/banho_higiene_1.svg" alt="Shampoo para Filhotes, PetClean 700mL" class="imagemItemTabela" /></td>
-    <td>Shampoo para Filhotes, PetClean 700mL</td>
-    <td>Banho & Higiene</td>
-        <td>Cachorro</td>
-
-    <td>R$23,23</td>
-    <td>82</td>
-    <td class="colunaAcoes">
-      <a href="visualizar.html" class="botaoAcao visualizar" title="Visualizar"><i class="bi bi-eye-fill"></i></a>
-      <a href="edicao.html" class="botaoAcao editar" title="Editar"><i class="bi bi-pencil-fill"></i></a>
-      <a href="modal_excluir.html" class="botaoAcao excluir" title="Excluir"><i class="bi bi-trash-fill"></i></a>
-    </td>
-  </tr>
-  <tr>
-    <td><img src="images/imagens_produtos_roedores/imagens_secao_racao/racao_1.svg" alt="Ração Pedaços de Maça para Coelhos, Reino de Aves 500g" class="imagemItemTabela" /></td>
-    <td>Ração Pedaços de Maça para Coelhos, Reino de Aves 500g</td>
-    <td>Ração</td>
-        <td>Roedores</td>
-
-    <td>R$23,78</td>
-    <td>40</td>
-    <td class="colunaAcoes">
-      <a href="visualizar.html" class="botaoAcao visualizar" title="Visualizar"><i class="bi bi-eye-fill"></i></a>
-      <a href="edicao.html" class="botaoAcao editar" title="Editar"><i class="bi bi-pencil-fill"></i></a>
-      <a href="modal_excluir.html" class="botaoAcao excluir" title="Excluir"><i class="bi bi-trash-fill"></i></a>
-    </td>
-  </tr>
-  <tr>
-    <td><img src="images/imagens_produtos_gatos/imagens_secao_roupas_acessorios/roupa_1.svg" alt="Roupas colorida para Gato - Pequeno porte" class="imagemItemTabela" /></td>
-    <td>Roupas colorida para Gato - Pequeno porte</td>
-    <td>Roupas & Acessórios</td>
-    <td>Gatos</td>
-    <td>R$28,30</td>
-    <td>67</td>
-    <td class="colunaAcoes">
-      <a href="visualizar.html" class="botaoAcao visualizar" title="Visualizar"><i class="bi bi-eye-fill"></i></a>
-      <a href="edicao.html" class="botaoAcao editar" title="Editar"><i class="bi bi-pencil-fill"></i></a>
-      <a href="modal_excluir.html" class="botaoAcao excluir" title="Excluir"><i class="bi bi-trash-fill"></i></a>
-    </td>
-  </tr>
-  <tr>
-    <td><img src="images/imagens_racao/produto_racao_peixes.svg" alt="Ração Basic para peixes, Alcon 20g" class="imagemItemTabela" /></td>
-    <td>Ração Basic para peixes, Alcon 20g</td>
-    <td>Ração</td>
-    <td>Peixe</td>
-    <td>R$25,90</td>
-    <td>31</td>
-    <td class="colunaAcoes">
-      <a href="visualizar.html" class="botaoAcao visualizar" title="Visualizar"><i class="bi bi-eye-fill"></i></a>
-      <a href="edicao.html" class="botaoAcao editar" title="Editar"><i class="bi bi-pencil-fill"></i></a>
-      <a href="modal_excluir.html" class="botaoAcao excluir" title="Excluir"><i class="bi bi-trash-fill"></i></a>
-    </td>
-  </tr>
-  <tr>
-    <td><img src="images/imagens_produtos_roedores/imagens_secao_brinquedo/brinquedo_4.svg" alt="Bola de lã para Colegos, Cobasi" class="imagemItemTabela" /></td>
-    <td>Bola de lã para Colegos, Cobasi</td>
-    <td>Brinquedos</td>
-    <td>Roedores</td>
-    <td>R$ 22,90</td>
-    <td>54</td>
-    <td class="colunaAcoes">
-      <a href="visualizar.html" class="botaoAcao visualizar" title="Visualizar"><i class="bi bi-eye-fill"></i></a>
-      <a href="edicao.html" class="botaoAcao editar" title="Editar"><i class="bi bi-pencil-fill"></i></a>
-      <a href="modal_excluir.html" class="botaoAcao excluir" title="Excluir"><i class="bi bi-trash-fill"></i></a>
-    </td>
-  </tr>
-  <tr>
-    <td><img src="images/imagens_produtos_caes/imagens_secao_higiene/banho_higiene_4.svg" alt="Escova para Cães pelos longos, DogLifes" class="imagemItemTabela" /></td>
-    <td>Escova para Cães pelos longos, DogLifes</td>
-    <td>Banho & Higiene</td>
-    <td>Cachorro</td>
-    <td>R$6,13</td>
-    <td>73</td>
-    <td class="colunaAcoes">
-      <a href="visualizar.html" class="botaoAcao visualizar" title="Visualizar"><i class="bi bi-eye-fill"></i></a>
-      <a href="edicao.html" class="botaoAcao editar" title="Editar"><i class="bi bi-pencil-fill"></i></a>
-      <a href="modal_excluir.html" class="botaoAcao excluir" title="Excluir"><i class="bi bi-trash-fill"></i></a>
-    </td>
-  </tr>
-   <tr>
-    <td><img src="images/imagens_produtos_aves/imagens_secao_higiene/banho_3.svg" alt="Lavizoo Banho para Aves, Lavizoo 30mL" class="imagemItemTabela" /></td>
-    <td>Lavizoo Banho para Aves, Lavizoo 30mL</td>
-    <td>Banho & Higiene</td>
-    <td>Aves</td>
-    <td>R$9,23</td>
-    <td>73</td>
-    <td class="colunaAcoes">
-      <a href="visualizar.html" class="botaoAcao visualizar" title="Visualizar"><i class="bi bi-eye-fill"></i></a>
-      <a href="edicao.html" class="botaoAcao editar" title="Editar"><i class="bi bi-pencil-fill"></i></a>
-      <a href="modal_excluir.html" class="botaoAcao excluir" title="Excluir"><i class="bi bi-trash-fill"></i></a>
-    </td>
-  </tr>
-   <tr>
-    <td><img src="images/imagens_produtos_gatos/imagens_secao_racao/racao_5.png" alt="Ração de Frango, Whiskas 900g" class="imagemItemTabela" /></td>
-    <td>Ração de Frango, Whiskas 900g</td>
-    <td>Ração</td>
-    <td>Gatos</td>
-    <td>R$78,90</td>
-    <td>73</td>
-    <td class="colunaAcoes">
-      <a href="visualizar.html" class="botaoAcao visualizar" title="Visualizar"><i class="bi bi-eye-fill"></i></a>
-      <a href="edicao.html" class="botaoAcao editar" title="Editar"><i class="bi bi-pencil-fill"></i></a>
-      <a href="modal_excluir.html" class="botaoAcao excluir" title="Excluir"><i class="bi bi-trash-fill"></i></a>
-    </td>
-  </tr>
-</tbody>
-
-      </table>
-    </section>
-    
-  </main>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Gestão Produtos</title>
+        <link rel="icon" href="images/icones/icone_principal.png" type="image/png" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <aside class="barraLateral" aria-label="Menu de navegação administrativo">
+            <header class="areaLogo">
+                <img src="images/icones/icone_principal.png" alt="Logo WorldPet" />
+            </header>
+            <nav>
+                <!--Menu aside de navegação-->
+                <ul class="menuPrincipal">
+                    <li><a href="dashboard.html" ><i class="bi bi-speedometer2"></i> Dashboard</a></li>
+                    <li><a href="gestao_produtos.html" class="ativo"><i class="bi bi-box-seam"></i> Gestão de Produtos</a></li>
+                    <li><a href="painel_pedidos.html"><i class="bi bi-cart4"></i> Painel de Pedidos</a></li>
+                    <li><a href="clientes.html"><i class="bi bi-people"></i> Painel de Clientes</a></li>
+                </ul>
+                <ul class="menuSair">
+                    <li><a href="modal_sair.html"><i class="bi bi-box-arrow-right"></i> Sair</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <header class="cabecalhoGestao">
+                <h1 class="tituloPagina">Gestão de Produtos - WorldPet</h1>
+                <section class="areaControles">
+                    <section class="grupoFiltros">
+                        <!--Dropbox do animal-->
+                        <section class="filtroCategoria">
+                            <label for="selecaoAnimal" class="rotuloFiltro">Animal:</label>
+                            <select id="selecaoAnimal" class="caixaSelecao">
+                                <option value="todos">Todos</option>
+                                <option value="caes">Cães</option>
+                                <option value="gatos">Gatos</option>
+                                <option value="aves">Aves</option>
+                                <option value="peixes">Peixes</option>
+                            </select>
+                        </section>
+                        <!--Dropbox da seção-->
+                        <section class="filtroCategoria">
+                            <label for="selecaoTipo" class="rotuloFiltro">Tipo de Produto:</label>
+                            <select id="selecaoTipo" class="caixaSelecao">
+                                <option value="todos">Todos</option>
+                                <option value="racao">Ração</option>
+                                <option value="higiene">Higiene</option>
+                                <option value="brinquedos">Brinquedos</option>
+                                <option value="roupas">Roupas</option>
+                            </select>
+                        </section>
+                    </section>
+                    <!--Botão adicionar produto-->
+                    <a href="adicionar.html"    class="botaoAdicionarProduto">
+                    <i class="bi bi-plus-circle-fill"></i> Adicionar Produto
+                    </a>
+                </section>
+            </header>
+            <!--Colunas de organização-->
+            <section class="areaTabelaProdutos">
+                <table class="tabelaProdutos">
+                    <thead>
+                        <tr>
+                            <th>Imagem</th>
+                            <th>Produto</th>
+                            <th>Categoria</th>
+                            <th>Animal</th>
+                            <th>Preço</th>
+                            <th>Estoque</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <!--Lista de produtos-->
+                            <td><img src="images/imagens_banho_higiene/produto_higiene_cachorro.svg" alt="Shampoo Pelos Claros, Sanon 500mL" class="imagemItemTabela" /></td>
+                            <td>Shampoo Pelos Claros, Sanon 500mL</td>
+                            <td>Banho & Higiene</td>
+                            <td>Cachorro</td>
+                            <td>R$25,34</td>
+                            <td>25</td>
+                            <td class="colunaAcoes">
+                                <a href="visualizar.html" class="botaoAcao visualizar" title="Visualizar"><i class="bi bi-eye-fill"></i></a>
+                                <a href="edicao.html" class="botaoAcao editar" title="Editar"><i class="bi bi-pencil-fill"></i></a>
+                                <a href="modal_excluir.html" class="botaoAcao excluir" title="Excluir"><i class="bi bi-trash-fill"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/imagens_produtos_caes/imagens_secao_higiene/banho_higiene_1.svg" alt="Shampoo para Filhotes, PetClean 700mL" class="imagemItemTabela" /></td>
+                            <td>Shampoo para Filhotes, PetClean 700mL</td>
+                            <td>Banho & Higiene</td>
+                            <td>Cachorro</td>
+                            <td>R$23,23</td>
+                            <td>82</td>
+                            <td class="colunaAcoes">
+                                <a href="visualizar.html" class="botaoAcao visualizar" title="Visualizar"><i class="bi bi-eye-fill"></i></a>
+                                <a href="edicao.html" class="botaoAcao editar" title="Editar"><i class="bi bi-pencil-fill"></i></a>
+                                <a href="modal_excluir.html" class="botaoAcao excluir" title="Excluir"><i class="bi bi-trash-fill"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/imagens_produtos_roedores/imagens_secao_racao/racao_1.svg" alt="Ração Pedaços de Maça para Coelhos, Reino de Aves 500g" class="imagemItemTabela" /></td>
+                            <td>Ração Pedaços de Maça para Coelhos, Reino de Aves 500g</td>
+                            <td>Ração</td>
+                            <td>Roedores</td>
+                            <td>R$23,78</td>
+                            <td>40</td>
+                            <td class="colunaAcoes">
+                                <a href="visualizar.html" class="botaoAcao visualizar" title="Visualizar"><i class="bi bi-eye-fill"></i></a>
+                                <a href="edicao.html" class="botaoAcao editar" title="Editar"><i class="bi bi-pencil-fill"></i></a>
+                                <a href="modal_excluir.html" class="botaoAcao excluir" title="Excluir"><i class="bi bi-trash-fill"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/imagens_produtos_gatos/imagens_secao_roupas_acessorios/roupa_1.svg" alt="Roupas colorida para Gato - Pequeno porte" class="imagemItemTabela" /></td>
+                            <td>Roupas colorida para Gato - Pequeno porte</td>
+                            <td>Roupas & Acessórios</td>
+                            <td>Gatos</td>
+                            <td>R$28,30</td>
+                            <td>67</td>
+                            <td class="colunaAcoes">
+                                <a href="visualizar.html" class="botaoAcao visualizar" title="Visualizar"><i class="bi bi-eye-fill"></i></a>
+                                <a href="edicao.html" class="botaoAcao editar" title="Editar"><i class="bi bi-pencil-fill"></i></a>
+                                <a href="modal_excluir.html" class="botaoAcao excluir" title="Excluir"><i class="bi bi-trash-fill"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/imagens_racao/produto_racao_peixes.svg" alt="Ração Basic para peixes, Alcon 20g" class="imagemItemTabela" /></td>
+                            <td>Ração Basic para peixes, Alcon 20g</td>
+                            <td>Ração</td>
+                            <td>Peixe</td>
+                            <td>R$25,90</td>
+                            <td>31</td>
+                            <td class="colunaAcoes">
+                                <a href="visualizar.html" class="botaoAcao visualizar" title="Visualizar"><i class="bi bi-eye-fill"></i></a>
+                                <a href="edicao.html" class="botaoAcao editar" title="Editar"><i class="bi bi-pencil-fill"></i></a>
+                                <a href="modal_excluir.html" class="botaoAcao excluir" title="Excluir"><i class="bi bi-trash-fill"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/imagens_produtos_roedores/imagens_secao_brinquedo/brinquedo_4.svg" alt="Bola de lã para Colegos, Cobasi" class="imagemItemTabela" /></td>
+                            <td>Bola de lã para Colegos, Cobasi</td>
+                            <td>Brinquedos</td>
+                            <td>Roedores</td>
+                            <td>R$ 22,90</td>
+                            <td>54</td>
+                            <td class="colunaAcoes">
+                                <a href="visualizar.html" class="botaoAcao visualizar" title="Visualizar"><i class="bi bi-eye-fill"></i></a>
+                                <a href="edicao.html" class="botaoAcao editar" title="Editar"><i class="bi bi-pencil-fill"></i></a>
+                                <a href="modal_excluir.html" class="botaoAcao excluir" title="Excluir"><i class="bi bi-trash-fill"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/imagens_produtos_caes/imagens_secao_higiene/banho_higiene_4.svg" alt="Escova para Cães pelos longos, DogLifes" class="imagemItemTabela" /></td>
+                            <td>Escova para Cães pelos longos, DogLifes</td>
+                            <td>Banho & Higiene</td>
+                            <td>Cachorro</td>
+                            <td>R$6,13</td>
+                            <td>73</td>
+                            <td class="colunaAcoes">
+                                <a href="visualizar.html" class="botaoAcao visualizar" title="Visualizar"><i class="bi bi-eye-fill"></i></a>
+                                <a href="edicao.html" class="botaoAcao editar" title="Editar"><i class="bi bi-pencil-fill"></i></a>
+                                <a href="modal_excluir.html" class="botaoAcao excluir" title="Excluir"><i class="bi bi-trash-fill"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/imagens_produtos_aves/imagens_secao_higiene/banho_3.svg" alt="Lavizoo Banho para Aves, Lavizoo 30mL" class="imagemItemTabela" /></td>
+                            <td>Lavizoo Banho para Aves, Lavizoo 30mL</td>
+                            <td>Banho & Higiene</td>
+                            <td>Aves</td>
+                            <td>R$9,23</td>
+                            <td>73</td>
+                            <td class="colunaAcoes">
+                                <a href="visualizar.html" class="botaoAcao visualizar" title="Visualizar"><i class="bi bi-eye-fill"></i></a>
+                                <a href="edicao.html" class="botaoAcao editar" title="Editar"><i class="bi bi-pencil-fill"></i></a>
+                                <a href="modal_excluir.html" class="botaoAcao excluir" title="Excluir"><i class="bi bi-trash-fill"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/imagens_produtos_gatos/imagens_secao_racao/racao_5.png" alt="Ração de Frango, Whiskas 900g" class="imagemItemTabela" /></td>
+                            <td>Ração de Frango, Whiskas 900g</td>
+                            <td>Ração</td>
+                            <td>Gatos</td>
+                            <td>R$78,90</td>
+                            <td>73</td>
+                            <td class="colunaAcoes">
+                                <a href="visualizar.html" class="botaoAcao visualizar" title="Visualizar"><i class="bi bi-eye-fill"></i></a>
+                                <a href="edicao.html" class="botaoAcao editar" title="Editar"><i class="bi bi-pencil-fill"></i></a>
+                                <a href="modal_excluir.html" class="botaoAcao excluir" title="Excluir"><i class="bi bi-trash-fill"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </body>
 </html>
