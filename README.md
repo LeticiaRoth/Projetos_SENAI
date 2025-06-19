@@ -43,20 +43,6 @@ O objetivo principal é garantir praticidade e bem-estar para os tutores e seus 
 - Desativar e ativar usuários
 
 
----
-
-### 📁 Estrutura de Arquivos
-
-- `index.html` – Página inicial
-- `catalogo.html` – Catálogo de produtos
-- `contato.html` – Página de contato
-- `sobrenos.html` – Informações sobre a empresa
-- `carrinho.html` – Carrinho de compras
-- `perfil.html` – Perfil do usuário
-- `style.css` – Estilos principais do site
-- `image/` – Diretório de imagens utilizadas
-
----
 
 ### 🚀 Tecnologias Utilizadas
 
