@@ -42,7 +42,7 @@ O objetivo principal é garantir praticidade e bem-estar para os tutores e seus 
 - Visualizar clientes
 - Desativar e ativar usuários
 
-
+---
 
 ### 🚀 Tecnologias Utilizadas
 
