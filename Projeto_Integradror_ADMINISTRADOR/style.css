@@ -667,18 +667,18 @@ td {
 }
 
 .botaoRetornarLogin {
-  background-color: #00cec9;
+  background-color: #044419;
   color: white;
   padding: 0.9rem 2rem;
   border-radius: 12px;
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 12px rgba(0, 206, 201, 0.4);
+  box-shadow: 0 4px 12px rgba(4, 77, 1, 0.4);
 }
 
 .botaoRetornarLogin:hover {
-  background-color: #00b3ad;
+  background-color: #1a3f04;
   transform: translateY(-2px);
 }
 
