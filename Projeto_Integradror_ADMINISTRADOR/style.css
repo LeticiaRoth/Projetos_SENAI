@@ -797,20 +797,7 @@ section.cartaoModalDesativado {
   margin-bottom: 2rem;
 }
 
-a.botaoRetornarGestao {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background-color: #0a9396;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
 
-a.botaoRetornarGestao:hover {
-  background-color: #087b7d;
-}
 
 @keyframes pulsar {
   from {
@@ -866,10 +853,10 @@ section.cartaoModalAtivado {
   margin-bottom: 2rem;
 }
 
-a.botaoRetornarGestao {
+.botaoRetornarGestaoAdmin {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: #0a9396;
+  background-color: #137C07;
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -877,8 +864,8 @@ a.botaoRetornarGestao {
   transition: background-color 0.3s ease;
 }
 
-a.botaoRetornarGestao:hover {
-  background-color: #087b7d;
+.botaoRetornarGestaoAdmin:hover {
+  background-color: #02440C;
 }
 
 /* Reutiliza animação */
