@@ -2001,7 +2001,7 @@ a {
 
 .navItem a:hover,
 .logoutItem a:hover {
-  color: #d8b48b;
+  color: #f9e0c2;
 }
 
 /* SECTION */
@@ -2215,8 +2215,8 @@ a {
 
 .productInfo {
   flex-grow: 1;
-  font-size: 0.95rem;
-  color: #333;
+  font-size: 1.3rem;
+  color: #161616;
 }
 
 .productPrice {
@@ -2265,6 +2265,11 @@ a {
   overflow: hidden;
 }
 
+.destaquePerfil{
+  background-color: #5c3b18;
+  width: 5rem;
+  color: #ffffff;
+}
 
 /* Sidebar */
 #menuLateral {
